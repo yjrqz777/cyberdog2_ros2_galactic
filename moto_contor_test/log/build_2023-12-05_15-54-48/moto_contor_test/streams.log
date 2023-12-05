@@ -1,0 +1,24 @@
+[0.146s] Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake /SDCARD/workspace/moto_contor_test -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/moto_contor_test/install/moto_contor_test
+[0.196s] -- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)
+[0.370s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.975s] -- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)
+[1.140s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.155s] -- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)
+[1.569s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.769s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)
+[1.775s] -- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.842s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.321s] -- Found toml: 0.0.0 (/opt/ros2/cyberdog/share/toml/cmake)
+[2.325s] -- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)
+[3.605s] -- Found cyberdog_common: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_common/cmake)
+[3.685s] -- Found elec_skin: 0.0.0 (/opt/ros2/cyberdog/share/elec_skin/cmake)
+[3.688s] CMake Error at /opt/ros2/galactic/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[3.689s]   ament_target_dependencies() the first argument must be a valid target name
+[3.694s] Call Stack (most recent call first):
+[3.694s]   CMakeLists.txt:34 (ament_target_dependencies)
+[3.695s] 
+[3.696s] 
+[3.697s] -- Configuring incomplete, errors occurred!
+[3.697s] See also "/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/CMakeOutput.log".
+[3.698s] See also "/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/CMakeError.log".
+[3.724s] Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '1': /usr/local/bin/cmake /SDCARD/workspace/moto_contor_test -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/moto_contor_test/install/moto_contor_test

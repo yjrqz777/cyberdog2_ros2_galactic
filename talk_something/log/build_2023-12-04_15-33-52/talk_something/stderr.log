@@ -1,0 +1,7 @@
+[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_[m[K’ does not name a type; did you mean ‘[01m[Krename[m[K’?
+     [01;31m[Kname_[m[K = "AudioTalkDemo";
+     [01;31m[K^~~~~[m[K
+     [32m[Krename[m[K
+make[2]: *** [CMakeFiles/talks_node.dir/src/talkers.cpp.o] Error 1
+make[1]: *** [CMakeFiles/talks_node.dir/all] Error 2
+make: *** [all] Error 2

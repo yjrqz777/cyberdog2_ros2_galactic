@@ -1,0 +1,4 @@
+source;share/motion_action/environment/ament_prefix_path.sh
+source;share/motion_action/environment/library_path.sh
+source;share/motion_action/environment/path.sh
+source;share/motion_action/environment/pythonpath.sh

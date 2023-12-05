@@ -1,0 +1,207 @@
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1")  
+-- Found FastRTPS: /opt/ros2/galactic/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rclpy: 1.9.0 (/opt/ros2/galactic/share/rclpy/cmake)
+-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)
+-- Found cyberdog_system: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_system/cmake)
+-- Found cyberdog_debug: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_debug/cmake)
+-- Found cyberdog_common: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_common/cmake)
+-- Found skin_manager: 0.0.0 (/opt/ros2/cyberdog/share/skin_manager/cmake)
+-- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /SDCARD/workspace/motion_action/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /SDCARD/workspace/motion_action/build/motion_action
+[  0%] Built target ament_cmake_python_symlink_motion_action
+[ 12%] [32mBuilding CXX object CMakeFiles/motion_action.dir/src/motion_action.cpp.o[0m
+[ 25%] [32m[1mLinking CXX shared library libmotion_action.so[0m
+[ 25%] Built target motion_action
+running egg_info
+creating motion_action.egg-info
+writing motion_action.egg-info/PKG-INFO
+writing dependency_links to motion_action.egg-info/dependency_links.txt
+writing top-level names to motion_action.egg-info/top_level.txt
+writing manifest file 'motion_action.egg-info/SOURCES.txt'
+reading manifest file 'motion_action.egg-info/SOURCES.txt'
+writing manifest file 'motion_action.egg-info/SOURCES.txt'
+[ 25%] Built target ament_cmake_python_build_motion_action_egg
+[ 37%] [32mBuilding CXX object CMakeFiles/client_test.dir/test/client_test.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable client_test[0m
+[ 50%] Built target client_test
+[ 62%] [32mBuilding CXX object CMakeFiles/publisher_test.dir/test/publisher_test.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable publisher_test[0m
+[ 75%] Built target publisher_test
+[ 87%] [32mBuilding CXX object CMakeFiles/controller_test.dir/test/controller_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable controller_test[0m
+[100%] Built target controller_test
+-- Install configuration: ""
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/include
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/include/motion_action
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/include/motion_action/motion_action.hpp
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/include/motion_action/motion_macros.hpp
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch/test_as_manager.launch
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch/test_as_manager.py
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch/AMENT_IGNORE
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/179.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/0.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/173.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/301.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/156.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/154.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/164.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/169.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/129.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/134.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/163.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/122.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/400.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/121.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/158.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/131.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/137.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/160.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/124.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/141.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/130.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/144.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/303.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/302.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/142.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/150.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/180.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/133.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/146.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/176.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/125.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/elec_skin.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/211.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/171.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/157.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/132.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/135.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/153.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/152.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/170.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/167.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/138.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/177.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/147.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/140.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/148.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/181.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/159.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/149.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/123.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/127.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/165.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/motion_id_map.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/174.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/162.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/175.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/166.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/305.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/user_gait_400.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/151.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/111.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/102.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/143.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/168.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/136.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/155.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/201.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/145.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/212.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/178.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/101.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/128.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/126.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/161.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/172.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/202.toml
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/libmotion_action.so
+-- Set runtime path of "/SDCARD/workspace/motion_action/install/motion_action/lib/libmotion_action.so" to ""
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/controller_test
+-- Set runtime path of "/SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/controller_test" to ""
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/publisher_test
+-- Set runtime path of "/SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/publisher_test" to ""
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/client_test
+-- Set runtime path of "/SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/client_test" to ""
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/pythonpath.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/pythonpath.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/SOURCES.txt
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/dependency_links.txt
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/top_level.txt
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/PKG-INFO
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action/__init__.py
+Listing '/SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action'...
+Compiling '/SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action/__init__.py'...
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/motion_teleop.py
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/pose_teleop.py
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/statistics.py
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/motion_units.py
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/motion_demo.py
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/library_path.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/library_path.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/ament_index/resource_index/package_run_dependencies/motion_action
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/ament_index/resource_index/parent_prefix_path/motion_action
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/ament_prefix_path.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/ament_prefix_path.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/path.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/path.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.bash
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.zsh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/ament_index/resource_index/packages/motion_action
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/motion_actionConfig.cmake
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/motion_actionConfig-version.cmake
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.xml

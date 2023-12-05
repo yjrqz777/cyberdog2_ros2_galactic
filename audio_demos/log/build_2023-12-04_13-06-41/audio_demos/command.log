@@ -1,0 +1,4 @@
+Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --install /SDCARD/workspace/audio_demos/build/audio_demos
+Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/audio_demos/build/audio_demos

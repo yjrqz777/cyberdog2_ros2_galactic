@@ -1,0 +1,2 @@
+Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
+Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6

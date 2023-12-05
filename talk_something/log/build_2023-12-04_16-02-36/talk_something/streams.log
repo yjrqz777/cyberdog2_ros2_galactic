@@ -1,0 +1,28 @@
+[0.139s] Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target talks_node[0m
+[0.375s] [ 50%] [32mBuilding CXX object CMakeFiles/talks_node.dir/src/talkers.cpp.o[0m
+[27.013s] [100%] [32m[1mLinking CXX executable talks_node[0m
+[29.188s] [100%] Built target talks_node
+[29.220s] Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+[29.327s] Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --install /SDCARD/workspace/talk_something/build/talk_something
+[29.340s] -- Install configuration: ""
+[29.341s] -- Installing: /SDCARD/workspace/talk_something/install/talk_something/lib/talk_something/talks_node
+[29.378s] -- Set runtime path of "/SDCARD/workspace/talk_something/install/talk_something/lib/talk_something/talks_node" to ""
+[29.379s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/ament_index/resource_index/package_run_dependencies/talk_something
+[29.379s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/ament_index/resource_index/parent_prefix_path/talk_something
+[29.380s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/ament_prefix_path.sh
+[29.380s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/ament_prefix_path.dsv
+[29.382s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/path.sh
+[29.387s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/path.dsv
+[29.388s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.bash
+[29.389s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.sh
+[29.389s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.zsh
+[29.390s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.dsv
+[29.390s] -- Installing: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.dsv
+[29.393s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/ament_index/resource_index/packages/talk_something
+[29.398s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.399s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.401s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/talk_somethingConfig.cmake
+[29.405s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/talk_somethingConfig-version.cmake
+[29.408s] -- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.xml
+[29.409s] Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/talk_something/build/talk_something

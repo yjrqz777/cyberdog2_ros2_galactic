@@ -1,0 +1,127 @@
+[1.683s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install', '--install-base', '/opt/ros2/cyberdog/', '--allow-overriding', 'audio_demos']
+[1.684s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=['audio_demos'], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='/opt/ros2/cyberdog/', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f94f457f0>>, merge_install=True, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f94f457f0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f94e9b1d0>)
+[1.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.713s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/SDCARD/workspace/audio_demos'
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.113s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'audio_demos'
+[2.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.218s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'cmake_args' from command line to 'None'
+[2.218s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'cmake_target' from command line to 'None'
+[2.219s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.219s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[2.219s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'cmake_clean_first' from command line to 'False'
+[2.219s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'cmake_force_configure' from command line to 'False'
+[2.219s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'ament_cmake_args' from command line to 'None'
+[2.219s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[2.220s] Level 5:colcon.colcon_core.verb:set package 'audio_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.220s] DEBUG:colcon.colcon_core.verb:Building package 'audio_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/SDCARD/workspace/audio_demos/build/audio_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/ros2/cyberdog', 'merge_install': True, 'path': '/SDCARD/workspace/audio_demos', 'symlink_install': False, 'test_result_base': None}
+[2.226s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/SDCARD/workspace/audio_demos/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[2.226s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/SDCARD/workspace/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[2.227s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/SDCARD/workspace/audio_demos/install' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.227s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/SDCARD/workspace/install' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.227s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/SDCARD/workspace/audio_demos/install' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.228s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/SDCARD/workspace/install' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.287s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.302s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.303s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/SDCARD/workspace/audio_demos' with build type 'ament_cmake'
+[2.304s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/SDCARD/workspace/audio_demos'
+[2.321s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+[107.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+[107.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --install /SDCARD/workspace/audio_demos/build/audio_demos
+[107.886s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_demos)
+[107.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/audio_demos/build/audio_demos
+[107.918s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog' for CMake module files
+[107.923s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog' for CMake config files
+[107.988s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'cmake_prefix_path')
+[107.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/cmake_prefix_path.ps1'
+[107.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/cmake_prefix_path.dsv'
+[107.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/cmake_prefix_path.sh'
+[108.005s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/lib'
+[108.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'ld_library_path_lib')
+[108.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/ld_library_path_lib.ps1'
+[108.012s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/ld_library_path_lib.dsv'
+[108.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/ld_library_path_lib.sh'
+[108.015s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/bin'
+[108.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'path')
+[108.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/path.ps1'
+[108.020s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/path.dsv'
+[108.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/path.sh'
+[108.023s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/lib/pkgconfig/audio_demos.pc'
+[108.024s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/lib/python3.6/site-packages'
+[108.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'pythonpath')
+[108.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/pythonpath.ps1'
+[108.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/pythonpath.dsv'
+[108.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/pythonpath.sh'
+[108.037s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.ps1'
+[108.042s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/ros2/cyberdog/share/audio_demos/package.dsv'
+[108.046s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.sh'
+[108.052s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.bash'
+[108.056s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.zsh'
+[108.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/ros2/cyberdog/share/colcon-core/packages/audio_demos)
+[108.176s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_demos)
+[108.183s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog' for CMake module files
+[108.186s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog' for CMake config files
+[108.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'cmake_prefix_path')
+[108.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/cmake_prefix_path.ps1'
+[108.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/cmake_prefix_path.dsv'
+[108.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/cmake_prefix_path.sh'
+[108.264s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/lib'
+[108.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'ld_library_path_lib')
+[108.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/ld_library_path_lib.ps1'
+[108.271s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/ld_library_path_lib.dsv'
+[108.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/ld_library_path_lib.sh'
+[108.274s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/bin'
+[108.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'path')
+[108.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/path.ps1'
+[108.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/path.dsv'
+[108.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/path.sh'
+[108.284s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/lib/pkgconfig/audio_demos.pc'
+[108.286s] Level 1:colcon.colcon_core.environment:checking '/opt/ros2/cyberdog/lib/python3.6/site-packages'
+[108.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_demos', 'pythonpath')
+[108.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/pythonpath.ps1'
+[108.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/ros2/cyberdog/share/audio_demos/hook/pythonpath.dsv'
+[108.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/ros2/cyberdog/share/audio_demos/hook/pythonpath.sh'
+[108.300s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.ps1'
+[108.304s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/ros2/cyberdog/share/audio_demos/package.dsv'
+[108.308s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.sh'
+[108.311s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.bash'
+[108.313s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros2/cyberdog/share/audio_demos/package.zsh'
+[108.315s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/ros2/cyberdog/share/colcon-core/packages/audio_demos)
+[108.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[108.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[108.321s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[108.321s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[108.351s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[108.352s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[108.352s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[108.417s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[108.421s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros2/cyberdog/local_setup.ps1'
+[108.427s] INFO:colcon.colcon_core.shell:Creating prefix util module '/opt/ros2/cyberdog/_local_setup_util_ps1.py'
+[108.435s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros2/cyberdog/setup.ps1'
+[108.441s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros2/cyberdog/local_setup.sh'
+[108.444s] INFO:colcon.colcon_core.shell:Creating prefix util module '/opt/ros2/cyberdog/_local_setup_util_sh.py'
+[108.447s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros2/cyberdog/setup.sh'
+[108.455s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros2/cyberdog/local_setup.bash'
+[108.458s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros2/cyberdog/setup.bash'
+[108.464s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros2/cyberdog/local_setup.zsh'
+[108.470s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros2/cyberdog/setup.zsh'

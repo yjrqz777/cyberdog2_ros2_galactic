@@ -1,0 +1,9 @@
+[ 50%] [32m[1mLinking CXX shared library libskin_manager.so[0m
+/usr/bin/ld: cannot find -lgalaxy-fds-sdk-cpp
+collect2: error: ld returned 1 exit status
+CMakeFiles/skin_manager.dir/build.make:176: recipe for target 'libskin_manager.so' failed
+make[2]: *** [libskin_manager.so] Error 1
+CMakeFiles/Makefile2:110: recipe for target 'CMakeFiles/skin_manager.dir/all' failed
+make[1]: *** [CMakeFiles/skin_manager.dir/all] Error 2
+Makefile:145: recipe for target 'all' failed
+make: *** [all] Error 2

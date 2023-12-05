@@ -1,0 +1,106 @@
+[1.635s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'talk_something']
+[1.636s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9714a940>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['talk_something'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9714a940>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9709a320>)
+[1.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.663s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/SDCARD/workspace/talk_something'
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.064s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'talk_something'
+[2.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.173s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'cmake_args' from command line to 'None'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'cmake_target' from command line to 'None'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'cmake_clean_cache' from command line to 'False'
+[2.175s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'cmake_clean_first' from command line to 'False'
+[2.175s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'cmake_force_configure' from command line to 'False'
+[2.175s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'ament_cmake_args' from command line to 'None'
+[2.175s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'catkin_cmake_args' from command line to 'None'
+[2.175s] Level 5:colcon.colcon_core.verb:set package 'talk_something' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.176s] DEBUG:colcon.colcon_core.verb:Building package 'talk_something' with the following arguments: {'ament_cmake_args': None, 'build_base': '/SDCARD/workspace/talk_something/build/talk_something', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/SDCARD/workspace/talk_something/install/talk_something', 'merge_install': False, 'path': '/SDCARD/workspace/talk_something', 'symlink_install': False, 'test_result_base': None}
+[2.235s] WARNING:colcon.colcon_core.verb:Some selected packages are already built in one or more underlay workspaces:
+	'talk_something' is in: /SDCARD/workspace/talk_something/install/talk_something
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding talk_something
+
+This may be promoted to an error in a future release of colcon-core.
+[2.238s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.252s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/SDCARD/workspace/talk_something' with build type 'ament_cmake'
+[2.254s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/SDCARD/workspace/talk_something'
+[2.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.273s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.273s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+[27.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+[27.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --install /SDCARD/workspace/talk_something/build/talk_something
+[27.608s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(talk_something)
+[27.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/talk_something/build/talk_something
+[27.658s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something' for CMake module files
+[27.663s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something' for CMake config files
+[27.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('talk_something', 'cmake_prefix_path')
+[27.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/hook/cmake_prefix_path.ps1'
+[27.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/hook/cmake_prefix_path.dsv'
+[27.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/hook/cmake_prefix_path.sh'
+[27.685s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/lib'
+[27.686s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/bin'
+[27.687s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/lib/pkgconfig/talk_something.pc'
+[27.687s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/lib/python3.6/site-packages'
+[27.692s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.ps1'
+[27.698s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.dsv'
+[27.701s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.sh'
+[27.706s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.bash'
+[27.714s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.zsh'
+[27.719s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/talk_something/install/talk_something/share/colcon-core/packages/talk_something)
+[27.806s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(talk_something)
+[27.814s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something' for CMake module files
+[27.827s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something' for CMake config files
+[27.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('talk_something', 'cmake_prefix_path')
+[27.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/hook/cmake_prefix_path.ps1'
+[27.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/hook/cmake_prefix_path.dsv'
+[27.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/hook/cmake_prefix_path.sh'
+[27.842s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/lib'
+[27.843s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/bin'
+[27.843s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/lib/pkgconfig/talk_something.pc'
+[27.843s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/talk_something/install/talk_something/lib/python3.6/site-packages'
+[27.847s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.ps1'
+[27.850s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.dsv'
+[27.853s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.sh'
+[27.855s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.bash'
+[27.857s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.zsh'
+[27.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/talk_something/install/talk_something/share/colcon-core/packages/talk_something)
+[27.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.865s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.867s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[27.867s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.900s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.901s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.901s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.972s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.981s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/talk_something/install/local_setup.ps1'
+[27.992s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/talk_something/install/_local_setup_util_ps1.py'
+[28.003s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/talk_something/install/setup.ps1'
+[28.014s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/talk_something/install/local_setup.sh'
+[28.019s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/talk_something/install/_local_setup_util_sh.py'
+[28.023s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/talk_something/install/setup.sh'
+[28.032s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/talk_something/install/local_setup.bash'
+[28.036s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/talk_something/install/setup.bash'
+[28.045s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/talk_something/install/local_setup.zsh'
+[28.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/talk_something/install/setup.zsh'

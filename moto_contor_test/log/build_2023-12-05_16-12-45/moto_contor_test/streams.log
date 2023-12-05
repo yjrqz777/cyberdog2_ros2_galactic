@@ -1,0 +1,14 @@
+[0.165s] Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6
+[0.330s] [35m[1mConsolidate compiler generated dependencies of target contor_led_node[0m
+[0.416s] [ 50%] [32mBuilding CXX object CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o[0m
+[41.967s] [100%] [32m[1mLinking CXX executable contor_led_node[0m
+[44.011s] CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o: In function `get_logger()':
+[44.012s] /opt/ros2/cyberdog/include/cyberdog_common/cyberdog_log.hpp:72: undefined reference to `cyberdog::common::CyberdogLoggerFactory::Get_Logger()'
+[44.012s] collect2: error: ld returned 1 exit status
+[44.015s] CMakeFiles/contor_led_node.dir/build.make:174: recipe for target 'contor_led_node' failed
+[44.016s] make[2]: *** [contor_led_node] Error 1
+[44.020s] CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/contor_led_node.dir/all' failed
+[44.034s] make[1]: *** [CMakeFiles/contor_led_node.dir/all] Error 2
+[44.035s] Makefile:145: recipe for target 'all' failed
+[44.036s] make: *** [all] Error 2
+[44.037s] Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6

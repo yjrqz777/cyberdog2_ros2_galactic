@@ -1,0 +1,11 @@
+[0.140s] Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
+[0.288s] [ 50%] [32m[1mLinking CXX shared library libskin_manager.so[0m
+[1.703s] /usr/bin/ld: cannot find -lgalaxy-fds-sdk-cpp
+[1.704s] collect2: error: ld returned 1 exit status
+[1.707s] CMakeFiles/skin_manager.dir/build.make:176: recipe for target 'libskin_manager.so' failed
+[1.708s] CMakeFiles/Makefile2:110: recipe for target 'CMakeFiles/skin_manager.dir/all' failed
+[1.709s] make[2]: *** [libskin_manager.so] Error 1
+[1.709s] make[1]: *** [CMakeFiles/skin_manager.dir/all] Error 2
+[1.710s] Makefile:145: recipe for target 'all' failed
+[1.711s] make: *** [all] Error 2
+[1.717s] Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6

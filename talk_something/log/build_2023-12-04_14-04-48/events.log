@@ -1,0 +1,145 @@
+[0.000000] (-) TimerEvent: {}
+[0.000822] (talk_something) JobQueued: {'identifier': 'talk_something', 'dependencies': OrderedDict()}
+[0.002896] (talk_something) JobStarted: {'identifier': 'talk_something'}
+[0.093493] (talk_something) JobProgress: {'identifier': 'talk_something', 'progress': 'cmake'}
+[0.096917] (talk_something) Command: {'cmd': ['/usr/local/bin/cmake', '/SDCARD/workspace/talk_something', '-DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/talk_something/install/talk_something'], 'cwd': '/SDCARD/workspace/talk_something/build/talk_something', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 6462 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/SDCARD/workspace'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-419c805e-b424-4523-bc49-2a2dcccdd40f.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/talk_something/build/talk_something'), ('SSH_CONNECTION', '192.168.44.2 6462 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.120280] (-) TimerEvent: {}
+[0.221652] (-) TimerEvent: {}
+[0.322781] (-) TimerEvent: {}
+[0.334994] (talk_something) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.422995] (-) TimerEvent: {}
+[0.523876] (-) TimerEvent: {}
+[0.589362] (talk_something) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.624217] (-) TimerEvent: {}
+[0.628173] (talk_something) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.724446] (-) TimerEvent: {}
+[0.825472] (-) TimerEvent: {}
+[0.865902] (talk_something) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.910070] (talk_something) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.911203] (talk_something) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.912736] (talk_something) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.925676] (-) TimerEvent: {}
+[0.931950] (talk_something) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.025967] (-) TimerEvent: {}
+[1.127616] (-) TimerEvent: {}
+[1.204350] (talk_something) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.227868] (-) TimerEvent: {}
+[1.254500] (talk_something) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.255694] (talk_something) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.257647] (talk_something) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.271430] (talk_something) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)\n'}
+[1.328100] (-) TimerEvent: {}
+[1.404496] (talk_something) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[1.405483] (talk_something) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.428251] (-) TimerEvent: {}
+[1.529246] (-) TimerEvent: {}
+[1.630089] (-) TimerEvent: {}
+[1.731002] (-) TimerEvent: {}
+[1.831965] (-) TimerEvent: {}
+[1.934277] (-) TimerEvent: {}
+[1.972372] (talk_something) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.2.0 (/opt/ros2/galactic/share/ament_index_cpp/cmake)\n'}
+[1.989922] (talk_something) StdoutLine: {'line': b'-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)\n'}
+[2.034497] (-) TimerEvent: {}
+[2.135480] (-) TimerEvent: {}
+[2.194096] (talk_something) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.228009] (talk_something) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)\n'}
+[2.235722] (-) TimerEvent: {}
+[2.336815] (-) TimerEvent: {}
+[2.437957] (-) TimerEvent: {}
+[2.539053] (-) TimerEvent: {}
+[2.544025] (talk_something) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1")  \n'}
+[2.617001] (talk_something) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros2/galactic/include  \n'}
+[2.639261] (-) TimerEvent: {}
+[2.740375] (-) TimerEvent: {}
+[2.841379] (-) TimerEvent: {}
+[2.922867] (talk_something) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.941596] (-) TimerEvent: {}
+[3.042547] (-) TimerEvent: {}
+[3.143487] (-) TimerEvent: {}
+[3.166627] (talk_something) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[3.178183] (talk_something) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[3.243736] (-) TimerEvent: {}
+[3.257378] (talk_something) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.261507] (talk_something) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.344350] (-) TimerEvent: {}
+[3.445509] (-) TimerEvent: {}
+[3.525251] (talk_something) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.526959] (talk_something) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.545748] (-) TimerEvent: {}
+[3.648737] (-) TimerEvent: {}
+[3.751392] (-) TimerEvent: {}
+[3.793831] (talk_something) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.795016] (talk_something) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.851827] (-) TimerEvent: {}
+[3.954871] (-) TimerEvent: {}
+[4.012016] (talk_something) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[4.014021] (talk_something) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[4.055068] (-) TimerEvent: {}
+[4.156202] (-) TimerEvent: {}
+[4.257279] (-) TimerEvent: {}
+[4.259529] (talk_something) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.266026] (talk_something) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.357548] (-) TimerEvent: {}
+[4.458666] (-) TimerEvent: {}
+[4.559687] (-) TimerEvent: {}
+[4.671274] (-) TimerEvent: {}
+[4.779045] (-) TimerEvent: {}
+[4.825940] (talk_something) StdoutLine: {'line': b'-- Found rclcpp_components: 9.1.0 (/opt/ros2/galactic/share/rclcpp_components/cmake)\n'}
+[4.879318] (-) TimerEvent: {}
+[4.980440] (-) TimerEvent: {}
+[5.035695] (talk_something) StdoutLine: {'line': b'-- Found std_srvs: 2.2.3 (/opt/ros2/galactic/share/std_srvs/cmake)\n'}
+[5.072753] (talk_something) StdoutLine: {'line': b'-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)\n'}
+[5.080641] (-) TimerEvent: {}
+[5.181570] (-) TimerEvent: {}
+[5.282545] (-) TimerEvent: {}
+[5.383555] (-) TimerEvent: {}
+[5.484553] (-) TimerEvent: {}
+[5.585699] (-) TimerEvent: {}
+[5.686907] (-) TimerEvent: {}
+[5.788130] (-) TimerEvent: {}
+[5.889080] (-) TimerEvent: {}
+[5.990076] (-) TimerEvent: {}
+[6.091293] (-) TimerEvent: {}
+[6.192327] (-) TimerEvent: {}
+[6.293308] (-) TimerEvent: {}
+[6.394267] (-) TimerEvent: {}
+[6.489941] (talk_something) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)\n'}
+[6.494428] (-) TimerEvent: {}
+[6.595333] (-) TimerEvent: {}
+[6.696239] (-) TimerEvent: {}
+[6.797135] (-) TimerEvent: {}
+[6.898016] (-) TimerEvent: {}
+[6.998954] (-) TimerEvent: {}
+[7.099803] (-) TimerEvent: {}
+[7.200969] (-) TimerEvent: {}
+[7.279558] (talk_something) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.301171] (-) TimerEvent: {}
+[7.302235] (talk_something) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.303221] (talk_something) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /SDCARD/workspace/talk_something/include\n'}
+[7.303718] (talk_something) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.319567] (talk_something) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.320601] (talk_something) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.329148] (talk_something) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.348204] (talk_something) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.349124] (talk_something) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.353755] (talk_something) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.369098] (talk_something) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.381046] (talk_something) StderrLine: {'line': b'CMake Error at CMakeLists.txt:27 (add_executable):\n'}
+[7.381878] (talk_something) StderrLine: {'line': b'  Cannot find source file:\n'}
+[7.382322] (talk_something) StderrLine: {'line': b'\n'}
+[7.382721] (talk_something) StderrLine: {'line': b'    src/talker.cpp\n'}
+[7.383085] (talk_something) StderrLine: {'line': b'\n'}
+[7.383490] (talk_something) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .h .hh .h++\n'}
+[7.383913] (talk_something) StderrLine: {'line': b'  .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc\n'}
+[7.384387] (talk_something) StderrLine: {'line': b'\n'}
+[7.384746] (talk_something) StderrLine: {'line': b'\n'}
+[7.389034] (talk_something) StderrLine: {'line': b'CMake Error at CMakeLists.txt:27 (add_executable):\n'}
+[7.389895] (talk_something) StderrLine: {'line': b'  No SOURCES given to target: talks_node\n'}
+[7.390378] (talk_something) StderrLine: {'line': b'\n'}
+[7.391207] (talk_something) StderrLine: {'line': b'\n'}
+[7.396764] (talk_something) StderrLine: {'line': b'CMake Generate step failed.  Build files cannot be regenerated correctly.\n'}
+[7.401379] (-) TimerEvent: {}
+[7.431313] (talk_something) CommandEnded: {'returncode': 1}
+[7.505953] (-) TimerEvent: {}
+[7.540777] (talk_something) JobEnded: {'identifier': 'talk_something', 'rc': 1}
+[7.555472] (-) EventReactorShutdown: {}

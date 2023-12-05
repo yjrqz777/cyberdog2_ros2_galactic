@@ -1,0 +1,10 @@
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/install/strip.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/install.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/list_install_components.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/moto_contor_test_uninstall.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/rebuild_cache.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/uninstall.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/contor_led_node.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/install/local.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/test.dir
+/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/edit_cache.dir

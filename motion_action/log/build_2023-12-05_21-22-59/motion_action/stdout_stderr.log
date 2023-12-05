@@ -1,0 +1,144 @@
+[  0%] Built target ament_cmake_python_symlink_motion_action
+[ 20%] Built target motion_action
+[35m[1mConsolidate compiler generated dependencies of target controller_test[0m
+[35m[1mConsolidate compiler generated dependencies of target client_test[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/manager_test.dir/test/manager_test.cpp.o[0m
+[ 50%] Built target controller_test
+[ 70%] Built target publisher_test
+[ 90%] Built target client_test
+running egg_info
+writing motion_action.egg-info/PKG-INFO
+writing dependency_links to motion_action.egg-info/dependency_links.txt
+writing top-level names to motion_action.egg-info/top_level.txt
+reading manifest file 'motion_action.egg-info/SOURCES.txt'
+writing manifest file 'motion_action.egg-info/SOURCES.txt'
+[ 90%] Built target ament_cmake_python_build_motion_action_egg
+[100%] [32m[1mLinking CXX executable manager_test[0m
+[100%] Built target manager_test
+-- Install configuration: ""
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/include
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/include/motion_action
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/include/motion_action/motion_action.hpp
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/include/motion_action/motion_macros.hpp
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch/test_as_manager.launch
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch/test_as_manager.py
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/launch/AMENT_IGNORE
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/179.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/0.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/173.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/301.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/156.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/154.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/164.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/169.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/129.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/134.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/163.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/122.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/400.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/121.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/158.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/131.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/137.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/160.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/124.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/141.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/130.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/144.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/303.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/302.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/142.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/150.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/180.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/133.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/146.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/176.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/125.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/elec_skin.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/211.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/171.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/157.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/132.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/135.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/153.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/152.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/170.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/167.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/138.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/177.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/147.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/140.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/148.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/181.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/159.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/149.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/123.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/127.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/165.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/motion_id_map.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/174.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/162.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/175.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/166.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/305.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/user_gait_400.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/151.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/111.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/102.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/143.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/168.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/136.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/155.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/201.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/145.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/212.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/178.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/101.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/128.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/126.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/161.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/172.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/preset/202.toml
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/libmotion_action.so
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/manager_test
+-- Set runtime path of "/SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/manager_test" to ""
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/controller_test
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/publisher_test
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/client_test
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/pythonpath.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/pythonpath.dsv
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/SOURCES.txt
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/dependency_links.txt
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/top_level.txt
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages//motion_action.egg-info/PKG-INFO
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action/__init__.py
+Listing '/SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages/motion_action'...
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/motion_teleop.py
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/pose_teleop.py
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/statistics.py
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/motion_units.py
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/lib/motion_action/motion_demo.py
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/library_path.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/library_path.dsv
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/ament_index/resource_index/package_run_dependencies/motion_action
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/ament_index/resource_index/parent_prefix_path/motion_action
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/ament_prefix_path.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/ament_prefix_path.dsv
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/path.sh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/environment/path.dsv
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.bash
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.sh
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.zsh
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/local_setup.dsv
+-- Installing: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.dsv
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/ament_index/resource_index/packages/motion_action
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/motion_actionConfig.cmake
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/cmake/motion_actionConfig-version.cmake
+-- Up-to-date: /SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.xml

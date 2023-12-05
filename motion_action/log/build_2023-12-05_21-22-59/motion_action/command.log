@@ -1,0 +1,4 @@
+Invoking command in '/SDCARD/workspace/motion_action/build/motion_action': /usr/local/bin/cmake --build /SDCARD/workspace/motion_action/build/motion_action -- -j6 -l6
+Invoked command in '/SDCARD/workspace/motion_action/build/motion_action' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/motion_action/build/motion_action -- -j6 -l6
+Invoking command in '/SDCARD/workspace/motion_action/build/motion_action': /usr/local/bin/cmake --install /SDCARD/workspace/motion_action/build/motion_action
+Invoked command in '/SDCARD/workspace/motion_action/build/motion_action' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/motion_action/build/motion_action

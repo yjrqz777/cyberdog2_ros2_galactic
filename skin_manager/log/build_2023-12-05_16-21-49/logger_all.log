@@ -1,0 +1,84 @@
+[1.728s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'skin_manager']
+[1.729s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f80c08908>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['skin_manager'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f80c08908>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f80b5a2e8>)
+[1.755s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.758s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.758s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/SDCARD/workspace/skin_manager'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.761s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.761s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.761s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.210s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'skin_manager'
+[2.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.320s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'cmake_args' from command line to 'None'
+[2.321s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'cmake_target' from command line to 'None'
+[2.321s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'cmake_clean_first' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'cmake_force_configure' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'ament_cmake_args' from command line to 'None'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'skin_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.323s] DEBUG:colcon.colcon_core.verb:Building package 'skin_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/SDCARD/workspace/skin_manager/build/skin_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/SDCARD/workspace/skin_manager/install/skin_manager', 'merge_install': False, 'path': '/SDCARD/workspace/skin_manager', 'symlink_install': False, 'test_result_base': None}
+[2.386s] WARNING:colcon.colcon_core.verb:Some selected packages are already built in one or more underlay workspaces:
+	'skin_manager' is in: /opt/ros2/cyberdog
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding skin_manager
+
+This may be promoted to an error in a future release of colcon-core.
+[2.389s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.404s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.405s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/SDCARD/workspace/skin_manager' with build type 'ament_cmake'
+[2.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/SDCARD/workspace/skin_manager'
+[2.424s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake /SDCARD/workspace/skin_manager -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/skin_manager/install/skin_manager
+[10.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '0': /usr/local/bin/cmake /SDCARD/workspace/skin_manager -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/skin_manager/install/skin_manager
+[10.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
+[62.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
+[62.653s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(skin_manager)
+[62.685s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/skin_manager/install/skin_manager' for CMake module files
+[62.688s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/skin_manager/install/skin_manager' for CMake config files
+[62.694s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/skin_manager/install/skin_manager/bin'
+[62.694s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/skin_manager/install/skin_manager/lib/pkgconfig/skin_manager.pc'
+[62.695s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/skin_manager/install/skin_manager/lib/python3.6/site-packages'
+[62.699s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.ps1'
+[62.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.dsv'
+[62.709s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.sh'
+[62.715s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.bash'
+[62.721s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.zsh'
+[62.726s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/skin_manager/install/skin_manager/share/colcon-core/packages/skin_manager)
+[62.748s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[62.756s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[62.756s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[62.759s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[62.813s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[62.814s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[62.814s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[62.915s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[62.920s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/skin_manager/install/local_setup.ps1'
+[62.928s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/skin_manager/install/_local_setup_util_ps1.py'
+[62.945s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/skin_manager/install/setup.ps1'
+[62.960s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/skin_manager/install/local_setup.sh'
+[62.965s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/skin_manager/install/_local_setup_util_sh.py'
+[62.968s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/skin_manager/install/setup.sh'
+[62.976s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/skin_manager/install/local_setup.bash'
+[62.980s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/skin_manager/install/setup.bash'
+[62.988s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/skin_manager/install/local_setup.zsh'
+[62.991s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/skin_manager/install/setup.zsh'

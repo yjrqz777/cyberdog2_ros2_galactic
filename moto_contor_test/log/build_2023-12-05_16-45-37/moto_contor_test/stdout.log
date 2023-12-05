@@ -1,0 +1,28 @@
+[100%] Built target contor_led_node
+-- Install configuration: ""
+-- Up-to-date: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/include
+-- Up-to-date: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/include/moto_contor_test
+-- Up-to-date: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib/libcontor_led_node.so
+-- Up-to-date: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/include/
+-- Up-to-date: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/include//moto_contor_test
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/config/
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/config//elec_skin.toml
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/environment/library_path.sh
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/environment/library_path.dsv
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/ament_index/resource_index/package_run_dependencies/moto_contor_test
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/ament_index/resource_index/parent_prefix_path/moto_contor_test
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/environment/ament_prefix_path.sh
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/environment/ament_prefix_path.dsv
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/environment/path.sh
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/environment/path.dsv
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/local_setup.bash
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/local_setup.sh
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/local_setup.zsh
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/local_setup.dsv
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.dsv
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/ament_index/resource_index/packages/moto_contor_test
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/cmake/moto_contor_testConfig.cmake
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/cmake/moto_contor_testConfig-version.cmake
+-- Installing: /SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.xml

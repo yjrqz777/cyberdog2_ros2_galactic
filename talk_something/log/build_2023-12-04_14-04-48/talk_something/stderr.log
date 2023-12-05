@@ -1,0 +1,14 @@
+CMake Error at CMakeLists.txt:27 (add_executable):
+  Cannot find source file:
+
+    src/talker.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .h .hh .h++
+  .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc
+
+
+CMake Error at CMakeLists.txt:27 (add_executable):
+  No SOURCES given to target: talks_node
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -1,0 +1,28 @@
+-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found toml: 0.0.0 (/opt/ros2/cyberdog/share/toml/cmake)
+-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)
+-- Found cyberdog_common: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_common/cmake)
+-- Found elec_skin: 0.0.0 (/opt/ros2/cyberdog/share/elec_skin/cmake)
+-- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /SDCARD/workspace/moto_contor_test/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+Makefile:267: recipe for target 'cmake_check_build_system' failed

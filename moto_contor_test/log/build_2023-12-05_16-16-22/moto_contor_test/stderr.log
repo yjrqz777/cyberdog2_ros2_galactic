@@ -1,0 +1,15 @@
+CMake Error at CMakeLists.txt:29 (add_library):
+  Cannot find source file:
+
+    src/skin_manager.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .h .hh .h++
+  .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc
+
+
+CMake Error at CMakeLists.txt:29 (add_library):
+  No SOURCES given to target: contor_led_node
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [cmake_check_build_system] Error 1

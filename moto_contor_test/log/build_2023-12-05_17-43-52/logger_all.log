@@ -1,0 +1,105 @@
+[2.662s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'moto_contor_test']
+[2.663s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9cad3940>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['moto_contor_test'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9cad3940>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9ca25358>)
+[2.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.723s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.723s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.723s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.723s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.725s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.726s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/SDCARD/workspace/moto_contor_test'
+[2.726s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.266s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'moto_contor_test'
+[3.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.430s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'cmake_args' from command line to 'None'
+[3.430s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'cmake_target' from command line to 'None'
+[3.431s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.431s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'cmake_clean_cache' from command line to 'False'
+[3.431s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'cmake_clean_first' from command line to 'False'
+[3.431s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'cmake_force_configure' from command line to 'False'
+[3.432s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'ament_cmake_args' from command line to 'None'
+[3.432s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'catkin_cmake_args' from command line to 'None'
+[3.432s] Level 5:colcon.colcon_core.verb:set package 'moto_contor_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.433s] DEBUG:colcon.colcon_core.verb:Building package 'moto_contor_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/SDCARD/workspace/moto_contor_test/build/moto_contor_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/SDCARD/workspace/moto_contor_test/install/moto_contor_test', 'merge_install': False, 'path': '/SDCARD/workspace/moto_contor_test', 'symlink_install': False, 'test_result_base': None}
+[3.518s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.535s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.537s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/SDCARD/workspace/moto_contor_test' with build type 'ament_cmake'
+[3.538s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/SDCARD/workspace/moto_contor_test'
+[3.570s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.573s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6
+[3.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6
+[4.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake --install /SDCARD/workspace/moto_contor_test/build/moto_contor_test
+[4.171s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moto_contor_test)
+[4.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/moto_contor_test/build/moto_contor_test
+[4.267s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test' for CMake module files
+[4.273s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test' for CMake config files
+[4.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('moto_contor_test', 'cmake_prefix_path')
+[4.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/cmake_prefix_path.ps1'
+[4.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/cmake_prefix_path.dsv'
+[4.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/cmake_prefix_path.sh'
+[4.299s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib'
+[4.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('moto_contor_test', 'ld_library_path_lib')
+[4.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/ld_library_path_lib.ps1'
+[4.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/ld_library_path_lib.dsv'
+[4.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/ld_library_path_lib.sh'
+[4.314s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/bin'
+[4.314s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib/pkgconfig/moto_contor_test.pc'
+[4.315s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib/python3.6/site-packages'
+[4.320s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.ps1'
+[4.329s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.dsv'
+[4.334s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.sh'
+[4.342s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.bash'
+[4.348s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.zsh'
+[4.355s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/colcon-core/packages/moto_contor_test)
+[4.460s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moto_contor_test)
+[4.469s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test' for CMake module files
+[4.473s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test' for CMake config files
+[4.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('moto_contor_test', 'cmake_prefix_path')
+[4.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/cmake_prefix_path.ps1'
+[4.483s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/cmake_prefix_path.dsv'
+[4.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/cmake_prefix_path.sh'
+[4.493s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib'
+[4.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('moto_contor_test', 'ld_library_path_lib')
+[4.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/ld_library_path_lib.ps1'
+[4.503s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/ld_library_path_lib.dsv'
+[4.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/hook/ld_library_path_lib.sh'
+[4.515s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/bin'
+[4.516s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib/pkgconfig/moto_contor_test.pc'
+[4.516s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/lib/python3.6/site-packages'
+[4.521s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.ps1'
+[4.525s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.dsv'
+[4.529s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.sh'
+[4.532s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.bash'
+[4.534s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/moto_contor_test/package.zsh'
+[4.536s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/moto_contor_test/install/moto_contor_test/share/colcon-core/packages/moto_contor_test)
+[4.538s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.543s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.543s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.595s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.596s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.690s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.697s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/moto_contor_test/install/local_setup.ps1'
+[4.710s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/moto_contor_test/install/_local_setup_util_ps1.py'
+[4.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/moto_contor_test/install/setup.ps1'
+[4.730s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/moto_contor_test/install/local_setup.sh'
+[4.735s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/moto_contor_test/install/_local_setup_util_sh.py'
+[4.739s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/moto_contor_test/install/setup.sh'
+[4.748s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/moto_contor_test/install/local_setup.bash'
+[4.752s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/moto_contor_test/install/setup.bash'
+[4.760s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/moto_contor_test/install/local_setup.zsh'
+[4.765s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/moto_contor_test/install/setup.zsh'

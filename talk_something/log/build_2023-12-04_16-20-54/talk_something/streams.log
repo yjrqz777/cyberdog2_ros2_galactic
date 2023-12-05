@@ -1,0 +1,29 @@
+[0.123s] Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+[0.235s] [35m[1mConsolidate compiler generated dependencies of target talks_node[0m
+[0.308s] [ 50%] [32mBuilding CXX object CMakeFiles/talks_node.dir/src/talkers.cpp.o[0m
+[10.231s] [01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:[m[K In member function ‘[01m[Kvoid talkersNode::talk_topic(bool, std::__cxx11::string)[m[K’:
+[10.232s] [01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:24:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Konline[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[10.232s]      void talk_topic(bool [01;35m[Konline[m[K,std::__cxx11::string strs)
+[10.233s]                           [01;35m[K^~~~~~[m[K
+[10.276s] In file included from [01m[K/opt/ros2/galactic/include/rclcpp/client.hpp:40:0[m[K,
+[10.276s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[10.279s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[10.280s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[10.280s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[10.281s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[10.287s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/executor.hpp:36[m[K,
+[10.288s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[10.289s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/executors.hpp:21[m[K,
+[10.290s]                  from [01m[K/opt/ros2/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[10.290s]                  from [01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:5[m[K:
+[10.291s] [01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:[m[K In member function ‘[01m[Kvoid talkersNode::timer_callback()[m[K’:
+[10.291s] [01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:48:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Client<protocol::srv::AudioExecute> > {aka class std::shared_ptr<rclcpp::Client<protocol::srv::AudioExecute> >}[m[K’ has no member named ‘[01m[Kc_str[m[K’; did you mean ‘[01m[K_M_ptr[m[K’?
+[10.292s]          RCLCPP_WARN(this->get_logger(), "audio client %s",audio_client_.[01;31m[Kc[m[K_str());
+[10.292s]                                                                          [01;31m[K^[m[K
+[17.275s] CMakeFiles/talks_node.dir/build.make:75: recipe for target 'CMakeFiles/talks_node.dir/src/talkers.cpp.o' failed
+[17.284s] make[2]: *** [CMakeFiles/talks_node.dir/src/talkers.cpp.o] Error 1
+[17.285s] make[1]: *** [CMakeFiles/talks_node.dir/all] Error 2
+[17.285s] make: *** [all] Error 2
+[17.286s] CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/talks_node.dir/all' failed
+[17.286s] Makefile:145: recipe for target 'all' failed
+[17.288s] Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6

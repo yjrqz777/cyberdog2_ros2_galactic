@@ -1,0 +1,4 @@
+Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6
+Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6
+Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake --install /SDCARD/workspace/moto_contor_test/build/moto_contor_test
+Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '1': /usr/local/bin/cmake --install /SDCARD/workspace/moto_contor_test/build/moto_contor_test

@@ -1,0 +1,666 @@
+[0.000000] (-) TimerEvent: {}
+[0.002485] (skin_manager) JobQueued: {'identifier': 'skin_manager', 'dependencies': OrderedDict()}
+[0.004606] (skin_manager) JobStarted: {'identifier': 'skin_manager'}
+[0.100357] (-) TimerEvent: {}
+[0.104230] (skin_manager) JobProgress: {'identifier': 'skin_manager', 'progress': 'cmake'}
+[0.107388] (skin_manager) Command: {'cmd': ['/usr/local/bin/cmake', '/SDCARD/workspace/skin_manager', '-DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/skin_manager/install/skin_manager'], 'cwd': '/SDCARD/workspace/skin_manager/build/skin_manager', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 13564 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('OLDPWD', '/SDCARD/workspace'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f830f729-6231-4c74-bbc2-05ae11dcd51a.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/skin_manager/build/skin_manager'), ('SSH_CONNECTION', '192.168.44.2 13564 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.200596] (-) TimerEvent: {}
+[0.302481] (-) TimerEvent: {}
+[0.405839] (-) TimerEvent: {}
+[0.480606] (skin_manager) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.506201] (-) TimerEvent: {}
+[0.607586] (-) TimerEvent: {}
+[0.708627] (-) TimerEvent: {}
+[0.809691] (-) TimerEvent: {}
+[0.819123] (skin_manager) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.875590] (skin_manager) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.909956] (-) TimerEvent: {}
+[1.012327] (-) TimerEvent: {}
+[1.115110] (-) TimerEvent: {}
+[1.138636] (skin_manager) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.198789] (skin_manager) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.210196] (skin_manager) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.211073] (skin_manager) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.215484] (-) TimerEvent: {}
+[1.225153] (skin_manager) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.315722] (-) TimerEvent: {}
+[1.419143] (-) TimerEvent: {}
+[1.489306] (skin_manager) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.519366] (-) TimerEvent: {}
+[1.554861] (skin_manager) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.556422] (skin_manager) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.559068] (skin_manager) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.579479] (skin_manager) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)\n'}
+[1.621321] (-) TimerEvent: {}
+[1.722333] (-) TimerEvent: {}
+[1.739679] (skin_manager) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[1.741113] (skin_manager) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.822563] (-) TimerEvent: {}
+[1.923461] (-) TimerEvent: {}
+[2.024377] (-) TimerEvent: {}
+[2.125263] (-) TimerEvent: {}
+[2.226285] (-) TimerEvent: {}
+[2.327174] (-) TimerEvent: {}
+[2.343804] (skin_manager) StdoutLine: {'line': b'-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)\n'}
+[2.427408] (-) TimerEvent: {}
+[2.528751] (-) TimerEvent: {}
+[2.561823] (skin_manager) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.598713] (skin_manager) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)\n'}
+[2.629173] (-) TimerEvent: {}
+[2.731120] (-) TimerEvent: {}
+[2.832253] (-) TimerEvent: {}
+[2.933273] (-) TimerEvent: {}
+[2.949099] (skin_manager) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1")  \n'}
+[3.023490] (skin_manager) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros2/galactic/include  \n'}
+[3.033577] (-) TimerEvent: {}
+[3.134822] (-) TimerEvent: {}
+[3.235903] (-) TimerEvent: {}
+[3.289642] (skin_manager) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.336139] (-) TimerEvent: {}
+[3.437293] (-) TimerEvent: {}
+[3.526971] (skin_manager) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[3.537602] (-) TimerEvent: {}
+[3.541220] (skin_manager) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[3.609261] (skin_manager) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.617975] (skin_manager) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.637884] (-) TimerEvent: {}
+[3.741677] (-) TimerEvent: {}
+[3.842839] (-) TimerEvent: {}
+[3.866789] (skin_manager) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.868797] (skin_manager) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.945699] (-) TimerEvent: {}
+[4.047755] (-) TimerEvent: {}
+[4.150904] (-) TimerEvent: {}
+[4.227602] (skin_manager) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[4.235036] (skin_manager) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[4.251393] (-) TimerEvent: {}
+[4.352405] (-) TimerEvent: {}
+[4.451821] (skin_manager) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[4.452737] (-) TimerEvent: {}
+[4.454454] (skin_manager) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[4.553006] (-) TimerEvent: {}
+[4.654641] (-) TimerEvent: {}
+[4.735262] (skin_manager) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.744417] (skin_manager) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.757745] (-) TimerEvent: {}
+[4.859854] (-) TimerEvent: {}
+[4.961313] (-) TimerEvent: {}
+[5.062661] (-) TimerEvent: {}
+[5.163849] (-) TimerEvent: {}
+[5.264986] (-) TimerEvent: {}
+[5.350211] (skin_manager) StdoutLine: {'line': b'-- Found toml: 0.0.0 (/opt/ros2/cyberdog/share/toml/cmake)\n'}
+[5.360437] (skin_manager) StdoutLine: {'line': b'-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)\n'}
+[5.365227] (-) TimerEvent: {}
+[5.466626] (-) TimerEvent: {}
+[5.567563] (-) TimerEvent: {}
+[5.668544] (-) TimerEvent: {}
+[5.769610] (-) TimerEvent: {}
+[5.870432] (-) TimerEvent: {}
+[5.971405] (-) TimerEvent: {}
+[6.072473] (-) TimerEvent: {}
+[6.173564] (-) TimerEvent: {}
+[6.274614] (-) TimerEvent: {}
+[6.375686] (-) TimerEvent: {}
+[6.476766] (-) TimerEvent: {}
+[6.577957] (-) TimerEvent: {}
+[6.678980] (-) TimerEvent: {}
+[6.751801] (skin_manager) StdoutLine: {'line': b'-- Found cyberdog_common: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_common/cmake)\n'}
+[6.779202] (-) TimerEvent: {}
+[6.857221] (skin_manager) StdoutLine: {'line': b'-- Found elec_skin: 0.0.0 (/opt/ros2/cyberdog/share/elec_skin/cmake)\n'}
+[6.873556] (skin_manager) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)\n'}
+[6.879422] (-) TimerEvent: {}
+[6.980336] (-) TimerEvent: {}
+[7.081581] (-) TimerEvent: {}
+[7.182607] (-) TimerEvent: {}
+[7.283806] (-) TimerEvent: {}
+[7.384786] (-) TimerEvent: {}
+[7.485919] (-) TimerEvent: {}
+[7.587192] (-) TimerEvent: {}
+[7.622794] (skin_manager) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.640916] (skin_manager) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.642087] (skin_manager) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /SDCARD/workspace/skin_manager/include\n'}
+[7.642760] (skin_manager) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.658318] (skin_manager) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.659154] (skin_manager) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.673679] (skin_manager) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.687421] (-) TimerEvent: {}
+[7.692973] (skin_manager) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.693888] (skin_manager) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.698372] (skin_manager) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.710950] (skin_manager) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.772231] (skin_manager) StdoutLine: {'line': b'-- Generating done\n'}
+[7.782044] (skin_manager) StdoutLine: {'line': b'-- Build files have been written to: /SDCARD/workspace/skin_manager/build/skin_manager\n'}
+[7.787629] (-) TimerEvent: {}
+[7.822389] (skin_manager) CommandEnded: {'returncode': 0}
+[7.841359] (skin_manager) JobProgress: {'identifier': 'skin_manager', 'progress': 'build'}
+[7.848180] (skin_manager) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/SDCARD/workspace/skin_manager/build/skin_manager', '--', '-j6', '-l6'], 'cwd': '/SDCARD/workspace/skin_manager/build/skin_manager', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 13564 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('OLDPWD', '/SDCARD/workspace'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f830f729-6231-4c74-bbc2-05ae11dcd51a.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/skin_manager/build/skin_manager'), ('SSH_CONNECTION', '192.168.44.2 13564 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[7.887923] (-) TimerEvent: {}
+[7.947987] (skin_manager) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/skin_manager.dir/src/skin_manager.cpp.o\x1b[0m\n'}
+[7.988258] (-) TimerEvent: {}
+[8.091636] (-) TimerEvent: {}
+[8.192833] (-) TimerEvent: {}
+[8.297935] (-) TimerEvent: {}
+[8.399003] (-) TimerEvent: {}
+[8.500079] (-) TimerEvent: {}
+[8.602961] (-) TimerEvent: {}
+[8.703991] (-) TimerEvent: {}
+[8.805051] (-) TimerEvent: {}
+[8.906073] (-) TimerEvent: {}
+[9.007058] (-) TimerEvent: {}
+[9.109141] (-) TimerEvent: {}
+[9.210211] (-) TimerEvent: {}
+[9.311270] (-) TimerEvent: {}
+[9.412198] (-) TimerEvent: {}
+[9.513169] (-) TimerEvent: {}
+[9.614333] (-) TimerEvent: {}
+[9.715300] (-) TimerEvent: {}
+[9.816270] (-) TimerEvent: {}
+[9.917341] (-) TimerEvent: {}
+[10.018452] (-) TimerEvent: {}
+[10.119434] (-) TimerEvent: {}
+[10.220397] (-) TimerEvent: {}
+[10.321854] (-) TimerEvent: {}
+[10.422926] (-) TimerEvent: {}
+[10.524031] (-) TimerEvent: {}
+[10.625005] (-) TimerEvent: {}
+[10.726124] (-) TimerEvent: {}
+[10.827243] (-) TimerEvent: {}
+[10.928211] (-) TimerEvent: {}
+[11.029272] (-) TimerEvent: {}
+[11.130373] (-) TimerEvent: {}
+[11.231363] (-) TimerEvent: {}
+[11.332374] (-) TimerEvent: {}
+[11.433774] (-) TimerEvent: {}
+[11.534975] (-) TimerEvent: {}
+[11.636068] (-) TimerEvent: {}
+[11.737156] (-) TimerEvent: {}
+[11.838376] (-) TimerEvent: {}
+[11.939337] (-) TimerEvent: {}
+[12.040316] (-) TimerEvent: {}
+[12.141649] (-) TimerEvent: {}
+[12.242842] (-) TimerEvent: {}
+[12.343887] (-) TimerEvent: {}
+[12.444890] (-) TimerEvent: {}
+[12.545920] (-) TimerEvent: {}
+[12.646860] (-) TimerEvent: {}
+[12.747974] (-) TimerEvent: {}
+[12.848871] (-) TimerEvent: {}
+[12.950050] (-) TimerEvent: {}
+[13.051176] (-) TimerEvent: {}
+[13.152306] (-) TimerEvent: {}
+[13.253353] (-) TimerEvent: {}
+[13.354588] (-) TimerEvent: {}
+[13.455883] (-) TimerEvent: {}
+[13.557155] (-) TimerEvent: {}
+[13.658489] (-) TimerEvent: {}
+[13.759815] (-) TimerEvent: {}
+[13.860925] (-) TimerEvent: {}
+[13.962056] (-) TimerEvent: {}
+[14.063758] (-) TimerEvent: {}
+[14.165743] (-) TimerEvent: {}
+[14.266777] (-) TimerEvent: {}
+[14.367714] (-) TimerEvent: {}
+[14.470881] (-) TimerEvent: {}
+[14.571899] (-) TimerEvent: {}
+[14.672996] (-) TimerEvent: {}
+[14.774072] (-) TimerEvent: {}
+[14.875045] (-) TimerEvent: {}
+[14.980714] (-) TimerEvent: {}
+[15.086624] (-) TimerEvent: {}
+[15.187709] (-) TimerEvent: {}
+[15.288802] (-) TimerEvent: {}
+[15.390004] (-) TimerEvent: {}
+[15.491095] (-) TimerEvent: {}
+[15.592169] (-) TimerEvent: {}
+[15.693183] (-) TimerEvent: {}
+[15.794217] (-) TimerEvent: {}
+[15.895225] (-) TimerEvent: {}
+[15.996289] (-) TimerEvent: {}
+[16.097358] (-) TimerEvent: {}
+[16.202028] (-) TimerEvent: {}
+[16.303162] (-) TimerEvent: {}
+[16.404239] (-) TimerEvent: {}
+[16.505328] (-) TimerEvent: {}
+[16.606487] (-) TimerEvent: {}
+[16.707759] (-) TimerEvent: {}
+[16.808861] (-) TimerEvent: {}
+[16.910087] (-) TimerEvent: {}
+[17.011116] (-) TimerEvent: {}
+[17.112088] (-) TimerEvent: {}
+[17.213090] (-) TimerEvent: {}
+[17.314272] (-) TimerEvent: {}
+[17.417979] (-) TimerEvent: {}
+[17.518938] (-) TimerEvent: {}
+[17.620348] (-) TimerEvent: {}
+[17.721798] (-) TimerEvent: {}
+[17.822851] (-) TimerEvent: {}
+[17.923812] (-) TimerEvent: {}
+[18.024708] (-) TimerEvent: {}
+[18.127616] (-) TimerEvent: {}
+[18.228582] (-) TimerEvent: {}
+[18.329748] (-) TimerEvent: {}
+[18.431280] (-) TimerEvent: {}
+[18.533236] (-) TimerEvent: {}
+[18.634633] (-) TimerEvent: {}
+[18.735726] (-) TimerEvent: {}
+[18.836687] (-) TimerEvent: {}
+[18.937931] (-) TimerEvent: {}
+[19.038879] (-) TimerEvent: {}
+[19.139816] (-) TimerEvent: {}
+[19.240725] (-) TimerEvent: {}
+[19.341777] (-) TimerEvent: {}
+[19.442940] (-) TimerEvent: {}
+[19.543938] (-) TimerEvent: {}
+[19.644851] (-) TimerEvent: {}
+[19.745989] (-) TimerEvent: {}
+[19.846945] (-) TimerEvent: {}
+[19.947890] (-) TimerEvent: {}
+[20.048857] (-) TimerEvent: {}
+[20.149917] (-) TimerEvent: {}
+[20.250908] (-) TimerEvent: {}
+[20.352036] (-) TimerEvent: {}
+[20.453038] (-) TimerEvent: {}
+[20.554414] (-) TimerEvent: {}
+[20.655383] (-) TimerEvent: {}
+[20.756466] (-) TimerEvent: {}
+[20.857804] (-) TimerEvent: {}
+[20.958813] (-) TimerEvent: {}
+[21.060021] (-) TimerEvent: {}
+[21.161113] (-) TimerEvent: {}
+[21.262146] (-) TimerEvent: {}
+[21.363101] (-) TimerEvent: {}
+[21.464121] (-) TimerEvent: {}
+[21.565158] (-) TimerEvent: {}
+[21.666183] (-) TimerEvent: {}
+[21.767077] (-) TimerEvent: {}
+[21.868127] (-) TimerEvent: {}
+[21.969176] (-) TimerEvent: {}
+[22.070138] (-) TimerEvent: {}
+[22.172926] (-) TimerEvent: {}
+[22.273926] (-) TimerEvent: {}
+[22.374920] (-) TimerEvent: {}
+[22.478555] (-) TimerEvent: {}
+[22.579639] (-) TimerEvent: {}
+[22.681118] (-) TimerEvent: {}
+[22.782193] (-) TimerEvent: {}
+[22.883109] (-) TimerEvent: {}
+[22.984173] (-) TimerEvent: {}
+[23.087346] (-) TimerEvent: {}
+[23.189787] (-) TimerEvent: {}
+[23.295365] (-) TimerEvent: {}
+[23.396844] (-) TimerEvent: {}
+[23.498370] (-) TimerEvent: {}
+[23.599466] (-) TimerEvent: {}
+[23.700561] (-) TimerEvent: {}
+[23.801585] (-) TimerEvent: {}
+[23.902569] (-) TimerEvent: {}
+[24.003576] (-) TimerEvent: {}
+[24.105335] (-) TimerEvent: {}
+[24.208671] (-) TimerEvent: {}
+[24.309649] (-) TimerEvent: {}
+[24.410662] (-) TimerEvent: {}
+[24.511675] (-) TimerEvent: {}
+[24.612769] (-) TimerEvent: {}
+[24.713816] (-) TimerEvent: {}
+[24.816026] (-) TimerEvent: {}
+[24.917112] (-) TimerEvent: {}
+[25.018242] (-) TimerEvent: {}
+[25.120442] (-) TimerEvent: {}
+[25.221543] (-) TimerEvent: {}
+[25.322482] (-) TimerEvent: {}
+[25.423443] (-) TimerEvent: {}
+[25.524357] (-) TimerEvent: {}
+[25.625244] (-) TimerEvent: {}
+[25.726224] (-) TimerEvent: {}
+[25.827417] (-) TimerEvent: {}
+[25.928505] (-) TimerEvent: {}
+[26.029742] (-) TimerEvent: {}
+[26.130691] (-) TimerEvent: {}
+[26.231596] (-) TimerEvent: {}
+[26.332607] (-) TimerEvent: {}
+[26.433678] (-) TimerEvent: {}
+[26.534603] (-) TimerEvent: {}
+[26.635684] (-) TimerEvent: {}
+[26.736740] (-) TimerEvent: {}
+[26.837920] (-) TimerEvent: {}
+[26.938948] (-) TimerEvent: {}
+[27.039839] (-) TimerEvent: {}
+[27.140828] (-) TimerEvent: {}
+[27.241914] (-) TimerEvent: {}
+[27.342894] (-) TimerEvent: {}
+[27.443936] (-) TimerEvent: {}
+[27.544958] (-) TimerEvent: {}
+[27.650313] (-) TimerEvent: {}
+[27.751296] (-) TimerEvent: {}
+[27.852152] (-) TimerEvent: {}
+[27.953193] (-) TimerEvent: {}
+[28.054347] (-) TimerEvent: {}
+[28.155300] (-) TimerEvent: {}
+[28.256356] (-) TimerEvent: {}
+[28.357444] (-) TimerEvent: {}
+[28.458424] (-) TimerEvent: {}
+[28.559548] (-) TimerEvent: {}
+[28.660522] (-) TimerEvent: {}
+[28.761448] (-) TimerEvent: {}
+[28.862455] (-) TimerEvent: {}
+[28.963497] (-) TimerEvent: {}
+[29.064503] (-) TimerEvent: {}
+[29.165509] (-) TimerEvent: {}
+[29.266471] (-) TimerEvent: {}
+[29.368535] (-) TimerEvent: {}
+[29.469686] (-) TimerEvent: {}
+[29.570664] (-) TimerEvent: {}
+[29.671622] (-) TimerEvent: {}
+[29.772575] (-) TimerEvent: {}
+[29.873695] (-) TimerEvent: {}
+[29.981688] (-) TimerEvent: {}
+[30.082694] (-) TimerEvent: {}
+[30.188452] (-) TimerEvent: {}
+[30.301004] (-) TimerEvent: {}
+[30.402101] (-) TimerEvent: {}
+[30.503137] (-) TimerEvent: {}
+[30.614547] (-) TimerEvent: {}
+[30.715654] (-) TimerEvent: {}
+[30.817071] (-) TimerEvent: {}
+[30.918256] (-) TimerEvent: {}
+[31.019630] (-) TimerEvent: {}
+[31.122901] (-) TimerEvent: {}
+[31.224049] (-) TimerEvent: {}
+[31.324916] (-) TimerEvent: {}
+[31.426114] (-) TimerEvent: {}
+[31.527187] (-) TimerEvent: {}
+[31.628158] (-) TimerEvent: {}
+[31.729127] (-) TimerEvent: {}
+[31.830145] (-) TimerEvent: {}
+[31.931085] (-) TimerEvent: {}
+[32.032131] (-) TimerEvent: {}
+[32.133062] (-) TimerEvent: {}
+[32.234100] (-) TimerEvent: {}
+[32.335103] (-) TimerEvent: {}
+[32.436075] (-) TimerEvent: {}
+[32.537106] (-) TimerEvent: {}
+[32.639350] (-) TimerEvent: {}
+[32.741856] (-) TimerEvent: {}
+[32.842836] (-) TimerEvent: {}
+[32.943714] (-) TimerEvent: {}
+[33.044705] (-) TimerEvent: {}
+[33.149249] (-) TimerEvent: {}
+[33.260259] (-) TimerEvent: {}
+[33.365041] (-) TimerEvent: {}
+[33.466165] (-) TimerEvent: {}
+[33.567155] (-) TimerEvent: {}
+[33.668135] (-) TimerEvent: {}
+[33.769229] (-) TimerEvent: {}
+[33.870334] (-) TimerEvent: {}
+[33.971245] (-) TimerEvent: {}
+[34.072875] (-) TimerEvent: {}
+[34.176871] (-) TimerEvent: {}
+[34.280738] (-) TimerEvent: {}
+[34.390129] (-) TimerEvent: {}
+[34.492513] (-) TimerEvent: {}
+[34.594447] (-) TimerEvent: {}
+[34.700896] (-) TimerEvent: {}
+[34.802007] (-) TimerEvent: {}
+[34.903133] (-) TimerEvent: {}
+[35.004213] (-) TimerEvent: {}
+[35.105304] (-) TimerEvent: {}
+[35.206448] (-) TimerEvent: {}
+[35.307479] (-) TimerEvent: {}
+[35.408581] (-) TimerEvent: {}
+[35.510632] (-) TimerEvent: {}
+[35.615606] (-) TimerEvent: {}
+[35.716848] (-) TimerEvent: {}
+[35.817977] (-) TimerEvent: {}
+[35.919007] (-) TimerEvent: {}
+[36.021172] (-) TimerEvent: {}
+[36.122178] (-) TimerEvent: {}
+[36.223178] (-) TimerEvent: {}
+[36.324186] (-) TimerEvent: {}
+[36.425129] (-) TimerEvent: {}
+[36.526259] (-) TimerEvent: {}
+[36.627172] (-) TimerEvent: {}
+[36.730931] (-) TimerEvent: {}
+[36.831901] (-) TimerEvent: {}
+[36.932899] (-) TimerEvent: {}
+[37.034036] (-) TimerEvent: {}
+[37.135532] (-) TimerEvent: {}
+[37.236667] (-) TimerEvent: {}
+[37.338489] (-) TimerEvent: {}
+[37.439446] (-) TimerEvent: {}
+[37.541605] (-) TimerEvent: {}
+[37.644294] (-) TimerEvent: {}
+[37.745330] (-) TimerEvent: {}
+[37.846727] (-) TimerEvent: {}
+[37.947759] (-) TimerEvent: {}
+[38.048764] (-) TimerEvent: {}
+[38.149880] (-) TimerEvent: {}
+[38.251245] (-) TimerEvent: {}
+[38.352175] (-) TimerEvent: {}
+[38.453215] (-) TimerEvent: {}
+[38.554346] (-) TimerEvent: {}
+[38.656760] (-) TimerEvent: {}
+[38.758040] (-) TimerEvent: {}
+[38.860406] (-) TimerEvent: {}
+[38.961591] (-) TimerEvent: {}
+[39.064140] (-) TimerEvent: {}
+[39.165476] (-) TimerEvent: {}
+[39.267231] (-) TimerEvent: {}
+[39.368768] (-) TimerEvent: {}
+[39.470002] (-) TimerEvent: {}
+[39.571780] (-) TimerEvent: {}
+[39.673190] (-) TimerEvent: {}
+[39.775648] (-) TimerEvent: {}
+[39.877776] (-) TimerEvent: {}
+[39.979279] (-) TimerEvent: {}
+[40.081631] (-) TimerEvent: {}
+[40.184397] (-) TimerEvent: {}
+[40.287776] (-) TimerEvent: {}
+[40.390670] (-) TimerEvent: {}
+[40.492824] (-) TimerEvent: {}
+[40.594263] (-) TimerEvent: {}
+[40.695511] (-) TimerEvent: {}
+[40.797669] (-) TimerEvent: {}
+[40.900211] (-) TimerEvent: {}
+[41.001221] (-) TimerEvent: {}
+[41.103295] (-) TimerEvent: {}
+[41.205151] (-) TimerEvent: {}
+[41.307930] (-) TimerEvent: {}
+[41.412388] (-) TimerEvent: {}
+[41.513889] (-) TimerEvent: {}
+[41.616058] (-) TimerEvent: {}
+[41.717680] (-) TimerEvent: {}
+[41.818997] (-) TimerEvent: {}
+[41.920445] (-) TimerEvent: {}
+[42.021619] (-) TimerEvent: {}
+[42.123672] (-) TimerEvent: {}
+[42.225276] (-) TimerEvent: {}
+[42.327263] (-) TimerEvent: {}
+[42.428497] (-) TimerEvent: {}
+[42.529919] (-) TimerEvent: {}
+[42.631006] (-) TimerEvent: {}
+[42.732028] (-) TimerEvent: {}
+[42.833110] (-) TimerEvent: {}
+[42.935537] (-) TimerEvent: {}
+[43.036444] (-) TimerEvent: {}
+[43.137516] (-) TimerEvent: {}
+[43.238396] (-) TimerEvent: {}
+[43.340099] (-) TimerEvent: {}
+[43.441675] (-) TimerEvent: {}
+[43.542679] (-) TimerEvent: {}
+[43.643677] (-) TimerEvent: {}
+[43.745068] (-) TimerEvent: {}
+[43.847211] (-) TimerEvent: {}
+[43.948332] (-) TimerEvent: {}
+[44.049508] (-) TimerEvent: {}
+[44.150516] (-) TimerEvent: {}
+[44.251644] (-) TimerEvent: {}
+[44.353327] (-) TimerEvent: {}
+[44.454720] (-) TimerEvent: {}
+[44.555759] (-) TimerEvent: {}
+[44.656839] (-) TimerEvent: {}
+[44.758068] (-) TimerEvent: {}
+[44.859083] (-) TimerEvent: {}
+[44.960103] (-) TimerEvent: {}
+[45.061317] (-) TimerEvent: {}
+[45.162381] (-) TimerEvent: {}
+[45.263369] (-) TimerEvent: {}
+[45.364780] (-) TimerEvent: {}
+[45.465909] (-) TimerEvent: {}
+[45.566982] (-) TimerEvent: {}
+[45.668075] (-) TimerEvent: {}
+[45.771196] (-) TimerEvent: {}
+[45.873012] (-) TimerEvent: {}
+[45.975192] (-) TimerEvent: {}
+[46.076477] (-) TimerEvent: {}
+[46.177652] (-) TimerEvent: {}
+[46.279434] (-) TimerEvent: {}
+[46.381361] (-) TimerEvent: {}
+[46.482831] (-) TimerEvent: {}
+[46.584543] (-) TimerEvent: {}
+[46.686008] (-) TimerEvent: {}
+[46.788470] (-) TimerEvent: {}
+[46.889481] (-) TimerEvent: {}
+[46.990918] (-) TimerEvent: {}
+[47.093024] (-) TimerEvent: {}
+[47.195076] (-) TimerEvent: {}
+[47.296238] (-) TimerEvent: {}
+[47.397533] (-) TimerEvent: {}
+[47.498708] (-) TimerEvent: {}
+[47.600435] (-) TimerEvent: {}
+[47.701644] (-) TimerEvent: {}
+[47.804361] (-) TimerEvent: {}
+[47.907028] (-) TimerEvent: {}
+[48.008178] (-) TimerEvent: {}
+[48.109613] (-) TimerEvent: {}
+[48.211100] (-) TimerEvent: {}
+[48.314777] (-) TimerEvent: {}
+[48.417120] (-) TimerEvent: {}
+[48.518847] (-) TimerEvent: {}
+[48.620815] (-) TimerEvent: {}
+[48.723767] (-) TimerEvent: {}
+[48.825619] (-) TimerEvent: {}
+[48.926629] (-) TimerEvent: {}
+[49.028498] (-) TimerEvent: {}
+[49.129639] (-) TimerEvent: {}
+[49.230831] (-) TimerEvent: {}
+[49.332084] (-) TimerEvent: {}
+[49.434074] (-) TimerEvent: {}
+[49.535298] (-) TimerEvent: {}
+[49.637548] (-) TimerEvent: {}
+[49.738950] (-) TimerEvent: {}
+[49.840202] (-) TimerEvent: {}
+[49.941685] (-) TimerEvent: {}
+[50.043148] (-) TimerEvent: {}
+[50.144079] (-) TimerEvent: {}
+[50.245057] (-) TimerEvent: {}
+[50.346180] (-) TimerEvent: {}
+[50.447172] (-) TimerEvent: {}
+[50.548147] (-) TimerEvent: {}
+[50.649637] (-) TimerEvent: {}
+[50.752194] (-) TimerEvent: {}
+[50.853347] (-) TimerEvent: {}
+[50.955197] (-) TimerEvent: {}
+[51.057253] (-) TimerEvent: {}
+[51.159625] (-) TimerEvent: {}
+[51.261589] (-) TimerEvent: {}
+[51.362897] (-) TimerEvent: {}
+[51.463948] (-) TimerEvent: {}
+[51.565165] (-) TimerEvent: {}
+[51.666810] (-) TimerEvent: {}
+[51.767955] (-) TimerEvent: {}
+[51.868939] (-) TimerEvent: {}
+[51.970282] (-) TimerEvent: {}
+[52.071470] (-) TimerEvent: {}
+[52.173271] (-) TimerEvent: {}
+[52.274829] (-) TimerEvent: {}
+[52.376273] (-) TimerEvent: {}
+[52.477312] (-) TimerEvent: {}
+[52.579975] (-) TimerEvent: {}
+[52.681151] (-) TimerEvent: {}
+[52.782702] (-) TimerEvent: {}
+[52.883696] (-) TimerEvent: {}
+[52.984830] (-) TimerEvent: {}
+[53.086129] (-) TimerEvent: {}
+[53.187180] (-) TimerEvent: {}
+[53.288678] (-) TimerEvent: {}
+[53.389843] (-) TimerEvent: {}
+[53.491007] (-) TimerEvent: {}
+[53.593227] (-) TimerEvent: {}
+[53.695007] (-) TimerEvent: {}
+[53.801114] (-) TimerEvent: {}
+[53.903817] (-) TimerEvent: {}
+[54.005087] (-) TimerEvent: {}
+[54.106190] (-) TimerEvent: {}
+[54.208100] (-) TimerEvent: {}
+[54.311178] (-) TimerEvent: {}
+[54.412323] (-) TimerEvent: {}
+[54.513359] (-) TimerEvent: {}
+[54.614571] (-) TimerEvent: {}
+[54.717688] (-) TimerEvent: {}
+[54.819894] (-) TimerEvent: {}
+[54.920903] (-) TimerEvent: {}
+[55.038017] (-) TimerEvent: {}
+[55.140133] (-) TimerEvent: {}
+[55.241105] (-) TimerEvent: {}
+[55.342427] (-) TimerEvent: {}
+[55.443498] (-) TimerEvent: {}
+[55.544437] (-) TimerEvent: {}
+[55.645581] (-) TimerEvent: {}
+[55.746598] (-) TimerEvent: {}
+[55.847584] (-) TimerEvent: {}
+[55.948579] (-) TimerEvent: {}
+[56.050055] (-) TimerEvent: {}
+[56.151091] (-) TimerEvent: {}
+[56.252281] (-) TimerEvent: {}
+[56.353536] (-) TimerEvent: {}
+[56.454608] (-) TimerEvent: {}
+[56.555618] (-) TimerEvent: {}
+[56.656656] (-) TimerEvent: {}
+[56.757968] (-) TimerEvent: {}
+[56.859027] (-) TimerEvent: {}
+[56.960107] (-) TimerEvent: {}
+[57.061202] (-) TimerEvent: {}
+[57.162545] (-) TimerEvent: {}
+[57.263606] (-) TimerEvent: {}
+[57.368689] (-) TimerEvent: {}
+[57.469962] (-) TimerEvent: {}
+[57.571195] (-) TimerEvent: {}
+[57.672208] (-) TimerEvent: {}
+[57.773213] (-) TimerEvent: {}
+[57.874816] (-) TimerEvent: {}
+[57.975778] (-) TimerEvent: {}
+[58.076858] (-) TimerEvent: {}
+[58.177951] (-) TimerEvent: {}
+[58.278943] (-) TimerEvent: {}
+[58.379935] (-) TimerEvent: {}
+[58.480945] (-) TimerEvent: {}
+[58.582185] (-) TimerEvent: {}
+[58.678051] (skin_manager) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libskin_manager.so\x1b[0m\n'}
+[58.682386] (-) TimerEvent: {}
+[58.784210] (-) TimerEvent: {}
+[58.885116] (-) TimerEvent: {}
+[58.986909] (-) TimerEvent: {}
+[59.089283] (-) TimerEvent: {}
+[59.191040] (-) TimerEvent: {}
+[59.293630] (-) TimerEvent: {}
+[59.395286] (-) TimerEvent: {}
+[59.497169] (-) TimerEvent: {}
+[59.598500] (-) TimerEvent: {}
+[59.700309] (-) TimerEvent: {}
+[59.802716] (-) TimerEvent: {}
+[59.905079] (-) TimerEvent: {}
+[60.007894] (-) TimerEvent: {}
+[60.084883] (skin_manager) StderrLine: {'line': b'/usr/bin/ld: cannot find -lgalaxy-fds-sdk-cpp\n'}
+[60.089986] (skin_manager) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[60.097630] (skin_manager) StdoutLine: {'line': b"CMakeFiles/skin_manager.dir/build.make:176: recipe for target 'libskin_manager.so' failed\n"}
+[60.102055] (skin_manager) StderrLine: {'line': b'make[2]: *** [libskin_manager.so] Error 1\n'}
+[60.104299] (skin_manager) StdoutLine: {'line': b"CMakeFiles/Makefile2:110: recipe for target 'CMakeFiles/skin_manager.dir/all' failed\n"}
+[60.105253] (skin_manager) StdoutLine: {'line': b"Makefile:145: recipe for target 'all' failed\n"}
+[60.124785] (-) TimerEvent: {}
+[60.147889] (skin_manager) StderrLine: {'line': b'make[1]: *** [CMakeFiles/skin_manager.dir/all] Error 2\n'}
+[60.148815] (skin_manager) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[60.149551] (skin_manager) CommandEnded: {'returncode': 2}
+[60.225906] (-) TimerEvent: {}
+[60.327876] (skin_manager) JobEnded: {'identifier': 'skin_manager', 'rc': 2}
+[60.358870] (-) TimerEvent: {}
+[60.359539] (-) EventReactorShutdown: {}

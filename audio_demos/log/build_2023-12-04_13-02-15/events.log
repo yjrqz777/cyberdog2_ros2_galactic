@@ -1,0 +1,288 @@
+[0.000000] (-) TimerEvent: {}
+[0.001284] (audio_demos) JobQueued: {'identifier': 'audio_demos', 'dependencies': OrderedDict()}
+[0.002529] (audio_demos) JobStarted: {'identifier': 'audio_demos'}
+[0.099413] (audio_demos) JobProgress: {'identifier': 'audio_demos', 'progress': 'cmake'}
+[0.100412] (-) TimerEvent: {}
+[0.103544] (audio_demos) Command: {'cmd': ['/usr/local/bin/cmake', '/SDCARD/workspace/audio_demos', '-DCMAKE_INSTALL_PREFIX=/opt/ros2/cyberdog'], 'cwd': '/SDCARD/workspace/audio_demos/build/audio_demos', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 5325 22'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('SHLVL', '1'), ('OLDPWD', '/SDCARD/workspace'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('SSH_TTY', '/dev/pts/12'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/SDCARD/workspace/audio_demos/install:/SDCARD/workspace/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros2/cyberdog/bin:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/SDCARD/workspace/audio_demos/install:/SDCARD/workspace/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/ros2/cyberdog/share/cyberdog_parameter/cmake'), ('PWD', '/SDCARD/workspace/audio_demos/build/audio_demos'), ('SSH_CONNECTION', '192.168.44.2 5325 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/SDCARD/workspace/install/lib/python3.6/site-packages:/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/SDCARD/workspace/audio_demos/install:/SDCARD/workspace/install:/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.200779] (-) TimerEvent: {}
+[0.302090] (-) TimerEvent: {}
+[0.337790] (audio_demos) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.402348] (-) TimerEvent: {}
+[0.503312] (-) TimerEvent: {}
+[0.584406] (audio_demos) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.603539] (-) TimerEvent: {}
+[0.619560] (audio_demos) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.703761] (-) TimerEvent: {}
+[0.805621] (-) TimerEvent: {}
+[0.845477] (audio_demos) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.896640] (audio_demos) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.897661] (audio_demos) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.899629] (audio_demos) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.905852] (-) TimerEvent: {}
+[0.915251] (audio_demos) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.006076] (-) TimerEvent: {}
+[1.107066] (-) TimerEvent: {}
+[1.169783] (audio_demos) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.207334] (-) TimerEvent: {}
+[1.225119] (audio_demos) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.226502] (audio_demos) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.228760] (audio_demos) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.241384] (audio_demos) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)\n'}
+[1.307487] (-) TimerEvent: {}
+[1.369873] (audio_demos) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[1.370911] (audio_demos) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.407719] (-) TimerEvent: {}
+[1.509024] (-) TimerEvent: {}
+[1.611981] (-) TimerEvent: {}
+[1.714026] (-) TimerEvent: {}
+[1.815075] (-) TimerEvent: {}
+[1.916066] (-) TimerEvent: {}
+[1.925735] (audio_demos) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.2.0 (/opt/ros2/galactic/share/ament_index_cpp/cmake)\n'}
+[1.945114] (audio_demos) StdoutLine: {'line': b'-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)\n'}
+[2.016283] (-) TimerEvent: {}
+[2.117176] (-) TimerEvent: {}
+[2.164353] (audio_demos) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.199489] (audio_demos) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)\n'}
+[2.217358] (-) TimerEvent: {}
+[2.318204] (-) TimerEvent: {}
+[2.419142] (-) TimerEvent: {}
+[2.520056] (-) TimerEvent: {}
+[2.521591] (audio_demos) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1")  \n'}
+[2.600256] (audio_demos) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros2/galactic/include  \n'}
+[2.620289] (-) TimerEvent: {}
+[2.721184] (-) TimerEvent: {}
+[2.822022] (-) TimerEvent: {}
+[2.883244] (audio_demos) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.922251] (-) TimerEvent: {}
+[3.024508] (-) TimerEvent: {}
+[3.126981] (-) TimerEvent: {}
+[3.140437] (audio_demos) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[3.154558] (audio_demos) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[3.227162] (-) TimerEvent: {}
+[3.231889] (audio_demos) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.236500] (audio_demos) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.327416] (-) TimerEvent: {}
+[3.428434] (-) TimerEvent: {}
+[3.479345] (audio_demos) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.480782] (audio_demos) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.528717] (-) TimerEvent: {}
+[3.629810] (-) TimerEvent: {}
+[3.718668] (audio_demos) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.719796] (audio_demos) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.729953] (-) TimerEvent: {}
+[3.831224] (-) TimerEvent: {}
+[3.913930] (audio_demos) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.914976] (audio_demos) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.931421] (-) TimerEvent: {}
+[4.032361] (-) TimerEvent: {}
+[4.138551] (-) TimerEvent: {}
+[4.143049] (audio_demos) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.150808] (audio_demos) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.238669] (-) TimerEvent: {}
+[4.339673] (-) TimerEvent: {}
+[4.440628] (-) TimerEvent: {}
+[4.541617] (-) TimerEvent: {}
+[4.643711] (-) TimerEvent: {}
+[4.695347] (audio_demos) StdoutLine: {'line': b'-- Found rclcpp_components: 9.1.0 (/opt/ros2/galactic/share/rclcpp_components/cmake)\n'}
+[4.743951] (-) TimerEvent: {}
+[4.844978] (-) TimerEvent: {}
+[4.902501] (audio_demos) StdoutLine: {'line': b'-- Found std_srvs: 2.2.3 (/opt/ros2/galactic/share/std_srvs/cmake)\n'}
+[4.939364] (audio_demos) StdoutLine: {'line': b'-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)\n'}
+[4.945192] (-) TimerEvent: {}
+[5.046255] (-) TimerEvent: {}
+[5.147321] (-) TimerEvent: {}
+[5.248258] (-) TimerEvent: {}
+[5.349180] (-) TimerEvent: {}
+[5.450194] (-) TimerEvent: {}
+[5.551215] (-) TimerEvent: {}
+[5.653041] (-) TimerEvent: {}
+[5.757464] (-) TimerEvent: {}
+[5.858545] (-) TimerEvent: {}
+[5.959505] (-) TimerEvent: {}
+[6.060447] (-) TimerEvent: {}
+[6.161435] (-) TimerEvent: {}
+[6.262341] (-) TimerEvent: {}
+[6.363342] (-) TimerEvent: {}
+[6.384647] (audio_demos) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)\n'}
+[6.463551] (-) TimerEvent: {}
+[6.564690] (-) TimerEvent: {}
+[6.665622] (-) TimerEvent: {}
+[6.766561] (-) TimerEvent: {}
+[6.867476] (-) TimerEvent: {}
+[6.968372] (-) TimerEvent: {}
+[7.069278] (-) TimerEvent: {}
+[7.170325] (-) TimerEvent: {}
+[7.185089] (audio_demos) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.217577] (audio_demos) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.219837] (audio_demos) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /SDCARD/workspace/audio_demos/include\n'}
+[7.220728] (audio_demos) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.251296] (audio_demos) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.252675] (audio_demos) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.264892] (audio_demos) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.270606] (-) TimerEvent: {}
+[7.300519] (audio_demos) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.301705] (audio_demos) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.306289] (audio_demos) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.321392] (audio_demos) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.370888] (-) TimerEvent: {}
+[7.441713] (audio_demos) StdoutLine: {'line': b'-- Generating done\n'}
+[7.451774] (audio_demos) StdoutLine: {'line': b'-- Build files have been written to: /SDCARD/workspace/audio_demos/build/audio_demos\n'}
+[7.471118] (-) TimerEvent: {}
+[7.496361] (audio_demos) CommandEnded: {'returncode': 0}
+[7.508950] (audio_demos) JobProgress: {'identifier': 'audio_demos', 'progress': 'build'}
+[7.509434] (audio_demos) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/SDCARD/workspace/audio_demos/build/audio_demos', '--', '-j6', '-l6'], 'cwd': '/SDCARD/workspace/audio_demos/build/audio_demos', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 5325 22'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('SHLVL', '1'), ('OLDPWD', '/SDCARD/workspace'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('SSH_TTY', '/dev/pts/12'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/SDCARD/workspace/audio_demos/install:/SDCARD/workspace/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros2/cyberdog/bin:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/SDCARD/workspace/audio_demos/install:/SDCARD/workspace/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/ros2/cyberdog/share/cyberdog_parameter/cmake'), ('PWD', '/SDCARD/workspace/audio_demos/build/audio_demos'), ('SSH_CONNECTION', '192.168.44.2 5325 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/SDCARD/workspace/install/lib/python3.6/site-packages:/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/SDCARD/workspace/audio_demos/install:/SDCARD/workspace/install:/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[7.572075] (-) TimerEvent: {}
+[7.632016] (audio_demos) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o\x1b[0m\n'}
+[7.633404] (audio_demos) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/set_voice.dir/src/set_voice.cpp.o\x1b[0m\n'}
+[7.634470] (audio_demos) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/set_mic.dir/src/set_mic.cpp.o\x1b[0m\n'}
+[7.640767] (audio_demos) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o\x1b[0m\n'}
+[7.676071] (-) TimerEvent: {}
+[7.777375] (-) TimerEvent: {}
+[7.879044] (-) TimerEvent: {}
+[7.980955] (-) TimerEvent: {}
+[8.082094] (-) TimerEvent: {}
+[8.184730] (-) TimerEvent: {}
+[8.290707] (-) TimerEvent: {}
+[8.392282] (-) TimerEvent: {}
+[8.493966] (-) TimerEvent: {}
+[8.597410] (-) TimerEvent: {}
+[8.698587] (-) TimerEvent: {}
+[8.801086] (-) TimerEvent: {}
+[8.902607] (-) TimerEvent: {}
+[9.003512] (-) TimerEvent: {}
+[9.105649] (-) TimerEvent: {}
+[9.208042] (-) TimerEvent: {}
+[9.309166] (-) TimerEvent: {}
+[9.410992] (-) TimerEvent: {}
+[9.512127] (-) TimerEvent: {}
+[9.613642] (-) TimerEvent: {}
+[9.715691] (-) TimerEvent: {}
+[9.818307] (-) TimerEvent: {}
+[9.921593] (-) TimerEvent: {}
+[10.023180] (-) TimerEvent: {}
+[10.125001] (-) TimerEvent: {}
+[10.232249] (-) TimerEvent: {}
+[10.334572] (-) TimerEvent: {}
+[10.436297] (-) TimerEvent: {}
+[10.542684] (-) TimerEvent: {}
+[10.644932] (-) TimerEvent: {}
+[10.746718] (-) TimerEvent: {}
+[10.847644] (-) TimerEvent: {}
+[10.948706] (-) TimerEvent: {}
+[11.050570] (-) TimerEvent: {}
+[11.153080] (-) TimerEvent: {}
+[11.256545] (-) TimerEvent: {}
+[11.358627] (-) TimerEvent: {}
+[11.461105] (-) TimerEvent: {}
+[11.562299] (-) TimerEvent: {}
+[11.664630] (-) TimerEvent: {}
+[11.766235] (-) TimerEvent: {}
+[11.867395] (-) TimerEvent: {}
+[11.969122] (-) TimerEvent: {}
+[12.070242] (-) TimerEvent: {}
+[12.174008] (-) TimerEvent: {}
+[12.275130] (-) TimerEvent: {}
+[12.376066] (-) TimerEvent: {}
+[12.477992] (-) TimerEvent: {}
+[12.579068] (-) TimerEvent: {}
+[12.682002] (-) TimerEvent: {}
+[12.783804] (-) TimerEvent: {}
+[12.888030] (-) TimerEvent: {}
+[12.989568] (-) TimerEvent: {}
+[13.091021] (-) TimerEvent: {}
+[13.194015] (-) TimerEvent: {}
+[13.296097] (-) TimerEvent: {}
+[13.398459] (-) TimerEvent: {}
+[13.501322] (-) TimerEvent: {}
+[13.603549] (-) TimerEvent: {}
+[13.705363] (-) TimerEvent: {}
+[13.810258] (-) TimerEvent: {}
+[13.912001] (-) TimerEvent: {}
+[14.012968] (-) TimerEvent: {}
+[14.115844] (-) TimerEvent: {}
+[14.217280] (-) TimerEvent: {}
+[14.318260] (-) TimerEvent: {}
+[14.419385] (-) TimerEvent: {}
+[14.521153] (-) TimerEvent: {}
+[14.622987] (-) TimerEvent: {}
+[14.725643] (-) TimerEvent: {}
+[14.826653] (-) TimerEvent: {}
+[14.929100] (-) TimerEvent: {}
+[15.033103] (-) TimerEvent: {}
+[15.136354] (-) TimerEvent: {}
+[15.238704] (-) TimerEvent: {}
+[15.342472] (-) TimerEvent: {}
+[15.444626] (-) TimerEvent: {}
+[15.548355] (-) TimerEvent: {}
+[15.651335] (-) TimerEvent: {}
+[15.753053] (-) TimerEvent: {}
+[15.854994] (-) TimerEvent: {}
+[15.956704] (-) TimerEvent: {}
+[16.058866] (-) TimerEvent: {}
+[16.160324] (-) TimerEvent: {}
+[16.262253] (-) TimerEvent: {}
+[16.364037] (-) TimerEvent: {}
+[16.465223] (-) TimerEvent: {}
+[16.568050] (-) TimerEvent: {}
+[16.670287] (-) TimerEvent: {}
+[16.772240] (-) TimerEvent: {}
+[16.881790] (-) TimerEvent: {}
+[16.984577] (-) TimerEvent: {}
+[17.087371] (-) TimerEvent: {}
+[17.189700] (-) TimerEvent: {}
+[17.291012] (-) TimerEvent: {}
+[17.393155] (-) TimerEvent: {}
+[17.495557] (-) TimerEvent: {}
+[17.598431] (-) TimerEvent: {}
+[17.699402] (-) TimerEvent: {}
+[17.801137] (-) TimerEvent: {}
+[17.902127] (-) TimerEvent: {}
+[18.003942] (-) TimerEvent: {}
+[18.105101] (-) TimerEvent: {}
+[18.206544] (-) TimerEvent: {}
+[18.307682] (-) TimerEvent: {}
+[18.409305] (-) TimerEvent: {}
+[18.510884] (-) TimerEvent: {}
+[18.612727] (-) TimerEvent: {}
+[18.714609] (-) TimerEvent: {}
+[18.815907] (-) TimerEvent: {}
+[18.923922] (-) TimerEvent: {}
+[19.024995] (-) TimerEvent: {}
+[19.126526] (-) TimerEvent: {}
+[19.229543] (-) TimerEvent: {}
+[19.331532] (-) TimerEvent: {}
+[19.433353] (-) TimerEvent: {}
+[19.534486] (-) TimerEvent: {}
+[19.636105] (-) TimerEvent: {}
+[19.737628] (-) TimerEvent: {}
+[19.839305] (-) TimerEvent: {}
+[19.943022] (-) TimerEvent: {}
+[20.045298] (-) TimerEvent: {}
+[20.149445] (-) TimerEvent: {}
+[20.259456] (-) TimerEvent: {}
+[20.325222] (audio_demos) StdoutLine: {'line': b"CMakeFiles/set_mic.dir/build.make:75: recipe for target 'CMakeFiles/set_mic.dir/src/set_mic.cpp.o' failed\n"}
+[20.326298] (audio_demos) StdoutLine: {'line': b"CMakeFiles/talker.dir/build.make:75: recipe for target 'CMakeFiles/talker.dir/src/talker.cpp.o' failed\n"}
+[20.327448] (audio_demos) StdoutLine: {'line': b"CMakeFiles/Makefile2:116: recipe for target 'CMakeFiles/set_mic.dir/all' failed\n"}
+[20.328067] (audio_demos) StdoutLine: {'line': b"CMakeFiles/set_waken_words.dir/build.make:75: recipe for target 'CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o' failed\n"}
+[20.328570] (audio_demos) StdoutLine: {'line': b"CMakeFiles/Makefile2:168: recipe for target 'CMakeFiles/talker.dir/all' failed\n"}
+[20.328999] (audio_demos) StdoutLine: {'line': b"CMakeFiles/set_voice.dir/build.make:75: recipe for target 'CMakeFiles/set_voice.dir/src/set_voice.cpp.o' failed\n"}
+[20.329455] (audio_demos) StderrLine: {'line': b'make[2]: *** [CMakeFiles/set_mic.dir/src/set_mic.cpp.o] Interrupt\n'}
+[20.330437] (audio_demos) StderrLine: {'line': b'make[2]: *** [CMakeFiles/talker.dir/src/talker.cpp.o] Interrupt\n'}
+[20.330922] (audio_demos) StderrLine: {'line': b'make[1]: *** [CMakeFiles/set_mic.dir/all] Interrupt\n'}
+[20.331365] (audio_demos) StderrLine: {'line': b'make[2]: *** [CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o] Interrupt\n'}
+[20.331819] (audio_demos) StderrLine: {'line': b'make[1]: *** [CMakeFiles/talker.dir/all] Interrupt\n'}
+[20.332222] (audio_demos) StderrLine: {'line': b'make[2]: *** [CMakeFiles/set_voice.dir/src/set_voice.cpp.o] Interrupt\n'}
+[20.332641] (audio_demos) StderrLine: {'line': b'make[1]: *** [CMakeFiles/set_waken_words.dir/all] Interrupt\n'}
+[20.333291] (audio_demos) StdoutLine: {'line': b"CMakeFiles/Makefile2:220: recipe for target 'CMakeFiles/set_waken_words.dir/all' failed\n"}
+[20.333743] (audio_demos) StdoutLine: {'line': b"CMakeFiles/Makefile2:194: recipe for target 'CMakeFiles/set_voice.dir/all' failed\n"}
+[20.334147] (audio_demos) StderrLine: {'line': b'make[1]: *** [CMakeFiles/set_voice.dir/all] Interrupt\n'}
+[20.334621] (audio_demos) StderrLine: {'line': b'make: *** [all] Interrupt\n'}
+[20.335027] (audio_demos) StdoutLine: {'line': b"Makefile:145: recipe for target 'all' failed\n"}
+[20.359790] (-) TimerEvent: {}
+[20.415272] (audio_demos) CommandEnded: {'returncode': -2}
+[20.461405] (-) TimerEvent: {}
+[20.564404] (-) TimerEvent: {}
+[20.665662] (-) TimerEvent: {}
+[20.766907] (-) TimerEvent: {}
+[20.832799] (audio_demos) JobEnded: {'identifier': 'audio_demos', 'rc': 'SIGINT'}
+[20.846814] (-) EventReactorShutdown: {}

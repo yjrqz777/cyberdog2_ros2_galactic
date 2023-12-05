@@ -1,0 +1,14 @@
+source;share/motion_action/hook/cmake_prefix_path.ps1
+source;share/motion_action/hook/cmake_prefix_path.dsv
+source;share/motion_action/hook/cmake_prefix_path.sh
+source;share/motion_action/hook/ld_library_path_lib.ps1
+source;share/motion_action/hook/ld_library_path_lib.dsv
+source;share/motion_action/hook/ld_library_path_lib.sh
+source;share/motion_action/hook/pythonpath.ps1
+source;share/motion_action/hook/pythonpath.dsv
+source;share/motion_action/hook/pythonpath.sh
+source;share/motion_action/local_setup.bash
+source;share/motion_action/local_setup.dsv
+source;share/motion_action/local_setup.ps1
+source;share/motion_action/local_setup.sh
+source;share/motion_action/local_setup.zsh

@@ -1,0 +1,202 @@
+[0.000000] (-) TimerEvent: {}
+[0.002873] (talk_something) JobQueued: {'identifier': 'talk_something', 'dependencies': OrderedDict()}
+[0.003173] (talk_something) JobStarted: {'identifier': 'talk_something'}
+[0.095443] (-) TimerEvent: {}
+[0.098800] (talk_something) JobProgress: {'identifier': 'talk_something', 'progress': 'cmake'}
+[0.102685] (talk_something) JobProgress: {'identifier': 'talk_something', 'progress': 'build'}
+[0.113975] (talk_something) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/SDCARD/workspace/talk_something/build/talk_something', '--', '-j6', '-l6'], 'cwd': '/SDCARD/workspace/talk_something/build/talk_something', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 6462 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/SDCARD/workspace'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-419c805e-b424-4523-bc49-2a2dcccdd40f.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/SDCARD/workspace/talk_something/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros2/cyberdog/bin:/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/SDCARD/workspace/talk_something/install/talk_something:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/ros2/cyberdog/share/cyberdog_parameter/cmake'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/talk_something/build/talk_something'), ('SSH_CONNECTION', '192.168.44.2 6462 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/SDCARD/workspace/talk_something/install/talk_something:/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.195701] (-) TimerEvent: {}
+[0.216249] (talk_something) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talks_node\x1b[0m\n'}
+[0.277245] (talk_something) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talks_node.dir/src/talkers.cpp.o\x1b[0m\n'}
+[0.295940] (-) TimerEvent: {}
+[0.397448] (-) TimerEvent: {}
+[0.499923] (-) TimerEvent: {}
+[0.602617] (-) TimerEvent: {}
+[0.703531] (-) TimerEvent: {}
+[0.804803] (-) TimerEvent: {}
+[0.905838] (-) TimerEvent: {}
+[1.006823] (-) TimerEvent: {}
+[1.107894] (-) TimerEvent: {}
+[1.212808] (-) TimerEvent: {}
+[1.313864] (-) TimerEvent: {}
+[1.415008] (-) TimerEvent: {}
+[1.519594] (-) TimerEvent: {}
+[1.620624] (-) TimerEvent: {}
+[1.721539] (-) TimerEvent: {}
+[1.822562] (-) TimerEvent: {}
+[1.925115] (-) TimerEvent: {}
+[2.026544] (-) TimerEvent: {}
+[2.127894] (-) TimerEvent: {}
+[2.231520] (-) TimerEvent: {}
+[2.333839] (-) TimerEvent: {}
+[2.438815] (-) TimerEvent: {}
+[2.539856] (-) TimerEvent: {}
+[2.640967] (-) TimerEvent: {}
+[2.741851] (-) TimerEvent: {}
+[2.842843] (-) TimerEvent: {}
+[2.943854] (-) TimerEvent: {}
+[3.044896] (-) TimerEvent: {}
+[3.145787] (-) TimerEvent: {}
+[3.257000] (-) TimerEvent: {}
+[3.358074] (-) TimerEvent: {}
+[3.459563] (-) TimerEvent: {}
+[3.561080] (-) TimerEvent: {}
+[3.662443] (-) TimerEvent: {}
+[3.764629] (-) TimerEvent: {}
+[3.866088] (-) TimerEvent: {}
+[3.969949] (-) TimerEvent: {}
+[4.071156] (-) TimerEvent: {}
+[4.172850] (-) TimerEvent: {}
+[4.273993] (-) TimerEvent: {}
+[4.375539] (-) TimerEvent: {}
+[4.477046] (-) TimerEvent: {}
+[4.578629] (-) TimerEvent: {}
+[4.680087] (-) TimerEvent: {}
+[4.782041] (-) TimerEvent: {}
+[4.884864] (-) TimerEvent: {}
+[4.986023] (-) TimerEvent: {}
+[5.086934] (-) TimerEvent: {}
+[5.187992] (-) TimerEvent: {}
+[5.289084] (-) TimerEvent: {}
+[5.390026] (-) TimerEvent: {}
+[5.491025] (-) TimerEvent: {}
+[5.592656] (-) TimerEvent: {}
+[5.693684] (-) TimerEvent: {}
+[5.794581] (-) TimerEvent: {}
+[5.895628] (-) TimerEvent: {}
+[5.996627] (-) TimerEvent: {}
+[6.097543] (-) TimerEvent: {}
+[6.199263] (-) TimerEvent: {}
+[6.300248] (-) TimerEvent: {}
+[6.401340] (-) TimerEvent: {}
+[6.502396] (-) TimerEvent: {}
+[6.603527] (-) TimerEvent: {}
+[6.705020] (-) TimerEvent: {}
+[6.806018] (-) TimerEvent: {}
+[6.907016] (-) TimerEvent: {}
+[7.008233] (-) TimerEvent: {}
+[7.109400] (-) TimerEvent: {}
+[7.210659] (-) TimerEvent: {}
+[7.312092] (-) TimerEvent: {}
+[7.413826] (-) TimerEvent: {}
+[7.514861] (-) TimerEvent: {}
+[7.615881] (-) TimerEvent: {}
+[7.717045] (-) TimerEvent: {}
+[7.818072] (-) TimerEvent: {}
+[7.919141] (-) TimerEvent: {}
+[8.020152] (-) TimerEvent: {}
+[8.121427] (-) TimerEvent: {}
+[8.222839] (-) TimerEvent: {}
+[8.324297] (-) TimerEvent: {}
+[8.425937] (-) TimerEvent: {}
+[8.527446] (-) TimerEvent: {}
+[8.629151] (-) TimerEvent: {}
+[8.731034] (-) TimerEvent: {}
+[8.832302] (-) TimerEvent: {}
+[8.933431] (-) TimerEvent: {}
+[9.034634] (-) TimerEvent: {}
+[9.135736] (-) TimerEvent: {}
+[9.236863] (-) TimerEvent: {}
+[9.337879] (-) TimerEvent: {}
+[9.438941] (-) TimerEvent: {}
+[9.539942] (-) TimerEvent: {}
+[9.640953] (-) TimerEvent: {}
+[9.741962] (-) TimerEvent: {}
+[9.842981] (-) TimerEvent: {}
+[9.944009] (-) TimerEvent: {}
+[10.045178] (-) TimerEvent: {}
+[10.146185] (-) TimerEvent: {}
+[10.247328] (-) TimerEvent: {}
+[10.348838] (-) TimerEvent: {}
+[10.449835] (-) TimerEvent: {}
+[10.550856] (-) TimerEvent: {}
+[10.651966] (-) TimerEvent: {}
+[10.753573] (-) TimerEvent: {}
+[10.854494] (-) TimerEvent: {}
+[10.955513] (-) TimerEvent: {}
+[11.056595] (-) TimerEvent: {}
+[11.157696] (-) TimerEvent: {}
+[11.258736] (-) TimerEvent: {}
+[11.359680] (-) TimerEvent: {}
+[11.460764] (-) TimerEvent: {}
+[11.562188] (-) TimerEvent: {}
+[11.663576] (-) TimerEvent: {}
+[11.765037] (-) TimerEvent: {}
+[11.866066] (-) TimerEvent: {}
+[11.967076] (-) TimerEvent: {}
+[12.068119] (-) TimerEvent: {}
+[12.169285] (-) TimerEvent: {}
+[12.270782] (-) TimerEvent: {}
+[12.371817] (-) TimerEvent: {}
+[12.472964] (-) TimerEvent: {}
+[12.573968] (-) TimerEvent: {}
+[12.675080] (-) TimerEvent: {}
+[12.776598] (-) TimerEvent: {}
+[12.878033] (-) TimerEvent: {}
+[12.979005] (-) TimerEvent: {}
+[13.079959] (-) TimerEvent: {}
+[13.181047] (-) TimerEvent: {}
+[13.282063] (-) TimerEvent: {}
+[13.383097] (-) TimerEvent: {}
+[13.484090] (-) TimerEvent: {}
+[13.585306] (-) TimerEvent: {}
+[13.686579] (-) TimerEvent: {}
+[13.787542] (-) TimerEvent: {}
+[13.888621] (-) TimerEvent: {}
+[13.989700] (-) TimerEvent: {}
+[14.090677] (-) TimerEvent: {}
+[14.191586] (-) TimerEvent: {}
+[14.292616] (-) TimerEvent: {}
+[14.393584] (-) TimerEvent: {}
+[14.494583] (-) TimerEvent: {}
+[14.595548] (-) TimerEvent: {}
+[14.696688] (-) TimerEvent: {}
+[14.797582] (-) TimerEvent: {}
+[14.898686] (-) TimerEvent: {}
+[14.999741] (-) TimerEvent: {}
+[15.100712] (-) TimerEvent: {}
+[15.201756] (-) TimerEvent: {}
+[15.231270] (talk_something) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talks_node\x1b[0m\n'}
+[15.301994] (-) TimerEvent: {}
+[15.402983] (-) TimerEvent: {}
+[15.504103] (-) TimerEvent: {}
+[15.605258] (-) TimerEvent: {}
+[15.706280] (-) TimerEvent: {}
+[15.807379] (-) TimerEvent: {}
+[15.910649] (-) TimerEvent: {}
+[16.011764] (-) TimerEvent: {}
+[16.113107] (-) TimerEvent: {}
+[16.214234] (-) TimerEvent: {}
+[16.315439] (-) TimerEvent: {}
+[16.417046] (-) TimerEvent: {}
+[16.519232] (talk_something) StdoutLine: {'line': b'[100%] Built target talks_node\n'}
+[16.520520] (-) TimerEvent: {}
+[16.538626] (talk_something) CommandEnded: {'returncode': 0}
+[16.621213] (-) TimerEvent: {}
+[16.628892] (talk_something) JobProgress: {'identifier': 'talk_something', 'progress': 'install'}
+[16.649505] (talk_something) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/SDCARD/workspace/talk_something/build/talk_something'], 'cwd': '/SDCARD/workspace/talk_something/build/talk_something', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 6462 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/SDCARD/workspace'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-419c805e-b424-4523-bc49-2a2dcccdd40f.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/SDCARD/workspace/talk_something/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros2/cyberdog/bin:/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/SDCARD/workspace/talk_something/install/talk_something:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/ros2/cyberdog/share/cyberdog_parameter/cmake'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/talk_something/build/talk_something'), ('SSH_CONNECTION', '192.168.44.2 6462 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/SDCARD/workspace/talk_something/install/talk_something:/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[16.662695] (talk_something) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.663998] (talk_something) StdoutLine: {'line': b'-- Installing: /SDCARD/workspace/talk_something/install/talk_something/lib/talk_something/talks_node\n'}
+[16.673584] (talk_something) StdoutLine: {'line': b'-- Set runtime path of "/SDCARD/workspace/talk_something/install/talk_something/lib/talk_something/talks_node" to ""\n'}
+[16.675146] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/ament_index/resource_index/package_run_dependencies/talk_something\n'}
+[16.677130] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/ament_index/resource_index/parent_prefix_path/talk_something\n'}
+[16.679745] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/ament_prefix_path.sh\n'}
+[16.690442] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/ament_prefix_path.dsv\n'}
+[16.695159] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/path.sh\n'}
+[16.695840] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/environment/path.dsv\n'}
+[16.696342] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.bash\n'}
+[16.696914] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.sh\n'}
+[16.697363] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.zsh\n'}
+[16.697773] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/local_setup.dsv\n'}
+[16.698256] (talk_something) StdoutLine: {'line': b'-- Installing: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.dsv\n'}
+[16.698658] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/ament_index/resource_index/packages/talk_something\n'}
+[16.699066] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.699484] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.699921] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/talk_somethingConfig.cmake\n'}
+[16.700330] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/cmake/talk_somethingConfig-version.cmake\n'}
+[16.700804] (talk_something) StdoutLine: {'line': b'-- Up-to-date: /SDCARD/workspace/talk_something/install/talk_something/share/talk_something/package.xml\n'}
+[16.701249] (talk_something) CommandEnded: {'returncode': 0}
+[16.721460] (-) TimerEvent: {}
+[16.824045] (-) TimerEvent: {}
+[16.911307] (talk_something) JobEnded: {'identifier': 'talk_something', 'rc': 0}
+[16.917510] (-) EventReactorShutdown: {}

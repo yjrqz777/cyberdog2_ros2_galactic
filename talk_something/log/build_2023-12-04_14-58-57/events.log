@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.002321] (talk_something) JobQueued: {'identifier': 'talk_something', 'dependencies': OrderedDict()}
+[0.004180] (talk_something) JobStarted: {'identifier': 'talk_something'}
+[0.098257] (-) TimerEvent: {}
+[0.104329] (talk_something) JobProgress: {'identifier': 'talk_something', 'progress': 'cmake'}
+[0.110312] (talk_something) JobProgress: {'identifier': 'talk_something', 'progress': 'build'}
+[0.111190] (talk_something) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/SDCARD/workspace/talk_something/build/talk_something', '--', '-j6', '-l6'], 'cwd': '/SDCARD/workspace/talk_something/build/talk_something', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 6462 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/SDCARD/workspace'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-419c805e-b424-4523-bc49-2a2dcccdd40f.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/SDCARD/workspace/talk_something/install:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros2/cyberdog/bin:/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/SDCARD/workspace/talk_something/install/talk_something:/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/ros2/cyberdog/share/cyberdog_parameter/cmake'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/talk_something/build/talk_something'), ('SSH_CONNECTION', '192.168.44.2 6462 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/SDCARD/workspace/talk_something/install/talk_something:/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.199269] (-) TimerEvent: {}
+[0.239695] (talk_something) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talks_node\x1b[0m\n'}
+[0.299650] (-) TimerEvent: {}
+[0.301826] (talk_something) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talks_node.dir/src/talkers.cpp.o\x1b[0m\n'}
+[0.399914] (-) TimerEvent: {}
+[0.500944] (-) TimerEvent: {}
+[0.605035] (-) TimerEvent: {}
+[0.706354] (-) TimerEvent: {}
+[0.808246] (-) TimerEvent: {}
+[0.910034] (-) TimerEvent: {}
+[1.011233] (-) TimerEvent: {}
+[1.112683] (-) TimerEvent: {}
+[1.214222] (-) TimerEvent: {}
+[1.315599] (-) TimerEvent: {}
+[1.417883] (-) TimerEvent: {}
+[1.519609] (-) TimerEvent: {}
+[1.620771] (-) TimerEvent: {}
+[1.722953] (-) TimerEvent: {}
+[1.823987] (-) TimerEvent: {}
+[1.925982] (-) TimerEvent: {}
+[2.027054] (-) TimerEvent: {}
+[2.128176] (-) TimerEvent: {}
+[2.229268] (-) TimerEvent: {}
+[2.330560] (-) TimerEvent: {}
+[2.431603] (-) TimerEvent: {}
+[2.532721] (-) TimerEvent: {}
+[2.633867] (-) TimerEvent: {}
+[2.734969] (-) TimerEvent: {}
+[2.835948] (-) TimerEvent: {}
+[2.937000] (-) TimerEvent: {}
+[3.038766] (-) TimerEvent: {}
+[3.140036] (-) TimerEvent: {}
+[3.241704] (-) TimerEvent: {}
+[3.343468] (-) TimerEvent: {}
+[3.444984] (-) TimerEvent: {}
+[3.547333] (-) TimerEvent: {}
+[3.648947] (-) TimerEvent: {}
+[3.750171] (-) TimerEvent: {}
+[3.851139] (-) TimerEvent: {}
+[3.952814] (-) TimerEvent: {}
+[4.053845] (-) TimerEvent: {}
+[4.155127] (-) TimerEvent: {}
+[4.257232] (-) TimerEvent: {}
+[4.358415] (-) TimerEvent: {}
+[4.459506] (-) TimerEvent: {}
+[4.561739] (-) TimerEvent: {}
+[4.662695] (-) TimerEvent: {}
+[4.765135] (-) TimerEvent: {}
+[4.866213] (-) TimerEvent: {}
+[4.967160] (-) TimerEvent: {}
+[5.068123] (-) TimerEvent: {}
+[5.169133] (-) TimerEvent: {}
+[5.270196] (-) TimerEvent: {}
+[5.371198] (-) TimerEvent: {}
+[5.472204] (-) TimerEvent: {}
+[5.573211] (-) TimerEvent: {}
+[5.674720] (-) TimerEvent: {}
+[5.775791] (-) TimerEvent: {}
+[5.876995] (-) TimerEvent: {}
+[5.978101] (-) TimerEvent: {}
+[6.079098] (-) TimerEvent: {}
+[6.180301] (-) TimerEvent: {}
+[6.281971] (-) TimerEvent: {}
+[6.383759] (-) TimerEvent: {}
+[6.488737] (-) TimerEvent: {}
+[6.590379] (-) TimerEvent: {}
+[6.692058] (-) TimerEvent: {}
+[6.794811] (-) TimerEvent: {}
+[6.895968] (-) TimerEvent: {}
+[6.997095] (-) TimerEvent: {}
+[7.098292] (-) TimerEvent: {}
+[7.199767] (-) TimerEvent: {}
+[7.300821] (-) TimerEvent: {}
+[7.402300] (-) TimerEvent: {}
+[7.505398] (-) TimerEvent: {}
+[7.606869] (-) TimerEvent: {}
+[7.708230] (-) TimerEvent: {}
+[7.809863] (-) TimerEvent: {}
+[7.911619] (-) TimerEvent: {}
+[8.013042] (-) TimerEvent: {}
+[8.114608] (-) TimerEvent: {}
+[8.215958] (-) TimerEvent: {}
+[8.317298] (-) TimerEvent: {}
+[8.419892] (-) TimerEvent: {}
+[8.521216] (-) TimerEvent: {}
+[8.622442] (-) TimerEvent: {}
+[8.723394] (-) TimerEvent: {}
+[8.824481] (-) TimerEvent: {}
+[8.925420] (-) TimerEvent: {}
+[9.026524] (-) TimerEvent: {}
+[9.127513] (-) TimerEvent: {}
+[9.228821] (-) TimerEvent: {}
+[9.330356] (-) TimerEvent: {}
+[9.431738] (-) TimerEvent: {}
+[9.533648] (-) TimerEvent: {}
+[9.634646] (-) TimerEvent: {}
+[9.735610] (-) TimerEvent: {}
+[9.836555] (-) TimerEvent: {}
+[9.937649] (-) TimerEvent: {}
+[10.038572] (-) TimerEvent: {}
+[10.094124] (talk_something) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/talk_something/src/talkers.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KtalkersNode::talkersNode(std::__cxx11::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.095758] (talk_something) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/talk_something/src/talkers.cpp:26:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KtalkersNode::create_wall_timer(int, std::_Bind_helper<false, void (talkersNode::*)(), talkersNode*>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.096259] (talk_something) StderrLine: {'line': b'         timer_ =this->create_wall_timer(100,std::bind(&talkersNode::timer_callback, this)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[10.096751] (talk_something) StderrLine: {'line': b'                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.097178] (talk_something) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros2/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28:0\x1b[m\x1b[K,\n'}
+[10.098691] (talk_something) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros2/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[10.099274] (talk_something) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros2/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[10.099647] (talk_something) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/SDCARD/workspace/talk_something/src/talkers.cpp:5\x1b[m\x1b[K:\n'}
+[10.099996] (talk_something) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros2/galactic/include/rclcpp/node.hpp:237:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: template<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\n'}
+[10.100398] (talk_something) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[10.100828] (talk_something) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.101224] (talk_something) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros2/galactic/include/rclcpp/node.hpp:237:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[10.101746] (talk_something) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/talk_something/src/talkers.cpp:26:90:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.102120] (talk_something) StderrLine: {'line': b'         timer_ =this->create_wall_timer(100,std::bind(&talkersNode::timer_callback, this)\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[10.102483] (talk_something) StderrLine: {'line': b'                                                                                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.140333] (-) TimerEvent: {}
+[10.241273] (-) TimerEvent: {}
+[10.342278] (-) TimerEvent: {}
+[10.443262] (-) TimerEvent: {}
+[10.544525] (-) TimerEvent: {}
+[10.645460] (-) TimerEvent: {}
+[10.746546] (-) TimerEvent: {}
+[10.847478] (-) TimerEvent: {}
+[10.948325] (-) TimerEvent: {}
+[11.049208] (-) TimerEvent: {}
+[11.150302] (-) TimerEvent: {}
+[11.251168] (-) TimerEvent: {}
+[11.352177] (-) TimerEvent: {}
+[11.453599] (-) TimerEvent: {}
+[11.554864] (-) TimerEvent: {}
+[11.656202] (-) TimerEvent: {}
+[11.757119] (-) TimerEvent: {}
+[11.858209] (-) TimerEvent: {}
+[11.959242] (-) TimerEvent: {}
+[12.060278] (-) TimerEvent: {}
+[12.161382] (-) TimerEvent: {}
+[12.262852] (-) TimerEvent: {}
+[12.357811] (talk_something) StderrLine: {'line': b'make[2]: *** [CMakeFiles/talks_node.dir/src/talkers.cpp.o] Error 1\n'}
+[12.358875] (talk_something) StderrLine: {'line': b'make[1]: *** [CMakeFiles/talks_node.dir/all] Error 2\n'}
+[12.359674] (talk_something) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[12.360550] (talk_something) StdoutLine: {'line': b"CMakeFiles/talks_node.dir/build.make:75: recipe for target 'CMakeFiles/talks_node.dir/src/talkers.cpp.o' failed\n"}
+[12.361079] (talk_something) StdoutLine: {'line': b"CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/talks_node.dir/all' failed\n"}
+[12.361866] (talk_something) StdoutLine: {'line': b"Makefile:145: recipe for target 'all' failed\n"}
+[12.366165] (-) TimerEvent: {}
+[12.367104] (talk_something) CommandEnded: {'returncode': 2}
+[12.466799] (-) TimerEvent: {}
+[12.534098] (talk_something) JobEnded: {'identifier': 'talk_something', 'rc': 2}
+[12.547351] (-) EventReactorShutdown: {}

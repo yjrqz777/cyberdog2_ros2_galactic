@@ -1,0 +1,32 @@
+[ 50%] [32m[1mLinking CXX shared library libskin_manager.so[0m
+[100%] Built target skin_manager
+-- Install configuration: ""
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/include
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/include/skin_manager
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/include/skin_manager/skin_manager.hpp
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/lib/libskin_manager.so
+-- Set runtime path of "/SDCARD/workspace/skin_manager/install/skin_manager/lib/libskin_manager.so" to ""
+-- Up-to-date: /SDCARD/workspace/skin_manager/install/skin_manager/include/
+-- Up-to-date: /SDCARD/workspace/skin_manager/install/skin_manager/include//skin_manager
+-- Up-to-date: /SDCARD/workspace/skin_manager/install/skin_manager/include//skin_manager/skin_manager.hpp
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/config/
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/config//elec_skin.toml
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/environment/library_path.sh
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/environment/library_path.dsv
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/ament_index/resource_index/package_run_dependencies/skin_manager
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/ament_index/resource_index/parent_prefix_path/skin_manager
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/environment/ament_prefix_path.sh
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/environment/ament_prefix_path.dsv
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/environment/path.sh
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/environment/path.dsv
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/local_setup.bash
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/local_setup.sh
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/local_setup.zsh
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/local_setup.dsv
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.dsv
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/ament_index/resource_index/packages/skin_manager
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/cmake/skin_managerConfig.cmake
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/cmake/skin_managerConfig-version.cmake
+-- Installing: /SDCARD/workspace/skin_manager/install/skin_manager/share/skin_manager/package.xml

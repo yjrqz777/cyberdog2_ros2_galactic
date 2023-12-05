@@ -1,0 +1,77 @@
+[0.118s] Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake /SDCARD/workspace/audio_demos -DCMAKE_INSTALL_PREFIX=/opt/ros2/cyberdog
+[0.335s] -- The C compiler identification is GNU 7.5.0
+[0.582s] -- The CXX compiler identification is GNU 7.5.0
+[0.617s] -- Detecting C compiler ABI info
+[0.843s] -- Detecting C compiler ABI info - done
+[0.894s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.895s] -- Detecting C compile features
+[0.897s] -- Detecting C compile features - done
+[0.913s] -- Detecting CXX compiler ABI info
+[1.167s] -- Detecting CXX compiler ABI info - done
+[1.223s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.224s] -- Detecting CXX compile features
+[1.226s] -- Detecting CXX compile features - done
+[1.239s] -- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)
+[1.367s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.368s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.923s] -- Found ament_index_cpp: 1.2.0 (/opt/ros2/galactic/share/ament_index_cpp/cmake)
+[1.943s] -- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)
+[2.162s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.197s] -- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)
+[2.519s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1")  
+[2.598s] -- Found FastRTPS: /opt/ros2/galactic/include  
+[2.881s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.138s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)
+[3.152s] -- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)
+[3.229s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.234s] -- Looking for pthread.h
+[3.477s] -- Looking for pthread.h - found
+[3.478s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.716s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.717s] -- Looking for pthread_create in pthreads
+[3.911s] -- Looking for pthread_create in pthreads - not found
+[3.912s] -- Looking for pthread_create in pthread
+[4.140s] -- Looking for pthread_create in pthread - found
+[4.148s] -- Found Threads: TRUE  
+[4.693s] -- Found rclcpp_components: 9.1.0 (/opt/ros2/galactic/share/rclcpp_components/cmake)
+[4.900s] -- Found std_srvs: 2.2.3 (/opt/ros2/galactic/share/std_srvs/cmake)
+[4.937s] -- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)
+[6.382s] -- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)
+[7.183s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.216s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.217s] -- Configured cppcheck include dirs: /SDCARD/workspace/audio_demos/include
+[7.218s] -- Configured cppcheck exclude dirs and/or files: 
+[7.249s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.250s] -- Configured cpplint exclude dirs and/or files: 
+[7.262s] -- Added test 'lint_cmake' to check CMake code style
+[7.298s] -- Added test 'uncrustify' to check C / C++ code style
+[7.299s] -- Configured uncrustify additional arguments: 
+[7.304s] -- Added test 'xmllint' to check XML markup files
+[7.319s] -- Configuring done
+[7.439s] -- Generating done
+[7.449s] -- Build files have been written to: /SDCARD/workspace/audio_demos/build/audio_demos
+[7.496s] Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake /SDCARD/workspace/audio_demos -DCMAKE_INSTALL_PREFIX=/opt/ros2/cyberdog
+[7.515s] Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+[7.630s] [ 12%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[7.631s] [ 25%] [32mBuilding CXX object CMakeFiles/set_voice.dir/src/set_voice.cpp.o[0m
+[7.632s] [ 37%] [32mBuilding CXX object CMakeFiles/set_mic.dir/src/set_mic.cpp.o[0m
+[7.639s] [ 50%] [32mBuilding CXX object CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o[0m
+[20.323s] CMakeFiles/set_mic.dir/build.make:75: recipe for target 'CMakeFiles/set_mic.dir/src/set_mic.cpp.o' failed
+[20.324s] CMakeFiles/talker.dir/build.make:75: recipe for target 'CMakeFiles/talker.dir/src/talker.cpp.o' failed
+[20.325s] CMakeFiles/Makefile2:116: recipe for target 'CMakeFiles/set_mic.dir/all' failed
+[20.325s] CMakeFiles/set_waken_words.dir/build.make:75: recipe for target 'CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o' failed
+[20.326s] CMakeFiles/Makefile2:168: recipe for target 'CMakeFiles/talker.dir/all' failed
+[20.326s] CMakeFiles/set_voice.dir/build.make:75: recipe for target 'CMakeFiles/set_voice.dir/src/set_voice.cpp.o' failed
+[20.327s] make[2]: *** [CMakeFiles/set_mic.dir/src/set_mic.cpp.o] Interrupt
+[20.328s] make[2]: *** [CMakeFiles/talker.dir/src/talker.cpp.o] Interrupt
+[20.328s] make[1]: *** [CMakeFiles/set_mic.dir/all] Interrupt
+[20.329s] make[2]: *** [CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o] Interrupt
+[20.329s] make[1]: *** [CMakeFiles/talker.dir/all] Interrupt
+[20.329s] make[2]: *** [CMakeFiles/set_voice.dir/src/set_voice.cpp.o] Interrupt
+[20.330s] make[1]: *** [CMakeFiles/set_waken_words.dir/all] Interrupt
+[20.330s] CMakeFiles/Makefile2:220: recipe for target 'CMakeFiles/set_waken_words.dir/all' failed
+[20.331s] CMakeFiles/Makefile2:194: recipe for target 'CMakeFiles/set_voice.dir/all' failed
+[20.331s] make[1]: *** [CMakeFiles/set_voice.dir/all] Interrupt
+[20.332s] make: *** [all] Interrupt
+[20.332s] Makefile:145: recipe for target 'all' failed
+[20.414s] Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '-2': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6

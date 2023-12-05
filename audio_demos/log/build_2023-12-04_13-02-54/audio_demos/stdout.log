@@ -1,0 +1,38 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/set_mic.dir/src/set_mic.cpp.o[0m
+[ 25%] [32m[1mLinking CXX executable set_mic[0m
+[ 25%] Built target set_mic
+[ 37%] [32mBuilding CXX object CMakeFiles/set_waken_words.dir/src/set_waken_words.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable set_waken_words[0m
+[ 50%] Built target set_waken_words
+[ 62%] [32mBuilding CXX object CMakeFiles/set_voice.dir/src/set_voice.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable set_voice[0m
+[ 75%] Built target set_voice
+[ 87%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[100%] [32m[1mLinking CXX executable talker[0m
+[100%] Built target talker
+-- Install configuration: ""
+-- Installing: /opt/ros2/cyberdog/lib/audio_demos/talker
+-- Set runtime path of "/opt/ros2/cyberdog/lib/audio_demos/talker" to ""
+-- Installing: /opt/ros2/cyberdog/lib/audio_demos/set_mic
+-- Set runtime path of "/opt/ros2/cyberdog/lib/audio_demos/set_mic" to ""
+-- Installing: /opt/ros2/cyberdog/lib/audio_demos/set_voice
+-- Set runtime path of "/opt/ros2/cyberdog/lib/audio_demos/set_voice" to ""
+-- Installing: /opt/ros2/cyberdog/lib/audio_demos/set_waken_words
+-- Set runtime path of "/opt/ros2/cyberdog/lib/audio_demos/set_waken_words" to ""
+-- Installing: /opt/ros2/cyberdog/share/ament_index/resource_index/package_run_dependencies/audio_demos
+-- Installing: /opt/ros2/cyberdog/share/ament_index/resource_index/parent_prefix_path/audio_demos
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/environment/ament_prefix_path.sh
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/environment/ament_prefix_path.dsv
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/environment/path.sh
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/environment/path.dsv
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/local_setup.bash
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/local_setup.sh
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/local_setup.zsh
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/local_setup.dsv
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/package.dsv
+-- Installing: /opt/ros2/cyberdog/share/ament_index/resource_index/packages/audio_demos
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/cmake/audio_demosConfig.cmake
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/cmake/audio_demosConfig-version.cmake
+-- Installing: /opt/ros2/cyberdog/share/audio_demos/package.xml

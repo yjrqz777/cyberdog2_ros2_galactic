@@ -1,0 +1,4 @@
+Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/talk_something/build/talk_something -- -j6 -l6
+Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake --install /SDCARD/workspace/talk_something/build/talk_something
+Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/talk_something/build/talk_something

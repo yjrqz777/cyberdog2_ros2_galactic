@@ -1,0 +1,25 @@
+[01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:31:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint main(int, char**)[m[K’
+ int [01;31m[Kmain[m[K(int argc, char * argv[])
+     [01;31m[K^~~~[m[K
+[01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:22:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint main(int, char**)[m[K’ previously defined here
+ int [01;36m[Kmain[m[K(int argc,char ** argv)
+     [01;36m[K^~~~[m[K
+[01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:35:32:[m[K [01;31m[Kerror: [m[K‘[01m[KAudioTalkDemo[m[K’ was not declared in this scope
+   auto node = std::make_shared<[01;31m[KAudioTalkDemo[m[K>();
+                                [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:35:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   auto node = std::make_shared<AudioTalkDemo>([01;31m[K)[m[K;
+                                               [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:703:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)
+     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:703:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:35:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   auto node = std::make_shared<AudioTalkDemo>([01;31m[K)[m[K;
+                                               [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o] Error 1
+make[1]: *** [CMakeFiles/contor_led_node.dir/all] Error 2
+make: *** [all] Error 2

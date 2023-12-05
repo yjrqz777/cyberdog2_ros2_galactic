@@ -1,0 +1,4 @@
+Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake /SDCARD/workspace/audio_demos -DCMAKE_INSTALL_PREFIX=/opt/ros2/cyberdog
+Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake /SDCARD/workspace/audio_demos -DCMAKE_INSTALL_PREFIX=/opt/ros2/cyberdog
+Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '-2': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6

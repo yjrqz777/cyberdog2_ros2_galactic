@@ -1,0 +1,11 @@
+source;share/moto_contor_test/hook/cmake_prefix_path.ps1
+source;share/moto_contor_test/hook/cmake_prefix_path.dsv
+source;share/moto_contor_test/hook/cmake_prefix_path.sh
+source;share/moto_contor_test/hook/ld_library_path_lib.ps1
+source;share/moto_contor_test/hook/ld_library_path_lib.dsv
+source;share/moto_contor_test/hook/ld_library_path_lib.sh
+source;share/moto_contor_test/local_setup.bash
+source;share/moto_contor_test/local_setup.dsv
+source;share/moto_contor_test/local_setup.ps1
+source;share/moto_contor_test/local_setup.sh
+source;share/moto_contor_test/local_setup.zsh

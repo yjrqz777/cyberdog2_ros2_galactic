@@ -1,0 +1,122 @@
+[1.882s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'motion_action']
+[1.883s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9e332978>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['motion_action'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9e332978>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9e283358>)
+[1.916s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.921s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/SDCARD/workspace/motion_action'
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.391s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'motion_action'
+[2.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.513s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'cmake_args' from command line to 'None'
+[2.514s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'cmake_target' from command line to 'None'
+[2.514s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.514s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'cmake_clean_cache' from command line to 'False'
+[2.515s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'cmake_clean_first' from command line to 'False'
+[2.515s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'cmake_force_configure' from command line to 'False'
+[2.515s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'ament_cmake_args' from command line to 'None'
+[2.516s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'catkin_cmake_args' from command line to 'None'
+[2.516s] Level 5:colcon.colcon_core.verb:set package 'motion_action' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.516s] DEBUG:colcon.colcon_core.verb:Building package 'motion_action' with the following arguments: {'ament_cmake_args': None, 'build_base': '/SDCARD/workspace/motion_action/build/motion_action', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/SDCARD/workspace/motion_action/install/motion_action', 'merge_install': False, 'path': '/SDCARD/workspace/motion_action', 'symlink_install': False, 'test_result_base': None}
+[2.585s] WARNING:colcon.colcon_core.verb:Some selected packages are already built in one or more underlay workspaces:
+	'motion_action' is in: /opt/ros2/cyberdog
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding motion_action
+
+This may be promoted to an error in a future release of colcon-core.
+[2.588s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.604s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.606s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/SDCARD/workspace/motion_action' with build type 'ament_cmake'
+[2.607s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/SDCARD/workspace/motion_action'
+[2.634s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.636s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/motion_action/build/motion_action': /usr/local/bin/cmake --build /SDCARD/workspace/motion_action/build/motion_action -- -j6 -l6
+[81.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/motion_action/build/motion_action' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/motion_action/build/motion_action -- -j6 -l6
+[81.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/SDCARD/workspace/motion_action/build/motion_action': /usr/local/bin/cmake --install /SDCARD/workspace/motion_action/build/motion_action
+[82.333s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_action)
+[82.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/SDCARD/workspace/motion_action/build/motion_action' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/motion_action/build/motion_action
+[82.363s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action' for CMake module files
+[82.367s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action' for CMake config files
+[82.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_action', 'cmake_prefix_path')
+[82.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/cmake_prefix_path.ps1'
+[82.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/cmake_prefix_path.dsv'
+[82.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/cmake_prefix_path.sh'
+[82.388s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/lib'
+[82.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_action', 'ld_library_path_lib')
+[82.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/ld_library_path_lib.ps1'
+[82.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/ld_library_path_lib.dsv'
+[82.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/ld_library_path_lib.sh'
+[82.398s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/bin'
+[82.399s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/lib/pkgconfig/motion_action.pc'
+[82.399s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages'
+[82.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_action', 'pythonpath')
+[82.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/pythonpath.ps1'
+[82.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/pythonpath.dsv'
+[82.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/pythonpath.sh'
+[82.415s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.ps1'
+[82.420s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.dsv'
+[82.425s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.sh'
+[82.430s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.bash'
+[82.439s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.zsh'
+[82.443s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/motion_action/install/motion_action/share/colcon-core/packages/motion_action)
+[82.589s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_action)
+[82.596s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action' for CMake module files
+[82.599s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action' for CMake config files
+[82.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_action', 'cmake_prefix_path')
+[82.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/cmake_prefix_path.ps1'
+[82.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/cmake_prefix_path.dsv'
+[82.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/cmake_prefix_path.sh'
+[82.614s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/lib'
+[82.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_action', 'ld_library_path_lib')
+[82.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/ld_library_path_lib.ps1'
+[82.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/ld_library_path_lib.dsv'
+[82.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/ld_library_path_lib.sh'
+[82.625s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/bin'
+[82.626s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/lib/pkgconfig/motion_action.pc'
+[82.626s] Level 1:colcon.colcon_core.environment:checking '/SDCARD/workspace/motion_action/install/motion_action/lib/python3.6/site-packages'
+[82.626s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_action', 'pythonpath')
+[82.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/pythonpath.ps1'
+[82.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/pythonpath.dsv'
+[82.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/hook/pythonpath.sh'
+[82.638s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.ps1'
+[82.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.dsv'
+[82.645s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.sh'
+[82.648s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.bash'
+[82.650s] INFO:colcon.colcon_core.shell:Creating package script '/SDCARD/workspace/motion_action/install/motion_action/share/motion_action/package.zsh'
+[82.652s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/SDCARD/workspace/motion_action/install/motion_action/share/colcon-core/packages/motion_action)
+[82.659s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[82.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[82.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[82.665s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[82.707s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[82.709s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[82.709s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[82.778s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[82.782s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/motion_action/install/local_setup.ps1'
+[82.788s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/motion_action/install/_local_setup_util_ps1.py'
+[82.801s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/motion_action/install/setup.ps1'
+[82.808s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/motion_action/install/local_setup.sh'
+[82.813s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/motion_action/install/_local_setup_util_sh.py'
+[82.817s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/motion_action/install/setup.sh'
+[82.826s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/motion_action/install/local_setup.bash'
+[82.829s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/motion_action/install/setup.bash'
+[82.838s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/motion_action/install/local_setup.zsh'
+[82.840s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/motion_action/install/setup.zsh'

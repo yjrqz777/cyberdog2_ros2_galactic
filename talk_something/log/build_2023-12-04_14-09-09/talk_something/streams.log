@@ -1,0 +1,43 @@
+[0.126s] Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake /SDCARD/workspace/talk_something -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/talk_something/install/talk_something
+[0.159s] -- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)
+[0.275s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.791s] -- Found ament_index_cpp: 1.2.0 (/opt/ros2/galactic/share/ament_index_cpp/cmake)
+[0.803s] -- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)
+[0.937s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.951s] -- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)
+[1.410s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.640s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)
+[1.648s] -- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.731s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.262s] -- Found rclcpp_components: 9.1.0 (/opt/ros2/galactic/share/rclcpp_components/cmake)
+[2.458s] -- Found std_srvs: 2.2.3 (/opt/ros2/galactic/share/std_srvs/cmake)
+[2.495s] -- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)
+[4.059s] -- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)
+[4.817s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.850s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.853s] -- Configured cppcheck include dirs: /SDCARD/workspace/talk_something/include
+[4.859s] -- Configured cppcheck exclude dirs and/or files: 
+[4.875s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.876s] -- Configured cpplint exclude dirs and/or files: 
+[4.880s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.889s] -- Added test 'lint_cmake' to check CMake code style
+[4.894s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.918s] -- Added test 'uncrustify' to check C / C++ code style
+[4.919s] -- Configured uncrustify additional arguments: 
+[4.922s] -- Added test 'xmllint' to check XML markup files
+[4.929s] -- Configuring done
+[4.943s] CMake Error at CMakeLists.txt:27 (add_executable):
+[4.944s]   Cannot find source file:
+[4.944s] 
+[4.945s]     src/talker.cpp
+[4.946s] 
+[4.946s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .h .hh .h++
+[4.947s]   .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc
+[4.947s] 
+[4.948s] 
+[4.952s] CMake Error at CMakeLists.txt:27 (add_executable):
+[4.953s]   No SOURCES given to target: talks_node
+[4.954s] 
+[4.955s] 
+[4.957s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[5.000s] Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '1': /usr/local/bin/cmake /SDCARD/workspace/talk_something -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/talk_something/install/talk_something

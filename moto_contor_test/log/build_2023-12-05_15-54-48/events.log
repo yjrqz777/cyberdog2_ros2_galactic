@@ -1,0 +1,68 @@
+[0.000000] (-) TimerEvent: {}
+[0.001162] (moto_contor_test) JobQueued: {'identifier': 'moto_contor_test', 'dependencies': OrderedDict()}
+[0.001434] (moto_contor_test) JobStarted: {'identifier': 'moto_contor_test'}
+[0.085328] (-) TimerEvent: {}
+[0.125416] (moto_contor_test) JobProgress: {'identifier': 'moto_contor_test', 'progress': 'cmake'}
+[0.130926] (moto_contor_test) Command: {'cmd': ['/usr/local/bin/cmake', '/SDCARD/workspace/moto_contor_test', '-DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/moto_contor_test/install/moto_contor_test'], 'cwd': '/SDCARD/workspace/moto_contor_test/build/moto_contor_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 13564 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('OLDPWD', '/SDCARD/workspace'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f830f729-6231-4c74-bbc2-05ae11dcd51a.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/moto_contor_test/build/moto_contor_test'), ('SSH_CONNECTION', '192.168.44.2 13564 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.186515] (-) TimerEvent: {}
+[0.197275] (moto_contor_test) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)\n'}
+[0.286639] (-) TimerEvent: {}
+[0.370274] (moto_contor_test) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.386947] (-) TimerEvent: {}
+[0.487959] (-) TimerEvent: {}
+[0.589007] (-) TimerEvent: {}
+[0.690084] (-) TimerEvent: {}
+[0.791073] (-) TimerEvent: {}
+[0.892054] (-) TimerEvent: {}
+[0.974249] (moto_contor_test) StdoutLine: {'line': b'-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)\n'}
+[0.992309] (-) TimerEvent: {}
+[1.093425] (-) TimerEvent: {}
+[1.140598] (moto_contor_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.156042] (moto_contor_test) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)\n'}
+[1.193659] (-) TimerEvent: {}
+[1.295342] (-) TimerEvent: {}
+[1.397573] (-) TimerEvent: {}
+[1.500861] (-) TimerEvent: {}
+[1.569722] (moto_contor_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.601146] (-) TimerEvent: {}
+[1.702371] (-) TimerEvent: {}
+[1.769836] (moto_contor_test) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[1.776371] (moto_contor_test) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.802565] (-) TimerEvent: {}
+[1.842884] (moto_contor_test) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.902810] (-) TimerEvent: {}
+[2.003859] (-) TimerEvent: {}
+[2.104930] (-) TimerEvent: {}
+[2.206087] (-) TimerEvent: {}
+[2.307397] (-) TimerEvent: {}
+[2.321536] (moto_contor_test) StdoutLine: {'line': b'-- Found toml: 0.0.0 (/opt/ros2/cyberdog/share/toml/cmake)\n'}
+[2.326187] (moto_contor_test) StdoutLine: {'line': b'-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)\n'}
+[2.407661] (-) TimerEvent: {}
+[2.509817] (-) TimerEvent: {}
+[2.613702] (-) TimerEvent: {}
+[2.715411] (-) TimerEvent: {}
+[2.816411] (-) TimerEvent: {}
+[2.917415] (-) TimerEvent: {}
+[3.018379] (-) TimerEvent: {}
+[3.119391] (-) TimerEvent: {}
+[3.220564] (-) TimerEvent: {}
+[3.321528] (-) TimerEvent: {}
+[3.422502] (-) TimerEvent: {}
+[3.523527] (-) TimerEvent: {}
+[3.606174] (moto_contor_test) StdoutLine: {'line': b'-- Found cyberdog_common: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_common/cmake)\n'}
+[3.623800] (-) TimerEvent: {}
+[3.684159] (moto_contor_test) StdoutLine: {'line': b'-- Found elec_skin: 0.0.0 (/opt/ros2/cyberdog/share/elec_skin/cmake)\n'}
+[3.686855] (moto_contor_test) StderrLine: {'line': b'CMake Error at /opt/ros2/galactic/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[3.690425] (moto_contor_test) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[3.694683] (moto_contor_test) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.695576] (moto_contor_test) StderrLine: {'line': b'  CMakeLists.txt:34 (ament_target_dependencies)\n'}
+[3.696203] (moto_contor_test) StderrLine: {'line': b'\n'}
+[3.696791] (moto_contor_test) StderrLine: {'line': b'\n'}
+[3.697871] (moto_contor_test) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.698454] (moto_contor_test) StdoutLine: {'line': b'See also "/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/CMakeOutput.log".\n'}
+[3.699225] (moto_contor_test) StdoutLine: {'line': b'See also "/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/CMakeError.log".\n'}
+[3.722497] (moto_contor_test) CommandEnded: {'returncode': 1}
+[3.727282] (-) TimerEvent: {}
+[3.821132] (moto_contor_test) JobEnded: {'identifier': 'moto_contor_test', 'rc': 1}
+[3.827520] (-) TimerEvent: {}
+[3.835396] (-) EventReactorShutdown: {}

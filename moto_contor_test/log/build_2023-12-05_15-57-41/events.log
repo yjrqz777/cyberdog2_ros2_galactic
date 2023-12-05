@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.002522] (moto_contor_test) JobQueued: {'identifier': 'moto_contor_test', 'dependencies': OrderedDict()}
+[0.003373] (moto_contor_test) JobStarted: {'identifier': 'moto_contor_test'}
+[0.099858] (-) TimerEvent: {}
+[0.109442] (moto_contor_test) JobProgress: {'identifier': 'moto_contor_test', 'progress': 'cmake'}
+[0.114922] (moto_contor_test) Command: {'cmd': ['/usr/local/bin/cmake', '/SDCARD/workspace/moto_contor_test', '-DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/moto_contor_test/install/moto_contor_test'], 'cwd': '/SDCARD/workspace/moto_contor_test/build/moto_contor_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 13564 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('OLDPWD', '/SDCARD/workspace'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f830f729-6231-4c74-bbc2-05ae11dcd51a.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/moto_contor_test/build/moto_contor_test'), ('SSH_CONNECTION', '192.168.44.2 13564 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.179525] (moto_contor_test) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)\n'}
+[0.199871] (-) TimerEvent: {}
+[0.306945] (-) TimerEvent: {}
+[0.321345] (moto_contor_test) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.407178] (-) TimerEvent: {}
+[0.508084] (-) TimerEvent: {}
+[0.610218] (-) TimerEvent: {}
+[0.711224] (-) TimerEvent: {}
+[0.812230] (-) TimerEvent: {}
+[0.845289] (moto_contor_test) StdoutLine: {'line': b'-- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)\n'}
+[0.912506] (-) TimerEvent: {}
+[0.981845] (moto_contor_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.995563] (moto_contor_test) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)\n'}
+[1.013973] (-) TimerEvent: {}
+[1.121336] (-) TimerEvent: {}
+[1.222391] (-) TimerEvent: {}
+[1.323478] (-) TimerEvent: {}
+[1.383484] (moto_contor_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.423673] (-) TimerEvent: {}
+[1.524714] (-) TimerEvent: {}
+[1.592881] (moto_contor_test) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[1.599390] (moto_contor_test) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.624867] (-) TimerEvent: {}
+[1.676211] (moto_contor_test) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.725112] (-) TimerEvent: {}
+[1.827098] (-) TimerEvent: {}
+[1.931474] (-) TimerEvent: {}
+[2.034016] (-) TimerEvent: {}
+[2.138817] (-) TimerEvent: {}
+[2.160960] (moto_contor_test) StdoutLine: {'line': b'-- Found toml: 0.0.0 (/opt/ros2/cyberdog/share/toml/cmake)\n'}
+[2.172146] (moto_contor_test) StdoutLine: {'line': b'-- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)\n'}
+[2.239065] (-) TimerEvent: {}
+[2.340578] (-) TimerEvent: {}
+[2.442065] (-) TimerEvent: {}
+[2.543617] (-) TimerEvent: {}
+[2.645007] (-) TimerEvent: {}
+[2.746259] (-) TimerEvent: {}
+[2.848349] (-) TimerEvent: {}
+[2.952277] (-) TimerEvent: {}
+[3.053747] (-) TimerEvent: {}
+[3.155099] (-) TimerEvent: {}
+[3.255997] (-) TimerEvent: {}
+[3.357049] (-) TimerEvent: {}
+[3.458804] (-) TimerEvent: {}
+[3.560612] (-) TimerEvent: {}
+[3.622947] (moto_contor_test) StdoutLine: {'line': b'-- Found cyberdog_common: 0.0.0 (/opt/ros2/cyberdog/share/cyberdog_common/cmake)\n'}
+[3.660832] (-) TimerEvent: {}
+[3.705658] (moto_contor_test) StdoutLine: {'line': b'-- Found elec_skin: 0.0.0 (/opt/ros2/cyberdog/share/elec_skin/cmake)\n'}
+[3.714665] (moto_contor_test) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros2/galactic/share/ament_lint_auto/cmake)\n'}
+[3.761052] (-) TimerEvent: {}
+[3.861903] (-) TimerEvent: {}
+[3.962859] (-) TimerEvent: {}
+[4.063954] (-) TimerEvent: {}
+[4.164986] (-) TimerEvent: {}
+[4.266289] (-) TimerEvent: {}
+[4.367239] (-) TimerEvent: {}
+[4.459758] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.467526] (-) TimerEvent: {}
+[4.486566] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.488903] (moto_contor_test) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /SDCARD/workspace/moto_contor_test/include\n'}
+[4.489604] (moto_contor_test) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.514570] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.517206] (moto_contor_test) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.520118] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.528094] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.532532] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[4.557598] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.558563] (moto_contor_test) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.561936] (moto_contor_test) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.567724] (-) TimerEvent: {}
+[4.572939] (moto_contor_test) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.584946] (moto_contor_test) StderrLine: {'line': b'CMake Error at CMakeLists.txt:32 (add_executable):\n'}
+[4.585961] (moto_contor_test) StderrLine: {'line': b'  Cannot find source file:\n'}
+[4.586410] (moto_contor_test) StderrLine: {'line': b'\n'}
+[4.586800] (moto_contor_test) StderrLine: {'line': b'    src/talkers.cpp\n'}
+[4.587167] (moto_contor_test) StderrLine: {'line': b'\n'}
+[4.587762] (moto_contor_test) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .h .hh .h++\n'}
+[4.588149] (moto_contor_test) StderrLine: {'line': b'  .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc\n'}
+[4.588531] (moto_contor_test) StderrLine: {'line': b'\n'}
+[4.588887] (moto_contor_test) StderrLine: {'line': b'\n'}
+[4.594780] (moto_contor_test) StderrLine: {'line': b'CMake Error at CMakeLists.txt:32 (add_executable):\n'}
+[4.596379] (moto_contor_test) StderrLine: {'line': b'  No SOURCES given to target: contor_led\n'}
+[4.596965] (moto_contor_test) StderrLine: {'line': b'\n'}
+[4.597440] (moto_contor_test) StderrLine: {'line': b'\n'}
+[4.597828] (moto_contor_test) StderrLine: {'line': b'CMake Generate step failed.  Build files cannot be regenerated correctly.\n'}
+[4.631569] (moto_contor_test) CommandEnded: {'returncode': 1}
+[4.671233] (-) TimerEvent: {}
+[4.726457] (moto_contor_test) JobEnded: {'identifier': 'moto_contor_test', 'rc': 1}
+[4.740375] (-) EventReactorShutdown: {}

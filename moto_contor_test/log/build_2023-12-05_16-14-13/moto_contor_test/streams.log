@@ -1,0 +1,26 @@
+[0.148s] Invoking command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6
+[0.233s] -- Found ament_cmake: 1.1.4 (/opt/ros2/galactic/share/ament_cmake/cmake)
+[0.415s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.927s] -- Found rclcpp: 9.1.0 (/opt/ros2/galactic/share/rclcpp/cmake)
+[1.081s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.096s] -- Found rosidl_adapter: 2.2.1 (/opt/ros2/galactic/share/rosidl_adapter/cmake)
+[1.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.678s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros2/galactic/share/rmw_implementation_cmake/cmake)
+[1.684s] -- Found rmw_cyclonedds_cpp: 0.22.3 (/opt/ros2/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.753s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.224s] -- Found toml: 0.0.0 (/opt/ros2/cyberdog/share/toml/cmake)
+[2.229s] -- Found protocol: 1.0.0 (/opt/ros2/cyberdog/share/protocol/cmake)
+[3.539s] -- Found elec_skin: 0.0.0 (/opt/ros2/cyberdog/share/elec_skin/cmake)
+[3.540s] CMake Error at /opt/ros2/galactic/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[3.541s]   ament_target_dependencies() the passed package name 'std_srvs' was not
+[3.547s]   found before
+[3.547s] Call Stack (most recent call first):
+[3.548s]   CMakeLists.txt:34 (ament_target_dependencies)
+[3.548s] 
+[3.549s] 
+[3.549s] -- Configuring incomplete, errors occurred!
+[3.550s] See also "/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/CMakeOutput.log".
+[3.550s] See also "/SDCARD/workspace/moto_contor_test/build/moto_contor_test/CMakeFiles/CMakeError.log".
+[3.570s] make: *** [cmake_check_build_system] Error 1
+[3.578s] Makefile:267: recipe for target 'cmake_check_build_system' failed
+[3.582s] Invoked command in '/SDCARD/workspace/moto_contor_test/build/moto_contor_test' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/moto_contor_test/build/moto_contor_test -- -j6 -l6

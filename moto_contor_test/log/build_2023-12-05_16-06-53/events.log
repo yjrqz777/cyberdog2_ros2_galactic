@@ -1,0 +1,331 @@
+[0.000000] (-) TimerEvent: {}
+[0.001450] (moto_contor_test) JobQueued: {'identifier': 'moto_contor_test', 'dependencies': OrderedDict()}
+[0.003046] (moto_contor_test) JobStarted: {'identifier': 'moto_contor_test'}
+[0.101276] (-) TimerEvent: {}
+[0.116677] (moto_contor_test) JobProgress: {'identifier': 'moto_contor_test', 'progress': 'cmake'}
+[0.122529] (moto_contor_test) JobProgress: {'identifier': 'moto_contor_test', 'progress': 'build'}
+[0.126966] (moto_contor_test) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/SDCARD/workspace/moto_contor_test/build/moto_contor_test', '--', '-j6', '-l6'], 'cwd': '/SDCARD/workspace/moto_contor_test/build/moto_contor_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/mi'), ('USER', 'mi'), ('SSH_CLIENT', '192.168.44.2 13564 22'), ('GIT_ASKPASS', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros2/galactic/opt/yaml_cpp_vendor/lib:/opt/ros2/galactic/opt/rviz_ogre_vendor/lib:/opt/ros2/galactic/lib:/opt/ros2/cyberdog/lib'), ('BROWSER', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('SHLVL', '4'), ('CYCLONEDDS_URI', 'file:///etc/mi/cyclonedds.xml'), ('HOME', '/home/mi'), ('OLDPWD', '/SDCARD/workspace'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f830f729-6231-4c74-bbc2-05ae11dcd51a.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'mi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros2/galactic/lib/aarch64-linux-gnu/pkgconfig:/opt/ros2/galactic/lib/pkgconfig'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mi/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros2/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3adbc994df.sock'), ('AMENT_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/SDCARD/workspace/moto_contor_test/build/moto_contor_test'), ('SSH_CONNECTION', '192.168.44.2 13564 192.168.44.1 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros2/cyberdog/lib/python3.6/site-packages:/opt/ros2/galactic/lib/python3.6/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros2/cyberdog:/opt/ros2/galactic')]), 'shell': False}
+[0.201521] (-) TimerEvent: {}
+[0.243558] (moto_contor_test) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target contor_led_node\x1b[0m\n'}
+[0.302909] (-) TimerEvent: {}
+[0.323582] (moto_contor_test) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o\x1b[0m\n'}
+[0.404307] (-) TimerEvent: {}
+[0.505466] (-) TimerEvent: {}
+[0.610739] (-) TimerEvent: {}
+[0.712152] (-) TimerEvent: {}
+[0.813432] (-) TimerEvent: {}
+[0.914540] (-) TimerEvent: {}
+[1.015661] (-) TimerEvent: {}
+[1.116743] (-) TimerEvent: {}
+[1.217842] (-) TimerEvent: {}
+[1.319489] (-) TimerEvent: {}
+[1.420519] (-) TimerEvent: {}
+[1.521534] (-) TimerEvent: {}
+[1.622571] (-) TimerEvent: {}
+[1.723625] (-) TimerEvent: {}
+[1.824705] (-) TimerEvent: {}
+[1.925780] (-) TimerEvent: {}
+[2.026994] (-) TimerEvent: {}
+[2.128102] (-) TimerEvent: {}
+[2.229125] (-) TimerEvent: {}
+[2.330899] (-) TimerEvent: {}
+[2.431965] (-) TimerEvent: {}
+[2.534522] (-) TimerEvent: {}
+[2.635628] (-) TimerEvent: {}
+[2.738269] (-) TimerEvent: {}
+[2.839313] (-) TimerEvent: {}
+[2.940798] (-) TimerEvent: {}
+[3.041833] (-) TimerEvent: {}
+[3.142942] (-) TimerEvent: {}
+[3.244055] (-) TimerEvent: {}
+[3.345078] (-) TimerEvent: {}
+[3.446730] (-) TimerEvent: {}
+[3.548823] (-) TimerEvent: {}
+[3.659186] (-) TimerEvent: {}
+[3.761289] (-) TimerEvent: {}
+[3.863708] (-) TimerEvent: {}
+[3.966199] (-) TimerEvent: {}
+[4.069102] (-) TimerEvent: {}
+[4.170511] (-) TimerEvent: {}
+[4.272895] (-) TimerEvent: {}
+[4.373977] (-) TimerEvent: {}
+[4.475118] (-) TimerEvent: {}
+[4.576216] (-) TimerEvent: {}
+[4.677285] (-) TimerEvent: {}
+[4.778502] (-) TimerEvent: {}
+[4.879568] (-) TimerEvent: {}
+[4.980547] (-) TimerEvent: {}
+[5.081478] (-) TimerEvent: {}
+[5.182650] (-) TimerEvent: {}
+[5.283622] (-) TimerEvent: {}
+[5.384767] (-) TimerEvent: {}
+[5.486157] (-) TimerEvent: {}
+[5.587182] (-) TimerEvent: {}
+[5.688551] (-) TimerEvent: {}
+[5.789610] (-) TimerEvent: {}
+[5.892722] (-) TimerEvent: {}
+[5.994306] (-) TimerEvent: {}
+[6.095456] (-) TimerEvent: {}
+[6.196444] (-) TimerEvent: {}
+[6.297548] (-) TimerEvent: {}
+[6.399381] (-) TimerEvent: {}
+[6.500301] (-) TimerEvent: {}
+[6.601345] (-) TimerEvent: {}
+[6.703188] (-) TimerEvent: {}
+[6.805690] (-) TimerEvent: {}
+[6.908044] (-) TimerEvent: {}
+[7.012766] (-) TimerEvent: {}
+[7.113982] (-) TimerEvent: {}
+[7.216155] (-) TimerEvent: {}
+[7.318062] (-) TimerEvent: {}
+[7.419135] (-) TimerEvent: {}
+[7.521733] (-) TimerEvent: {}
+[7.623480] (-) TimerEvent: {}
+[7.724894] (-) TimerEvent: {}
+[7.826615] (-) TimerEvent: {}
+[7.928087] (-) TimerEvent: {}
+[8.029261] (-) TimerEvent: {}
+[8.130734] (-) TimerEvent: {}
+[8.232151] (-) TimerEvent: {}
+[8.335936] (-) TimerEvent: {}
+[8.438905] (-) TimerEvent: {}
+[8.540711] (-) TimerEvent: {}
+[8.643213] (-) TimerEvent: {}
+[8.745129] (-) TimerEvent: {}
+[8.846274] (-) TimerEvent: {}
+[8.947921] (-) TimerEvent: {}
+[9.050259] (-) TimerEvent: {}
+[9.151447] (-) TimerEvent: {}
+[9.253009] (-) TimerEvent: {}
+[9.357166] (-) TimerEvent: {}
+[9.459089] (-) TimerEvent: {}
+[9.560441] (-) TimerEvent: {}
+[9.661945] (-) TimerEvent: {}
+[9.763774] (-) TimerEvent: {}
+[9.864965] (-) TimerEvent: {}
+[9.966524] (-) TimerEvent: {}
+[10.068202] (-) TimerEvent: {}
+[10.169839] (-) TimerEvent: {}
+[10.272752] (-) TimerEvent: {}
+[10.374547] (-) TimerEvent: {}
+[10.475676] (-) TimerEvent: {}
+[10.576715] (-) TimerEvent: {}
+[10.677860] (-) TimerEvent: {}
+[10.779029] (-) TimerEvent: {}
+[10.880208] (-) TimerEvent: {}
+[10.981313] (-) TimerEvent: {}
+[11.082981] (-) TimerEvent: {}
+[11.184537] (-) TimerEvent: {}
+[11.286189] (-) TimerEvent: {}
+[11.387459] (-) TimerEvent: {}
+[11.489422] (-) TimerEvent: {}
+[11.591136] (-) TimerEvent: {}
+[11.692412] (-) TimerEvent: {}
+[11.793672] (-) TimerEvent: {}
+[11.895925] (-) TimerEvent: {}
+[11.997325] (-) TimerEvent: {}
+[12.098579] (-) TimerEvent: {}
+[12.202664] (-) TimerEvent: {}
+[12.305761] (-) TimerEvent: {}
+[12.408062] (-) TimerEvent: {}
+[12.509138] (-) TimerEvent: {}
+[12.611865] (-) TimerEvent: {}
+[12.712843] (-) TimerEvent: {}
+[12.813959] (-) TimerEvent: {}
+[12.915177] (-) TimerEvent: {}
+[13.016218] (-) TimerEvent: {}
+[13.117263] (-) TimerEvent: {}
+[13.218566] (-) TimerEvent: {}
+[13.319673] (-) TimerEvent: {}
+[13.420639] (-) TimerEvent: {}
+[13.522569] (-) TimerEvent: {}
+[13.623605] (-) TimerEvent: {}
+[13.725429] (-) TimerEvent: {}
+[13.826561] (-) TimerEvent: {}
+[13.928228] (-) TimerEvent: {}
+[14.029315] (-) TimerEvent: {}
+[14.130780] (-) TimerEvent: {}
+[14.232071] (-) TimerEvent: {}
+[14.333263] (-) TimerEvent: {}
+[14.434580] (-) TimerEvent: {}
+[14.535680] (-) TimerEvent: {}
+[14.636687] (-) TimerEvent: {}
+[14.737815] (-) TimerEvent: {}
+[14.839072] (-) TimerEvent: {}
+[14.940599] (-) TimerEvent: {}
+[15.042148] (-) TimerEvent: {}
+[15.143320] (-) TimerEvent: {}
+[15.244279] (-) TimerEvent: {}
+[15.345822] (-) TimerEvent: {}
+[15.446954] (-) TimerEvent: {}
+[15.548044] (-) TimerEvent: {}
+[15.649030] (-) TimerEvent: {}
+[15.750003] (-) TimerEvent: {}
+[15.851661] (-) TimerEvent: {}
+[15.952633] (-) TimerEvent: {}
+[16.053764] (-) TimerEvent: {}
+[16.154828] (-) TimerEvent: {}
+[16.255826] (-) TimerEvent: {}
+[16.356845] (-) TimerEvent: {}
+[16.457787] (-) TimerEvent: {}
+[16.559043] (-) TimerEvent: {}
+[16.660048] (-) TimerEvent: {}
+[16.761192] (-) TimerEvent: {}
+[16.862468] (-) TimerEvent: {}
+[16.963383] (-) TimerEvent: {}
+[17.064405] (-) TimerEvent: {}
+[17.167774] (-) TimerEvent: {}
+[17.270027] (-) TimerEvent: {}
+[17.373148] (-) TimerEvent: {}
+[17.474630] (-) TimerEvent: {}
+[17.576228] (-) TimerEvent: {}
+[17.677256] (-) TimerEvent: {}
+[17.778219] (-) TimerEvent: {}
+[17.879368] (-) TimerEvent: {}
+[17.980454] (-) TimerEvent: {}
+[18.044752] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.047807] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:31:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.050190] (moto_contor_test) StderrLine: {'line': b' int \x1b[01;31m\x1b[Kmain\x1b[m\x1b[K(int argc, char * argv[])\n'}
+[18.050841] (moto_contor_test) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[18.051245] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:22:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[18.051836] (moto_contor_test) StderrLine: {'line': b' int \x1b[01;36m\x1b[Kmain\x1b[m\x1b[K(int argc,char ** argv)\n'}
+[18.052219] (moto_contor_test) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[18.052726] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:35:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAudioTalkDemo\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[18.053163] (moto_contor_test) StderrLine: {'line': b'   auto node = std::make_shared<\x1b[01;31m\x1b[KAudioTalkDemo\x1b[m\x1b[K>();\n'}
+[18.053529] (moto_contor_test) StderrLine: {'line': b'                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.058563] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:35:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.059637] (moto_contor_test) StderrLine: {'line': b'   auto node = std::make_shared<AudioTalkDemo>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[18.060120] (moto_contor_test) StderrLine: {'line': b'                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[18.060546] (moto_contor_test) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/7/memory:81:0\x1b[m\x1b[K,\n'}
+[18.060919] (moto_contor_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:1\x1b[m\x1b[K:\n'}
+[18.061316] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:703:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\n'}
+[18.061695] (moto_contor_test) StderrLine: {'line': b'     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[18.062096] (moto_contor_test) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.062729] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:703:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.063128] (moto_contor_test) StderrLine: {'line': b'\x1b[01m\x1b[K/SDCARD/workspace/moto_contor_test/src/contor_led.cpp:35:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[18.063533] (moto_contor_test) StderrLine: {'line': b'   auto node = std::make_shared<AudioTalkDemo>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[18.063915] (moto_contor_test) StderrLine: {'line': b'                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[18.080689] (-) TimerEvent: {}
+[18.181804] (-) TimerEvent: {}
+[18.283491] (-) TimerEvent: {}
+[18.384502] (-) TimerEvent: {}
+[18.485545] (-) TimerEvent: {}
+[18.586613] (-) TimerEvent: {}
+[18.688002] (-) TimerEvent: {}
+[18.789410] (-) TimerEvent: {}
+[18.890828] (-) TimerEvent: {}
+[18.991754] (-) TimerEvent: {}
+[19.093168] (-) TimerEvent: {}
+[19.194804] (-) TimerEvent: {}
+[19.295782] (-) TimerEvent: {}
+[19.396783] (-) TimerEvent: {}
+[19.498275] (-) TimerEvent: {}
+[19.599745] (-) TimerEvent: {}
+[19.701079] (-) TimerEvent: {}
+[19.802538] (-) TimerEvent: {}
+[19.909024] (-) TimerEvent: {}
+[20.010103] (-) TimerEvent: {}
+[20.111216] (-) TimerEvent: {}
+[20.212292] (-) TimerEvent: {}
+[20.313292] (-) TimerEvent: {}
+[20.414712] (-) TimerEvent: {}
+[20.515752] (-) TimerEvent: {}
+[20.616759] (-) TimerEvent: {}
+[20.717724] (-) TimerEvent: {}
+[20.818832] (-) TimerEvent: {}
+[20.919998] (-) TimerEvent: {}
+[21.021102] (-) TimerEvent: {}
+[21.122169] (-) TimerEvent: {}
+[21.223311] (-) TimerEvent: {}
+[21.324364] (-) TimerEvent: {}
+[21.425493] (-) TimerEvent: {}
+[21.526704] (-) TimerEvent: {}
+[21.627707] (-) TimerEvent: {}
+[21.728745] (-) TimerEvent: {}
+[21.830500] (-) TimerEvent: {}
+[21.931649] (-) TimerEvent: {}
+[22.032740] (-) TimerEvent: {}
+[22.133809] (-) TimerEvent: {}
+[22.234973] (-) TimerEvent: {}
+[22.338605] (-) TimerEvent: {}
+[22.439708] (-) TimerEvent: {}
+[22.541734] (-) TimerEvent: {}
+[22.643440] (-) TimerEvent: {}
+[22.744520] (-) TimerEvent: {}
+[22.848823] (-) TimerEvent: {}
+[22.949914] (-) TimerEvent: {}
+[23.051098] (-) TimerEvent: {}
+[23.152116] (-) TimerEvent: {}
+[23.254864] (-) TimerEvent: {}
+[23.355853] (-) TimerEvent: {}
+[23.456789] (-) TimerEvent: {}
+[23.557796] (-) TimerEvent: {}
+[23.658796] (-) TimerEvent: {}
+[23.759751] (-) TimerEvent: {}
+[23.860647] (-) TimerEvent: {}
+[23.961556] (-) TimerEvent: {}
+[24.062546] (-) TimerEvent: {}
+[24.163509] (-) TimerEvent: {}
+[24.264519] (-) TimerEvent: {}
+[24.365488] (-) TimerEvent: {}
+[24.466559] (-) TimerEvent: {}
+[24.567575] (-) TimerEvent: {}
+[24.668608] (-) TimerEvent: {}
+[24.769675] (-) TimerEvent: {}
+[24.870781] (-) TimerEvent: {}
+[24.971926] (-) TimerEvent: {}
+[25.072974] (-) TimerEvent: {}
+[25.174095] (-) TimerEvent: {}
+[25.275227] (-) TimerEvent: {}
+[25.376085] (-) TimerEvent: {}
+[25.477292] (-) TimerEvent: {}
+[25.578236] (-) TimerEvent: {}
+[25.679365] (-) TimerEvent: {}
+[25.780596] (-) TimerEvent: {}
+[25.881657] (-) TimerEvent: {}
+[25.982772] (-) TimerEvent: {}
+[26.083991] (-) TimerEvent: {}
+[26.185102] (-) TimerEvent: {}
+[26.286505] (-) TimerEvent: {}
+[26.387648] (-) TimerEvent: {}
+[26.488850] (-) TimerEvent: {}
+[26.589931] (-) TimerEvent: {}
+[26.691102] (-) TimerEvent: {}
+[26.792087] (-) TimerEvent: {}
+[26.893051] (-) TimerEvent: {}
+[26.994541] (-) TimerEvent: {}
+[27.096104] (-) TimerEvent: {}
+[27.197544] (-) TimerEvent: {}
+[27.299584] (-) TimerEvent: {}
+[27.401390] (-) TimerEvent: {}
+[27.502522] (-) TimerEvent: {}
+[27.603539] (-) TimerEvent: {}
+[27.704639] (-) TimerEvent: {}
+[27.805762] (-) TimerEvent: {}
+[27.907398] (-) TimerEvent: {}
+[28.008746] (-) TimerEvent: {}
+[28.110415] (-) TimerEvent: {}
+[28.211864] (-) TimerEvent: {}
+[28.312857] (-) TimerEvent: {}
+[28.413857] (-) TimerEvent: {}
+[28.515336] (-) TimerEvent: {}
+[28.616461] (-) TimerEvent: {}
+[28.717507] (-) TimerEvent: {}
+[28.818619] (-) TimerEvent: {}
+[28.919741] (-) TimerEvent: {}
+[29.020797] (-) TimerEvent: {}
+[29.121934] (-) TimerEvent: {}
+[29.225588] (-) TimerEvent: {}
+[29.327104] (-) TimerEvent: {}
+[29.428553] (-) TimerEvent: {}
+[29.530073] (-) TimerEvent: {}
+[29.533907] (moto_contor_test) StderrLine: {'line': b'make[2]: *** [CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o] Error 1\n'}
+[29.534838] (moto_contor_test) StdoutLine: {'line': b"CMakeFiles/contor_led_node.dir/build.make:75: recipe for target 'CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o' failed\n"}
+[29.536263] (moto_contor_test) StdoutLine: {'line': b"CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/contor_led_node.dir/all' failed\n"}
+[29.538880] (moto_contor_test) StderrLine: {'line': b'make[1]: *** [CMakeFiles/contor_led_node.dir/all] Error 2\n'}
+[29.542437] (moto_contor_test) StdoutLine: {'line': b"Makefile:145: recipe for target 'all' failed\n"}
+[29.551833] (moto_contor_test) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[29.559643] (moto_contor_test) CommandEnded: {'returncode': 2}
+[29.634010] (-) TimerEvent: {}
+[29.703696] (moto_contor_test) JobEnded: {'identifier': 'moto_contor_test', 'rc': 2}
+[29.716284] (-) EventReactorShutdown: {}

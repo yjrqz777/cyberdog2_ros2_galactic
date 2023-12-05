@@ -1,0 +1,4 @@
+source;share/talk_something/local_setup.bash
+source;share/talk_something/local_setup.dsv
+source;share/talk_something/local_setup.sh
+source;share/talk_something/local_setup.zsh

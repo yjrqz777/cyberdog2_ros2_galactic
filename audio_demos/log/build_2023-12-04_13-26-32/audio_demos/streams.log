@@ -1,0 +1,36 @@
+[0.114s] Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+[0.528s] [ 25%] Built target set_mic
+[0.619s] [ 50%] Built target set_waken_words
+[0.708s] [ 62%] [32mBuilding CXX object CMakeFiles/set_voice.dir/src/set_voice.cpp.o[0m
+[28.007s] [ 75%] [32m[1mLinking CXX executable set_voice[0m
+[30.211s] [ 75%] Built target set_voice
+[30.306s] [ 87%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[64.056s] [100%] [32m[1mLinking CXX executable talker[0m
+[66.260s] [100%] Built target talker
+[66.281s] Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/audio_demos/build/audio_demos -- -j6 -l6
+[66.424s] Invoking command in '/SDCARD/workspace/audio_demos/build/audio_demos': /usr/local/bin/cmake --install /SDCARD/workspace/audio_demos/build/audio_demos
+[66.442s] -- Install configuration: ""
+[66.444s] -- Installing: /opt/ros2/cyberdog/lib/audio_demos/talker
+[66.473s] -- Set runtime path of "/opt/ros2/cyberdog/lib/audio_demos/talker" to ""
+[66.477s] -- Up-to-date: /opt/ros2/cyberdog/lib/audio_demos/set_mic
+[66.479s] -- Installing: /opt/ros2/cyberdog/lib/audio_demos/set_voice
+[66.505s] -- Set runtime path of "/opt/ros2/cyberdog/lib/audio_demos/set_voice" to ""
+[66.507s] -- Up-to-date: /opt/ros2/cyberdog/lib/audio_demos/set_waken_words
+[66.509s] -- Up-to-date: /opt/ros2/cyberdog/share/ament_index/resource_index/package_run_dependencies/audio_demos
+[66.510s] -- Up-to-date: /opt/ros2/cyberdog/share/ament_index/resource_index/parent_prefix_path/audio_demos
+[66.511s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/ament_prefix_path.sh
+[66.512s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/ament_prefix_path.dsv
+[66.512s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/path.sh
+[66.513s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/path.dsv
+[66.513s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.bash
+[66.515s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.sh
+[66.516s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.zsh
+[66.516s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.dsv
+[66.519s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/package.dsv
+[66.521s] -- Up-to-date: /opt/ros2/cyberdog/share/ament_index/resource_index/packages/audio_demos
+[66.530s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/ament_cmake_export_include_directories-extras.cmake
+[66.538s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/ament_cmake_export_dependencies-extras.cmake
+[66.540s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/audio_demosConfig.cmake
+[66.541s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/audio_demosConfig-version.cmake
+[66.543s] -- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/package.xml
+[66.551s] Invoked command in '/SDCARD/workspace/audio_demos/build/audio_demos' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/audio_demos/build/audio_demos

@@ -1,0 +1,18 @@
+[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:[m[K In constructor ‘[01m[KtalkersNode::talkersNode(std::__cxx11::string)[m[K’:
+[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:26:90:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtalkersNode::create_wall_timer(int, std::_Bind_helper<false, void (talkersNode::*)(), talkersNode*>::type)[m[K’
+         timer_ =this->create_wall_timer(100,std::bind(&talkersNode::timer_callback, this)[01;31m[K)[m[K;
+                                                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros2/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28:0[m[K,
+                 from [01m[K/opt/ros2/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros2/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:5[m[K:
+[01m[K/opt/ros2/galactic/include/rclcpp/node.hpp:237:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)
+   [01;36m[Kcreate_wall_timer[m[K(
+   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros2/galactic/include/rclcpp/node.hpp:237:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:26:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+         timer_ =this->create_wall_timer(100,std::bind(&talkersNode::timer_callback, this)[01;36m[K)[m[K;
+                                                                                          [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/talks_node.dir/src/talkers.cpp.o] Error 1
+make[1]: *** [CMakeFiles/talks_node.dir/all] Error 2
+make: *** [all] Error 2

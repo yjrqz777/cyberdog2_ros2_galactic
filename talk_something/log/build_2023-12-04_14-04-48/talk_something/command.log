@@ -1,0 +1,2 @@
+Invoking command in '/SDCARD/workspace/talk_something/build/talk_something': /usr/local/bin/cmake /SDCARD/workspace/talk_something -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/talk_something/install/talk_something
+Invoked command in '/SDCARD/workspace/talk_something/build/talk_something' returned '1': /usr/local/bin/cmake /SDCARD/workspace/talk_something -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/talk_something/install/talk_something

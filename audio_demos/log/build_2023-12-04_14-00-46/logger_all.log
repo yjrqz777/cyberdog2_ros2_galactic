@@ -1,0 +1,47 @@
+[1.708s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install', '--packages-select', 'talk_something']
+[1.709s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fad6ad8d0>>, merge_install=True, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['talk_something'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fad6ad8d0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fad5ff2b0>)
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.734s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.734s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.737s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/SDCARD/workspace/audio_demos'
+[1.738s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.741s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.741s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.159s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'audio_demos'
+[2.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.165s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'talk_something' in --packages-select
+[2.262s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'audio_demos' in '.'
+[2.320s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.334s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.335s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.337s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.368s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.369s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.369s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.441s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.462s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.464s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/audio_demos/install/local_setup.ps1'
+[2.469s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/audio_demos/install/_local_setup_util_ps1.py'
+[2.476s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/audio_demos/install/setup.ps1'
+[2.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/audio_demos/install/local_setup.sh'
+[2.486s] INFO:colcon.colcon_core.shell:Creating prefix util module '/SDCARD/workspace/audio_demos/install/_local_setup_util_sh.py'
+[2.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/audio_demos/install/setup.sh'
+[2.496s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/audio_demos/install/local_setup.bash'
+[2.499s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/audio_demos/install/setup.bash'
+[2.505s] INFO:colcon.colcon_core.shell:Creating prefix script '/SDCARD/workspace/audio_demos/install/local_setup.zsh'
+[2.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/SDCARD/workspace/audio_demos/install/setup.zsh'

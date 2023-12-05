@@ -1,0 +1,26 @@
+[ 25%] Built target set_mic
+[ 50%] Built target set_waken_words
+[ 75%] Built target set_voice
+[100%] Built target talker
+-- Install configuration: ""
+-- Up-to-date: /opt/ros2/cyberdog/lib/audio_demos/talker
+-- Up-to-date: /opt/ros2/cyberdog/lib/audio_demos/set_mic
+-- Up-to-date: /opt/ros2/cyberdog/lib/audio_demos/set_voice
+-- Up-to-date: /opt/ros2/cyberdog/lib/audio_demos/set_waken_words
+-- Up-to-date: /opt/ros2/cyberdog/share/ament_index/resource_index/package_run_dependencies/audio_demos
+-- Up-to-date: /opt/ros2/cyberdog/share/ament_index/resource_index/parent_prefix_path/audio_demos
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/ament_prefix_path.sh
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/ament_prefix_path.dsv
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/path.sh
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/environment/path.dsv
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.bash
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.sh
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.zsh
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/local_setup.dsv
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/package.dsv
+-- Up-to-date: /opt/ros2/cyberdog/share/ament_index/resource_index/packages/audio_demos
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/audio_demosConfig.cmake
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/cmake/audio_demosConfig-version.cmake
+-- Up-to-date: /opt/ros2/cyberdog/share/audio_demos/package.xml
