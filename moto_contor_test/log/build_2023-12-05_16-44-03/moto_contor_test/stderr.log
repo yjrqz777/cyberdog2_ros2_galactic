@@ -1,5 +1,0 @@
-CMake Error at cmake_install.cmake:77 (file):
-  file INSTALL cannot find "/SDCARD/workspace/moto_contor_test/config": No
-  such file or directory.
-
-

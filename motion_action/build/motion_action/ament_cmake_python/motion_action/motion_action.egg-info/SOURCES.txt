@@ -1,6 +1,0 @@
-setup.py
-motion_action/__init__.py
-motion_action.egg-info/PKG-INFO
-motion_action.egg-info/SOURCES.txt
-motion_action.egg-info/dependency_links.txt
-motion_action.egg-info/top_level.txt

@@ -1,7 +1,0 @@
-CMake Error at /opt/ros2/galactic/share/ament_cmake_export_include_directories/cmake/ament_export_include_directories.cmake:30 (message):
-  ament_export_include_directories() must be called before ament_package()
-Call Stack (most recent call first):
-  CMakeLists.txt:78 (ament_export_include_directories)
-
-
-make: *** [cmake_check_build_system] Error 1

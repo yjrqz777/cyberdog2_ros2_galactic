@@ -1,6 +1,0 @@
-CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o: In function `get_logger()':
-/opt/ros2/cyberdog/include/cyberdog_common/cyberdog_log.hpp:72: undefined reference to `cyberdog::common::CyberdogLoggerFactory::Get_Logger()'
-collect2: error: ld returned 1 exit status
-make[2]: *** [contor_led_node] Error 1
-make[1]: *** [CMakeFiles/contor_led_node.dir/all] Error 2
-make: *** [all] Error 2

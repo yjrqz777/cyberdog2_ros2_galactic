@@ -1,5 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/contor_led_node.dir/src/contor_led.cpp.o[0m
-[100%] [32m[1mLinking CXX executable contor_led_node[0m
-CMakeFiles/contor_led_node.dir/build.make:174: recipe for target 'contor_led_node' failed
-CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/contor_led_node.dir/all' failed
-Makefile:145: recipe for target 'all' failed

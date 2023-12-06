@@ -58,6 +58,7 @@ public:
       FATAL("Service not avalible");
       return;
     }
+    INFO("111111111111111111111111");
     cmd_preset_ = ament_index_cpp::get_package_share_directory("motion_action") + "/preset/" + argv[1] + ".toml";
     cmd_def_ = ament_index_cpp::get_package_share_directory("motion_action") + "/preset/user_gait_" + argv[1] + ".toml";
     if(std::atoi(argv[1]) < 400) {

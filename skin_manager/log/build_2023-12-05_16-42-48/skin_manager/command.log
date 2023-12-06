@@ -1,4 +1,0 @@
-Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
-Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '0': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
-Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake --install /SDCARD/workspace/skin_manager/build/skin_manager
-Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '0': /usr/local/bin/cmake --install /SDCARD/workspace/skin_manager/build/skin_manager

@@ -70,4 +70,4 @@ ros2 topic pub /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend protocol/msg/Aud
 
 
 
-ros2 run motion_action controller_test "{mode: 111}" --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+ros2 run motion_action client_test "{mode: 111}" --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c

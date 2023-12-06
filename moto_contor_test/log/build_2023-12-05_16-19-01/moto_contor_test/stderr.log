@@ -1,5 +1,0 @@
-/usr/bin/ld: cannot find -lgalaxy-fds-sdk-cpp
-collect2: error: ld returned 1 exit status
-make[2]: *** [libcontor_led_node.so] Error 1
-make[1]: *** [CMakeFiles/contor_led_node.dir/all] Error 2
-make: *** [all] Error 2

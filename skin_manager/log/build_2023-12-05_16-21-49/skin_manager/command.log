@@ -1,4 +1,0 @@
-Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake /SDCARD/workspace/skin_manager -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/skin_manager/install/skin_manager
-Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '0': /usr/local/bin/cmake /SDCARD/workspace/skin_manager -DCMAKE_INSTALL_PREFIX=/SDCARD/workspace/skin_manager/install/skin_manager
-Invoking command in '/SDCARD/workspace/skin_manager/build/skin_manager': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6
-Invoked command in '/SDCARD/workspace/skin_manager/build/skin_manager' returned '2': /usr/local/bin/cmake --build /SDCARD/workspace/skin_manager/build/skin_manager -- -j6 -l6

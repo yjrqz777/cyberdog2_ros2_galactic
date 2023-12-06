@@ -1,8 +1,0 @@
-[01m[K/SDCARD/workspace/motion_action/test/manager_test.cpp:250:1:[m[K [01;31m[Kfatal error: [m[Kerror writing to /tmp/ccnrml22.s: No space left on device
- [01;31m[K}[m[K
-
- [01;31m[K^[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/manager_test.dir/test/manager_test.cpp.o] Error 1
-make[1]: *** [CMakeFiles/manager_test.dir/all] Error 2
-make: *** [all] Error 2

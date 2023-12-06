@@ -1,4 +1,0 @@
-[ 50%] [32m[1mLinking CXX shared library libskin_manager.so[0m
-CMakeFiles/skin_manager.dir/build.make:176: recipe for target 'libskin_manager.so' failed
-CMakeFiles/Makefile2:110: recipe for target 'CMakeFiles/skin_manager.dir/all' failed
-Makefile:145: recipe for target 'all' failed
