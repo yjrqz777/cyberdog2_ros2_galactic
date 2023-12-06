@@ -1,0 +1,118 @@
+2.1 基本控制
+基本控制指令用于调用运控预制的各个基本动作和步态并设定相应的参数，比如坐下、行走等动作。它所用到的LCM通道和数据结构信息如下：
+
+/** lcm通道信息
+- url: "udpm://239.255.76.67:7671?ttl=255"
+- channel: "robot_control_cmd"
+- frequncy: 2~500HZ，超时500ms触发趴下保护
+*/
+
+/** lcm数据结构 **/
+struct robot_control_cmd_lcmt {
+    int8_t   mode;
+    int8_t   gait_id;
+    int8_t   contact;           // Whether the four feet touch the ground
+    int8_t   life_count;        // Life count, command takes effect when count incremented
+    float    vel_des[ 3 ];      // x y(1.6) yaw speed(2.5)  m/s 
+    float    rpy_des[ 3 ];      // roll pitch yaw(0.45)  rad
+    float    pos_des[ 3 ];      // x y z(0.1-0.32)  m
+    float    acc_des[ 6 ];      // acc for jump m^2/s
+    float    ctrl_point[ 3 ];   // pose ctrl point  m
+    float    foot_pose[ 6 ];    // front/back foot pose x,y,z  m
+    float    step_height[ 2 ];  // step height when trot 0~0.08m
+    int32_t  value;             // bit0: 在舞蹈模式，use_mpc_traj 是否使用MPC轨迹
+                                // bit1: 0表示内八节能步态   1表示垂直步态
+    int32_t  duration;          // Time of command execution
+}
+
+"{mode: 12,
+gait_id: 0,
+contact: 0x0F,
+life_count: 0,
+vel_des: [0.0,0.0,0.0],
+rpy_des: [0.0,0.0,0.0],
+pos_des: [0.0,0.0,0.0],
+acc_des: [0.0,0.0,0.0,0.0,0.0,0.0],
+ctrl_point: [0.0,0.0,0.0],
+foot_pose: [0.0,0.0,0.0,0.0,0.0,0.0],
+step_height: [0.0,0.0],
+value: 0,
+duration: 0}"
+
+ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/motion_queue_cmd protocol/srv/MotionQueueCustomCmd "{mode: 12,gait_id: 0,contact: 0x0F,life_count: 0,vel_des: [0.0,0.0,0.0],rpy_des: [0.0,0.0,0.0],pos_des: [0.0,0.0,0.0],acc_des: [0.0,0.0,0.0,0.0,0.0,0.0],ctrl_point: [0.0,0.0,0.0],foot_pose: [0.0,0.0,0.0,0.0,0.0,0.0],step_height: [0.0,0.0],value: 0,duration: 0}"
+
+
+ros2 service type /mi_desktop_48_b0_2d_7b_02_9c/motion_result_cmd
+
+ros2 interface show  protocol/srv/MotionResultCmd
+
+Copy to clipboardErrorCopied
+其中：
+
+mode：运控程序中状态机定义的一种状态或模式，详见附表1
+gait_id：mode下细分的子动作，详见附表1
+contact：低四位用于位控姿态模式(mode/gait_id:21/0 )下定义哪条腿抬起，默认值0x0F，表示四条腿都不抬起。如需抬起一条腿，比如：0b1110抬右前腿，0b1101左前腿，0b1011右后腿，0b0111抬左后腿
+life_count：递增的心跳信号(0~255)，用于检测通信是否正常，避免超时，同时确保任务型命令只触发一次。和上一帧数值相同时，当前帧内容被忽略，避免被重复添加到任务栈。
+vel_des/rpy_des：分别控制机器人前进速度，侧移速度，转向速度，俯仰角度，横滚角度和扭动角度
+pos_des：位控姿态模式(mode/gait_id:21/0 )时作为期望质心位置(右手坐标系，前x+，左y+，上z+)偏移量 ，普通模式pos_des[2]用于表示身体质心距地面高度
+acc_des：用于mode=22时FORCE_JUMP跳跃动作控制
+ctrl_point：mode=21时(POSE_CTRL)作为俯仰角控制中心点坐标
+foot_pose：位控姿态模式(mode/gait_id:21/0 )时，抬起腿足端的坐标偏移，用于握手等，后3位为视觉行走时后腿抬腿位置预留
+step_height：行走时，前后腾空腿抬腿高度 0~0.06m
+value(bit0~bit31) : 其他和具体模式相关参数，比如
+行走模式：
+bit2: 0: 正常模式，1:出厂前触发速度偏置校准，步态速度vel_des值会被作为偏置量存储
+bit1: 0: 表示内八步态 1:表示垂直步态
+自定义步态模式：
+uint32_t 表示自定义步态是否使用MPC轨迹(use_mpc_traj)
+duration: 期望命令块对应动作持续时间，单位ms，最小执行单元2ms
+等于0时：
+表示持续，不限制动作执行时间，直到新指令更新。使用场景: 比如行走类指令(可以一直行走，直到速度更新或者切换动作)，如恢复站立等实际执行时间不定类动作（比如当机器人发现已接近站立，可快速完成，若发现摔倒，需要先翻身再站立，耗时较长）
+大于0时：
+表示指定该动作在运控控制命令序列栈里停留时间，间接控制动作期望执行时间。使用场景：比如增量位置控制动作（此时该变量可指定身体用多久的时间（间接控制速度）向目标姿态进行动作）；比如实现一段开环姿态调整，抬起一条腿进行握手动作，对于这一系列的命令块，可以通过该值指定每个动作的期望执行时间，进而实现对一段开环动作指令的短时间连续下发。
+综上，可以看出，duration=0时，主要用于实时控制，上层需实时检测机器人实时状态和命令执行情况，进而持续更新命令，详细使用可参考2.4.1内的基本动作。duration>0时，主要用于开环序列控制，比如一段舞蹈动作，指定每个动作的执行时间，详细使用可参考2.4.2的序列动作。
+值得注意的是，当指定时间小于动作本身执行所需的最小时间，等于进行请求切换动作，切换请求会失败，进而占用下一任务动作的时间，当动作小于设定时间提前结束时，动作会保持不动直到指定时间结束。另外duration=0的动作，有更高的执行优先级，会覆盖先前任务类动作序列。
+
+
+
+
+
+motion_id: 111
+contact: 15
+order_process_bar: 100
+switch_status: 0
+ori_error: 0
+footpos_error: 0
+motor_error:
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+- -2147483648
+---
+motion_id: 101
+contact: 0
+order_process_bar: 100
+switch_status: 0
+ori_error: 0
+footpos_error: 0
+motor_error:
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0

@@ -5,13 +5,17 @@ git config --global user.name "yjrqz777"
 git config --global user.email  3210551161@qq.com
 
 
-ros2 pkg create moto_contor_test --build-type ament_cmake --dependencies rclcpp
+ros2 pkg create motion_contor --build-type ament_cmake --dependencies rclcpp
 
 colcon build --merge-install --packages-select moto_contor_test
 
 ros2 run moto_contor_test talks_node --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/"`
 
 ros2 run moto_contor_test talks_node --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+
+ros2 run motion_action2 client_test --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+
+                                                         /mi_desktop_48_b0_2d_7b_02_9c/motion_sequence_cmd
 
 ros2 run moto_contor_test set_voice --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
 ros2 run audio_demos set_voice --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/"`
@@ -70,4 +74,6 @@ ros2 topic pub /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend protocol/msg/Aud
 
 
 
-ros2 run motion_action client_test "{mode: 111}" --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+ros2 run motion_action client_test --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c "{mode: 111}" 
+
+

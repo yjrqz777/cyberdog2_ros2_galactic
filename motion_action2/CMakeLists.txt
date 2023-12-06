@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(motion_action)
+project(motion_action2)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic -g)
@@ -27,7 +27,7 @@ find_package(skin_manager REQUIRED)
 
 include_directories(include)
 
-add_library(${PROJECT_NAME} SHARED src/motion_action.cpp)
+add_library(${PROJECT_NAME} SHARED src/motion_action2.cpp)
 target_link_libraries(${PROJECT_NAME} lcm)
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
@@ -43,17 +43,17 @@ ament_target_dependencies(${PROJECT_NAME}
 # target_link_libraries(manager_test ${PROJECT_NAME} lcm)
 # ament_target_dependencies(manager_test lcm cyberdog_common cyberdog_debug)
 
-add_executable(manager_test test/manager_test.cpp)
-target_link_libraries(manager_test ${PROJECT_NAME} lcm)
-ament_target_dependencies(manager_test lcm cyberdog_common cyberdog_debug)
+# add_executable(manager_test test/manager_test.cpp)
+# target_link_libraries(manager_test ${PROJECT_NAME} lcm)
+# ament_target_dependencies(manager_test lcm cyberdog_common cyberdog_debug)
 
-add_executable(controller_test test/controller_test.cpp)
-target_link_libraries(controller_test ${PROJECT_NAME} lcm)
-ament_target_dependencies(controller_test lcm cyberdog_common cyberdog_debug)
+# add_executable(controller_test test/controller_test.cpp)
+# target_link_libraries(controller_test ${PROJECT_NAME} lcm)
+# ament_target_dependencies(controller_test lcm cyberdog_common cyberdog_debug)
 
-add_executable(publisher_test test/publisher_test.cpp)
-target_link_libraries(publisher_test ${PROJECT_NAME} lcm)
-ament_target_dependencies(publisher_test lcm cyberdog_common cyberdog_debug)
+# add_executable(publisher_test test/publisher_test.cpp)
+# target_link_libraries(publisher_test ${PROJECT_NAME} lcm)
+# ament_target_dependencies(publisher_test lcm cyberdog_common cyberdog_debug)
 
 add_executable(client_test test/client_test.cpp)
 target_link_libraries(client_test ${PROJECT_NAME} lcm)
@@ -73,9 +73,9 @@ install(
 )
 install(TARGETS
   ${PROJECT_NAME}
-  manager_test
-  controller_test
-  publisher_test
+  # manager_test
+  # controller_test
+  # publisher_test
   client_test
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}

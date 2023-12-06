@@ -53,12 +53,19 @@ public:
 
   void Run(int argc, char ** argv)
   {
-    std::chrono::milliseconds timeout(1000);
+    std::chrono::milliseconds timeout(5000);
+    RCLCPP_INFO(node_ptr_->get_logger(), "Waiting for service%s",argv[1]);
+    // RCLCPP_INFO(node_ptr_->get_logger(), "motion_result_client_==%d",!motion_result_client_->wait_for_service(timeout));
+    // RCLCPP_INFO(node_ptr_->get_logger(), "motion_queue_client_==%d",!motion_queue_client_->wait_for_service(timeout));
+    RCLCPP_INFO(node_ptr_->get_logger(), "is_ok_==%d",!motion_result_client_->wait_for_service(timeout) || !motion_queue_client_->wait_for_service(timeout));
     if (!motion_result_client_->wait_for_service(timeout) || !motion_queue_client_->wait_for_service(timeout)) {
       FATAL("Service not avalible");
+    RCLCPP_INFO(node_ptr_->get_logger(), "motion_result_client_==%d",!motion_result_client_->wait_for_service(timeout));
+    RCLCPP_INFO(node_ptr_->get_logger(), "motion_queue_client_==%d",!motion_queue_client_->wait_for_service(timeout));
       return;
     }
     INFO("111111111111111111111111");
+    RCLCPP_INFO(node_ptr_->get_logger(), "ok for service");
     cmd_preset_ = ament_index_cpp::get_package_share_directory("motion_action") + "/preset/" + argv[1] + ".toml";
     cmd_def_ = ament_index_cpp::get_package_share_directory("motion_action") + "/preset/user_gait_" + argv[1] + ".toml";
     if(std::atoi(argv[1]) < 400) {
@@ -82,7 +89,7 @@ private:
       FATAL("Cannot parse %s", cmd_preset_.c_str());
       exit(-1);
     }
-    // GET_TOML_VALUE(value, "motion_id", req->motion_id);
+    GET_TOML_VALUE(value, "motion_id", req->motion_id);
     req->motion_id = std::atoi(argv[1]);
     GET_TOML_VALUE(value, "vel_des", req->vel_des);
     GET_TOML_VALUE(value, "rpy_des", req->rpy_des);
