@@ -1,5 +1,5 @@
 CMakeFiles/talks_node.dir/src/talkers.cpp.o: \
- /SDCARD/workspace/talk_something/src/talkers.cpp \
+ /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/src/talkers.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/7/chrono \
  /usr/include/c++/7/ratio /usr/include/c++/7/type_traits \
  /usr/include/aarch64-linux-gnu/c++/7/bits/c++config.h \

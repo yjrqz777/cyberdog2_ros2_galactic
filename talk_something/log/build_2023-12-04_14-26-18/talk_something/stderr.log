@@ -1,6 +1,0 @@
-[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:16:5:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KtalkersNode::[m[K’ on member ‘[01m[KtalkersNode[m[K’ [[01;31m[K-fpermissive[m[K]
-     [01;31m[KtalkersNode[m[K(std::string name ):Node(name)
-     [01;31m[K^~~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/talks_node.dir/src/talkers.cpp.o] Error 1
-make[1]: *** [CMakeFiles/talks_node.dir/all] Error 2
-make: *** [all] Error 2

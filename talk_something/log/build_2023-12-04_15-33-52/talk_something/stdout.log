@@ -1,4 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/talks_node.dir/src/talkers.cpp.o[0m
-CMakeFiles/talks_node.dir/build.make:75: recipe for target 'CMakeFiles/talks_node.dir/src/talkers.cpp.o' failed
-CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/talks_node.dir/all' failed
-Makefile:145: recipe for target 'all' failed

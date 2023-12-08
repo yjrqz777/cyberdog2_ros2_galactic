@@ -17,6 +17,9 @@ ros2 run moto_contor_test talks_node --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b
 
 ros2 run motion_action2 client_test --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
 
+
+ros2 run talk_something talks_node --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+
                                                          /mi_desktop_48_b0_2d_7b_02_9c/motion_sequence_cmd
 
 ros2 run moto_contor_test set_voice --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c

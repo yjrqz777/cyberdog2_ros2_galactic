@@ -52,7 +52,7 @@ private:
             RCLCPP_WARN(this->get_logger(), "audio client not ready.");
         }
          
-        talk_topic(true,"你好啊，再见 , place,go,study");
+        talk_topic(false,"你好啊，再见 , place,go,study");
 
         RCLCPP_INFO(this->get_logger(),"-----time:i=%d---------",i);
         i++;

@@ -22,6 +22,7 @@ function _colcon_prefix_chain_powershell_source_script {
 }
 
 # source chained prefixes
+_colcon_prefix_chain_powershell_source_script "/SDCARD/workspace/cyberdog2_ros2_galactic/audio_test/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/opt/ros2/galactic\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/opt/ros2/cyberdog\local_setup.ps1"
 

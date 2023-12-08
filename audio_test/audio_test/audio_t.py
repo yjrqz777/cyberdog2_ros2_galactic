@@ -13,15 +13,23 @@ from std_msgs.msg import UInt8
 
 mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 
+"""
+/audio_test$ colcon build
+ros2 run audio_test audio_node
+"""
+
+
 class AudioT(Node):
     def __init__(self,name):
         super().__init__(name)
         self.time_per = 1
         self.count = 0
-        self.pub_audio_get = self.create_publisher(UInt8, mi_node + "volume_set", 10)
-        
+        self.get_audio_stat = self.create_client(AudioExecute,"get_audio_state")   
+        self.get_logger().warn("self.get_audio_stat==%s"%self.get_audio_stat)
+        # rclpy.shutdown()
+        self.pub_volume_get = self.create_publisher(UInt8, mi_node + "volume_set", 10)
         self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
-        msg_send = AudioPlayExtend()
+        
 
 # '''
 # string module_name
@@ -39,15 +47,17 @@ class AudioT(Node):
 # '''
         msg_volume = UInt8()
         msg_volume.data = 20
-        self.pub_audio_get.publish(msg_volume)
+        self.pub_volume_get.publish(msg_volume)
 
 
-
-        msg_send.is_online = False
+        msg_send = AudioPlayExtend()
+        msg_send.is_online = True
         msg_send.module_name = "AudioTalkDemo"
-        msg_send.speech.module_name = "AudioTalkDemo"
-        msg_send.speech.play_id = 32
+        msg_send._speech.module_name = "AudioTalkDemo"
+        msg_send._speech.play_id = 32
         msg_send.text = "你好"
+        if self.get_audio_stat == None:
+            self.get_logger().error("self.get_audio_stat--is-no-ok")
 
         self.pub_audio_send.publish(msg_send)
         self.get_logger().info("111111-------")

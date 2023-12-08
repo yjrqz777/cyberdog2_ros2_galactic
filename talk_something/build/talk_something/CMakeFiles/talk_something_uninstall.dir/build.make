@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /SDCARD/workspace/talk_something
+CMAKE_SOURCE_DIR = /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /SDCARD/workspace/talk_something/build/talk_something
+CMAKE_BINARY_DIR = /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something
 
 # Utility rule file for talk_something_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/talk_something_uninstall.dir/compiler_depend.make
 include CMakeFiles/talk_something_uninstall.dir/progress.make
 
 CMakeFiles/talk_something_uninstall:
-	/usr/local/bin/cmake -P /SDCARD/workspace/talk_something/build/talk_something/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/local/bin/cmake -P /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 talk_something_uninstall: CMakeFiles/talk_something_uninstall
 talk_something_uninstall: CMakeFiles/talk_something_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/talk_something_uninstall.dir/clean:
 .PHONY : CMakeFiles/talk_something_uninstall.dir/clean
 
 CMakeFiles/talk_something_uninstall.dir/depend:
-	cd /SDCARD/workspace/talk_something/build/talk_something && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /SDCARD/workspace/talk_something /SDCARD/workspace/talk_something /SDCARD/workspace/talk_something/build/talk_something /SDCARD/workspace/talk_something/build/talk_something /SDCARD/workspace/talk_something/build/talk_something/CMakeFiles/talk_something_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/CMakeFiles/talk_something_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/talk_something_uninstall.dir/depend
 

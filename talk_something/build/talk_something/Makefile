@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /SDCARD/workspace/talk_something
+CMAKE_SOURCE_DIR = /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /SDCARD/workspace/talk_something/build/talk_something
+CMAKE_BINARY_DIR = /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /SDCARD/workspace/talk_something/build/talk_something/CMakeFiles /SDCARD/workspace/talk_something/build/talk_something//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/CMakeFiles /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /SDCARD/workspace/talk_something/build/talk_something/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

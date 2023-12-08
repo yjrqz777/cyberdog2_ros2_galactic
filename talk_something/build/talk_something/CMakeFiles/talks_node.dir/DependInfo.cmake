@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/SDCARD/workspace/talk_something/src/talkers.cpp" "CMakeFiles/talks_node.dir/src/talkers.cpp.o" "gcc" "CMakeFiles/talks_node.dir/src/talkers.cpp.o.d"
+  "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/src/talkers.cpp" "CMakeFiles/talks_node.dir/src/talkers.cpp.o" "gcc" "CMakeFiles/talks_node.dir/src/talkers.cpp.o.d"
   )
 
 # Targets to which this target links.

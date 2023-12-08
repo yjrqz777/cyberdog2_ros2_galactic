@@ -1,3 +1,6 @@
 log
 build
 install
+./*/install
+./*/build
+./*/log

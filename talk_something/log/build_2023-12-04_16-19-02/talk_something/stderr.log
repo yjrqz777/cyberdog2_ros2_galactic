@@ -1,4 +1,0 @@
-[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:[m[K In member function ‘[01m[Kvoid talkersNode::talk_topic(bool, std::__cxx11::string)[m[K’:
-[01m[K/SDCARD/workspace/talk_something/src/talkers.cpp:24:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Konline[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-     void talk_topic(bool [01;35m[Konline[m[K,std::__cxx11::string strs)
-                          [01;35m[K^~~~~~[m[K

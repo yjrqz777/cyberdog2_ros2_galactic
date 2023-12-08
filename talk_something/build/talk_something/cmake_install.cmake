@@ -1,8 +1,8 @@
-# Install script for directory: /SDCARD/workspace/talk_something
+# Install script for directory: /SDCARD/workspace/cyberdog2_ros2_galactic/talk_something
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/SDCARD/workspace/talk_something/install/talk_something")
+  set(CMAKE_INSTALL_PREFIX "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/install/talk_something")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/talk_something/talks_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/talk_something" TYPE EXECUTABLE FILES "/SDCARD/workspace/talk_something/build/talk_something/talks_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/talk_something" TYPE EXECUTABLE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/talks_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/talk_something/talks_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/talk_something/talks_node")
     file(RPATH_CHANGE
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/talk_something")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/talk_something")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/talk_something")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/talk_something")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/environment" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/environment" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,50 +83,50 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/environment" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/environment" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_index/share/ament_index/resource_index/packages/talk_something")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_index/share/ament_index/resource_index/packages/talk_something")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/cmake" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/cmake" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/cmake" TYPE FILE FILES "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/cmake" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something/cmake" TYPE FILE FILES
-    "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_core/talk_somethingConfig.cmake"
-    "/SDCARD/workspace/talk_something/build/talk_something/ament_cmake_core/talk_somethingConfig-version.cmake"
+    "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_core/talk_somethingConfig.cmake"
+    "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/ament_cmake_core/talk_somethingConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/talk_something/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/talk_something" TYPE FILE FILES "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -137,5 +137,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/SDCARD/workspace/talk_something/build/talk_something/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/SDCARD/workspace/cyberdog2_ros2_galactic/talk_something/build/talk_something/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
