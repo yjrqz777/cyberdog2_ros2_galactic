@@ -5,7 +5,9 @@ git config --global user.name "yjrqz777"
 git config --global user.email  3210551161@qq.com
 
 
-ros2 pkg create motion_contor --build-type ament_cmake --dependencies rclcpp
+ros2 pkg create audio_test --build-type ament_python --dependencies rclcpp
+
+ros2 pkg create wifi_test --build-type ament_python --dependencies rclcpp
 
 colcon build --merge-install --packages-select moto_contor_test
 
@@ -44,8 +46,8 @@ ros2 topic list|grep speech_play_extend
 /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend
 
 
-ros2 topic echo /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend
-ros2 topic info /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend
+ros2 topic echo /mi_desktop_48_b0_2d_7b_02_9c/volume_get
+ros2 topic info /mi_desktop_48_b0_2d_7b_02_9c/volume_get
 
 protocol/msg/AudioPlayExtend
 
