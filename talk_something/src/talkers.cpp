@@ -52,7 +52,7 @@ private:
             RCLCPP_WARN(this->get_logger(), "audio client not ready.");
         }
          
-        talk_topic(false,"你好啊，再见 , place,go,study");
+        talk_topic(true,"你好啊，再见 , place,go,study");
 
         RCLCPP_INFO(this->get_logger(),"-----time:i=%d---------",i);
         i++;
@@ -65,9 +65,10 @@ public:
         group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
         audio_client_ = this->create_client<protocol::srv::AudioExecute>("get_audio_state",rmw_qos_profile_services_default, group_);
         RCLCPP_INFO(this->get_logger(),"talkers---------%s",name.c_str());
-        timer_ =this->create_wall_timer(std::chrono::milliseconds(5000),std::bind(&talkersNode::timer_callback, this));
+        timer_ =this->create_wall_timer(std::chrono::milliseconds(1000),std::bind(&talkersNode::timer_callback, this));
         speech_play_extend_ = this->create_publisher<protocol::msg::AudioPlayExtend>("speech_play_extend",2);
         set_voice_ = this->create_publisher<std_msgs::msg::UInt8>("volume_set", 2);
+        // talk_topic(true,"你好啊，再见 , place,go,study");
     };
 
 };

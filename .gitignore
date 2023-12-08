@@ -1,6 +1,9 @@
 log
 build
 install
-./*/install
-./*/build
-./*/log
+**/install/
+**/build/
+**/log/
+./talk_something/build/
+./talk_something/install/
+./talk_something/log/

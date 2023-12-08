@@ -30,6 +30,26 @@ class AudioT(Node):
         self.pub_volume_get = self.create_publisher(UInt8, mi_node + "volume_set", 10)
         self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
         
+"""
+
+module_name: AudioTalkDemo
+is_online: true
+speech:
+  module_name: AudioTalkDemo
+  play_id: 32
+text: 这是在线语音32,this is online voice.
+---
+module_name: AudioTalkDemo
+is_online: true
+speech:
+  module_name: AudioTalkDemo
+  play_id: 32
+text: 你好
+---
+
+"""
+
+
 
 # '''
 # string module_name
