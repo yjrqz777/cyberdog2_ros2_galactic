@@ -105,7 +105,7 @@ private:
           //   RosServiceTalk(false);
           //   RosTopicTalk(false);
           /*online voice*/
-          RosServiceTalk(true);
+          // RosServiceTalk(true);
           RosTopicTalk(true);
           rclcpp::shutdown();
         } else {

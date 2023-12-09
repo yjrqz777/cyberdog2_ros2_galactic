@@ -15,6 +15,7 @@ mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 
 """
 /audio_test$ colcon build
+colcon build --merge-install --packages-select audio_test
 ros2 run audio_test audio_node
 """
 
@@ -24,47 +25,11 @@ class AudioT(Node):
         super().__init__(name)
         self.time_per = 1
         self.count = 0
-        self.get_audio_stat = self.create_client(AudioExecute,"get_audio_state")   
+        self.get_audio_stat = self.create_client(AudioExecute,mi_node + "get_audio_state")   
         self.get_logger().warn("self.get_audio_stat==%s"%self.get_audio_stat)
         # rclpy.shutdown()
         self.pub_volume_get = self.create_publisher(UInt8, mi_node + "volume_set", 10)
         self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
-        
-"""
-
-module_name: AudioTalkDemo
-is_online: true
-speech:
-  module_name: AudioTalkDemo
-  play_id: 32
-text: 这是在线语音32,this is online voice.
----
-module_name: AudioTalkDemo
-is_online: true
-speech:
-  module_name: AudioTalkDemo
-  play_id: 32
-text: 你好
----
-
-"""
-
-
-
-# '''
-# string module_name
-# bool is_online
-# AudioPlay speech
-#         string module_name
-#         uint16 play_id
-# string text
-#         speech_play_extend_voice->module_name = name_;
-#         speech_play_extend_voice->is_online = online;
-#         speech_play_extend_voice->speech.module_name = name_;
-#         speech_play_extend_voice->speech.play_id = 32;  // please close to me.
-#         speech_play_extend_voice->text = strs;
-
-# '''
         msg_volume = UInt8()
         msg_volume.data = 20
         self.pub_volume_get.publish(msg_volume)
@@ -72,8 +37,8 @@ text: 你好
 
         msg_send = AudioPlayExtend()
         msg_send.is_online = True
-        msg_send.module_name = "AudioTalkDemo"
-        msg_send._speech.module_name = "AudioTalkDemo"
+        msg_send.module_name = "AudioT"
+        msg_send._speech.module_name = "AudioT"
         msg_send._speech.play_id = 32
         msg_send.text = "你好"
         if self.get_audio_stat == None:
@@ -87,6 +52,9 @@ text: 你好
 
     def timer_callback(self):
         self.count += 1
+        
+        while not self.get_audio_stat.wait_for_service(1):
+            self.get_logger().warn('service not available, waiting again...')
         self.get_logger().info("Publishing: '%d'" % self.count)
 
 

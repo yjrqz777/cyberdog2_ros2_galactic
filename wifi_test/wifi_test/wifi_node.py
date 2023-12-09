@@ -26,7 +26,8 @@ uint8 RESULT_TIMEOUT = 15    # 连接超时
 int32 code
 ###
 
-/wifi_test$ colcon build
+/wifi_test$ colcon build 
+colcon build --merge-install --packages-select wifi_test
 ros2 run wifi_test wifi_node
 """
 
