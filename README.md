@@ -13,3 +13,6 @@
 
 2023年12月8日20:36:32 成功实现wifi连接
 2023年12月8日21:41:37 talk_something/src/talkers.cpp 有一个bug,不能运行，明天修
+
+
+
