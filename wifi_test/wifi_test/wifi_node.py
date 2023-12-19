@@ -1,5 +1,5 @@
 import rclpy
-
+import argparse
 from rclpy.node import Node
 from protocol.msg import WifiStatus
 from protocol.srv import WifiConnect
@@ -61,11 +61,12 @@ class WifiNode(Node):
         while not self.cli_wifi_connect.wait_for_service(timeout_sec=1.0):
             self.get_logger().warn('service not available, waiting again...')
         request = WifiConnect.Request()
-        request.ssid = "dog"
-        request.pwd = "12345678"
-
-        # request.ssid = "404_m6200"
-        # request.pwd = "404404404"
+        if n==1:
+            request.ssid = "dog"
+            request.pwd = "12345678"
+        if n==2:
+            request.ssid = "404_m6200"
+            request.pwd = "404404404"
         future = self.cli_wifi_connect.call_async(request)
         future.add_done_callback(self.connect_is_ok_callback)
     
@@ -89,8 +90,17 @@ class WifiNode(Node):
 
 
 def main(args=None):
+    global n
+    parser = argparse.ArgumentParser(description='命令行中传入一个数字')
+    #type是要传入的参数的数据类型  help是该参数的提示信息
+    parser.add_argument('integers', type=int, help='传入的数字')
+    argss = parser.parse_args()
+    n=argss.integers
     rclpy.init(args=args)
     node = WifiNode("wifi_node")
     node.send_request()
     rclpy.spin(node)
     rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,1 @@
+colcon build --merge-install --packages-select camera_picture

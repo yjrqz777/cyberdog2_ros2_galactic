@@ -9,6 +9,10 @@ ros2 pkg create audio_test --build-type ament_python --dependencies rclcpp
 
 ros2 pkg create wifi_test --build-type ament_python --dependencies rclcpp
 
+
+ros2 pkg create camera_picture --build-type ament_python --dependencies rclcpp
+
+
 colcon build --merge-install --packages-select moto_contor_test
 
 ros2 run moto_contor_test talks_node --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/"`
@@ -43,7 +47,7 @@ int32 wave_cycle_time # 2-5静态效果模式下表示变色时间，6动态模�
 # response
 bool success
 
-
+ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/camera_service protocol/srv/CameraService "{command: 1, args: ''}"
 
 ros2 topic list|grep speech_play_extend
 /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend
@@ -82,3 +86,36 @@ ros2 topic pub /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend protocol/msg/Aud
 ros2 run motion_action client_test --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c "{mode: 111}" 
 
 
+
+ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/camera_service protocol/srv/CameraService "{command: 1, args: ''}"
+
+# This message contains an uncompressed image
+# (0, 0) is at top-left corner of image
+
+std_msgs/Header header # Header timestamp should be acquisition time of image
+        builtin_interfaces/Time stamp
+                int32 sec
+                uint32 nanosec
+        string frame_id
+                             # Header frame_id should be optical frame of camera
+                             # origin of frame should be optical center of cameara
+                             # +x should point to the right in the image
+                             # +y should point down in the image
+                             # +z should point into to plane of the image
+                             # If the frame_id here and the frame_id of the CameraInfo
+                             # message associated with the image conflict
+                             # the behavior is undefined
+
+uint32 height                # image height, that is, number of rows
+uint32 width                 # image width, that is, number of columns
+
+# The legal values for encoding are in file src/image_encodings.cpp
+# If you want to standardize a new string format, join
+# ros-users@lists.ros.org and send an email proposing a new encoding.
+
+string encoding       # Encoding of pixels -- channel meaning, ordering, size
+                      # taken from the list of strings in include/sensor_msgs/image_encodings.hpp
+
+uint8 is_bigendian    # is this data bigendian?
+uint32 step           # Full row length in bytes
+uint8[] data          # actual matrix data, size is (step * rows)
