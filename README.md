@@ -14,6 +14,7 @@
 2023年12月8日20:36:32 成功实现wifi连接
 2023年12月8日21:41:37 talk_something/src/talkers.cpp 有一个bug,不能运行，明天修
 2023年12月9日12:57:14 talk_something/src/talkers.cpp 应用多线程 fix bug
+2023年12月19日17:12:28 测试camera
 
 
 

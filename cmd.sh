@@ -47,8 +47,8 @@ int32 wave_cycle_time # 2-5静态效果模式下表示变色时间，6动态模�
 # response
 bool success
 
-ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/camera_service protocol/srv/CameraService "{command: 1, args: ''}"
-
+ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/camera_service protocol/srv/CameraService "{command: 9, args: ''}"
+ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/camera_service protocol/srv/CameraService "{command: 9, width: 640, height: 480, fps: 0}"
 ros2 topic list|grep speech_play_extend
 /mi_desktop_48_b0_2d_7b_02_9c/speech_play_extend
 
