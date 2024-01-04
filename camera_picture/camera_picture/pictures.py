@@ -9,7 +9,7 @@ from protocol.srv import CameraService
 mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 import cv2
 import os
-
+import numpy as np
 # sensor_msgs/msg/Image
 '''
 uint8 SET_PARAMETERS = 0
@@ -88,19 +88,32 @@ class camera_picture_node(Node):
         super().__init__(name)
         # self.get_logger().info("Hello ROS 2")   
 
-        self.picture_date = self.create_subscription(Image,mi_node + "image",self.picture_date_callback,10)
+        self.picture_date = self.create_subscription(Image,mi_node +  "image",self.picture_date_callback,10)
         self.camera_state = self.create_client(CameraService,mi_node + "camera_service")
 
 
 
     def picture_date_callback(self,images_date):
         self.get_logger().info("picture_date_callback")
-        # print(len(images_date.data))
+        print(len(images_date.data))
+        print(images_date.width,images_date.height,images_date.encoding,images_date.is_bigendian,images_date.step,images_date.std_msgs)
         # cv2.imshow('Array Image', images_date.data)
         # cv2.waitKey(0)  # 等待按下任意键关闭图像窗口
         # self.get_logger().warn(images_date.data)
-        # with open("picture.txt","wb",'gbk' ) as f:
-        #     f.write(images_date.data)
+        # with open("picture.txt","w") as f:
+        #     array_string = ' '.join(map(str, images_date.data))
+        #     print(array_string)
+        #     f.write(array_string)
+        # f.close()
+        rclpy.shutdown()
+        numpy_image = np.array(images_date.data)
+        print(type(numpy_image))
+        width = images_date.width
+        height = images_date.height
+        two_dimensional_array = numpy_image.reshape(height, width)
+        cv2.imshow('Array Image', two_dimensional_array)
+        cv2.waitKey(1)  # 等待按下任意键关闭图像窗口
+        # cv2.imwrite("file_name.png", two_dimensional_array)
         # self.get_logger().info("\nis_connected=%d\n\
         #                        ip=%s\n\
         #                        ssid=%s\n\
@@ -123,7 +136,7 @@ class camera_picture_node(Node):
         request.fps = 0
         future = self.camera_state.call_async(request)
         future.add_done_callback(self.camera_callback)
-        self.get_logger().info("send_request")
+        self.get_logger().info("send_request2")
     
     def camera_callback(self,response):
         '''
@@ -132,14 +145,14 @@ class camera_picture_node(Node):
         int32 code
         '''
         # self.num_info(response.result())
-        self.get_logger().info("send_request")
+        # self.get_logger().info("send_request")
         self.get_logger().info("result = %d, msg=%s, code=%d" %(response.result().result, response.result().msg, response.result().code ))
         # rclpy.shutdown()
 
 def main(args=None):
     rclpy.init(args=args)
     node = camera_picture_node("picture_node")
-    # node.state_send_request()
+    node.state_send_request()
     rclpy.spin(node)
     rclpy.shutdown()
 

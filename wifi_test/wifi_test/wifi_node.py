@@ -143,12 +143,12 @@ def main(args=None):
     global n, ip
     parser = argparse.ArgumentParser(description='两个参数，1是wifi编号，2是app的ip地址')
     #type是要传入的参数的数据类型  help是该参数的提示信息
-    parser.add_argument('integers', type=int, help='wifi编号')
-    parser.add_argument('ip', type=str, help='app的ip地址')
+    parser.add_argument('--i', dest='int', metavar='1 or 2',type=int, help='wifi编号')
+    parser.add_argument('--ip', dest='ip',metavar='192.168.1.1',type=str, help='app的ip地址')
     argss = parser.parse_args()
-    n=argss.integers
+    n=argss.int
     ip=argss.ip
-    # print(n,ip)
+    print(n,ip)
     rclpy.init(args=args)
     node = WifiNode("wifi_node")
     node.send_app_request()
