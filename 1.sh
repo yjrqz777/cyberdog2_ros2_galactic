@@ -1,0 +1,26 @@
+sudo apt update python-apt-common python-pil python-pip-whl \
+python-pkg-resources \
+python-twisted \
+python-twisted-bin \
+python-twisted-core \
+python2.7 \
+python2.7-dev \
+python2.7-minimal \
+python3-apport \
+python3-apt \
+python3-distupgrade \
+python3-jwt \
+python3-louis \
+python3-lxml \
+python3-mako \
+python3-pil \
+python3-pip \
+python3-pkg-resources \
+python3-problem-report \
+python3-protobuf \
+python3-setuptools \
+python3-software-properties \
+python3-wheel \
+python3.6 \
+python3.6-dev \
+python3.6-minimal \

@@ -81,14 +81,28 @@ string encoding       # Encoding of pixels -- channel meaning, ordering, size
 uint8 is_bigendian    # is this data bigendian?
 uint32 step           # Full row length in bytes
 uint8[] data          # actual matrix data, size is (step * rows)
+
+
+colcon build --merge-install --packages-select camera_picture
+
+ros2 run camera_picture camera_picture_node
+
+ros2 service call /mi_desktop_48_b0_2d_7b_02_9c/camera_service protocol/srv/CameraService "{command: 1, args: ''}"
+
+
+ros2 run camera_test camera_server __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+
+
+ros2 run camera_test stereo_camera __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+
 '''
 
 class camera_picture_node(Node):
     def __init__(self,name):
         super().__init__(name)
         # self.get_logger().info("Hello ROS 2")   
-
-        self.picture_date = self.create_subscription(Image,mi_node +  "image",self.picture_date_callback,10)
+      # self.sub_wifi_status = self.create_subscription(WifiStatus,mi_node + "wifi_status",self.wifi_status_callback,10)
+        self.picture_date = self.create_subscription(Image,mi_node + "image",self.picture_date_callback,10)
         self.camera_state = self.create_client(CameraService,mi_node + "camera_service")
 
 
@@ -96,7 +110,7 @@ class camera_picture_node(Node):
     def picture_date_callback(self,images_date):
         self.get_logger().info("picture_date_callback")
         print(len(images_date.data))
-        print(images_date.width,images_date.height,images_date.encoding,images_date.is_bigendian,images_date.step,images_date.std_msgs)
+        print(images_date.width,images_date.height,images_date.encoding,images_date.is_bigendian,images_date.step)
         # cv2.imshow('Array Image', images_date.data)
         # cv2.waitKey(0)  # 等待按下任意键关闭图像窗口
         # self.get_logger().warn(images_date.data)
@@ -105,12 +119,11 @@ class camera_picture_node(Node):
         #     print(array_string)
         #     f.write(array_string)
         # f.close()
-        rclpy.shutdown()
         numpy_image = np.array(images_date.data)
         print(type(numpy_image))
         width = images_date.width
         height = images_date.height
-        two_dimensional_array = numpy_image.reshape(height, width)
+        two_dimensional_array = numpy_image.reshape(height, width,3)
         cv2.imshow('Array Image', two_dimensional_array)
         cv2.waitKey(1)  # 等待按下任意键关闭图像窗口
         # cv2.imwrite("file_name.png", two_dimensional_array)
