@@ -90,6 +90,9 @@ class WifiNode(Node):
         if n==2:
             request.wifi_name = "404_m6200"
             request.wifi_password = "404404404"
+        if n==3:
+            request.wifi_name = "1111"
+            request.wifi_password = "12345678"
         request.provider_ip = ip
         future = self.app_wifi_connect.call_async(request)
         future.add_done_callback(self.connect_app_callback)

@@ -15,6 +15,10 @@ ros2 pkg create camera_picture --build-type ament_python --dependencies rclcpp
 
 colcon build --merge-install --packages-select moto_contor_test
 
+colcon build --merge-install --packages-select nav2_control_demo
+
+
+
 ros2 run moto_contor_test talks_node --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/"`
 
 ros2 run moto_contor_test talks_node --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
@@ -119,3 +123,9 @@ string encoding       # Encoding of pixels -- channel meaning, ordering, size
 uint8 is_bigendian    # is this data bigendian?
 uint32 step           # Full row length in bytes
 uint8[] data          # actual matrix data, size is (step * rows)
+
+
+
+
+sudo mv /etc/mr813_version /etc/mr813_version.backup
+
