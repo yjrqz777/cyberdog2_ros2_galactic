@@ -1,4 +1,9 @@
 {
+    "files.exclude": {
+        "**/.git": false,
+        "*/.git": false,
+        ".git": false
+   },
     "files.associations": {
         "condition_variable": "cpp",
         "typeinfo": "cpp",
