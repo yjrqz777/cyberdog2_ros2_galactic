@@ -1,0 +1,139 @@
+[[step]]
+mode = 12
+gait_id = 0
+contact = 0
+life_count = 0 #Fake value
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 5000  # Expected execution time of Position interpolation control, For recovery stand need > 5.0S
+
+[[step]]
+mode = 21 #Position interpolation control
+gait_id = 5
+contact = 15 # 0b00001111  :15 Four legs  14:Up front right leg   13:Up front left leg  11:Up back right leg  7:Up back left leg
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.15,] # x y z， z:Absolute centroid height
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 300
+
+[[step]]
+mode = 21
+gait_id = 5
+contact = 15
+life_count = 0
+value = 0
+duration = 400
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.25,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+
+[[step]]
+mode = 21
+gait_id = 0
+contact = 15
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, -0.25, 0.0,] # roll pich yaw
+pos_des = [ 0.05, 0.05, -0.0,] # x y z, Right-handed coordinate system， +X:front +Y:Left  +Z:Up
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.1, 0.0, 0.0,] # x,y,z : Rotation point coordinates for roll pitch and yaw
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 500
+
+[[step]]
+mode = 21
+gait_id = 0
+contact = 11  # 0b00001111  :15 Four legs  14:Up front right leg   13:Up front left leg  11:Up back right leg  7:Up back left leg
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ -0.1, -0.1, 0.15, 0.0, 0.0, 0.0,] #x,y,z: Move distance of lifting foot along coordinate axis
+
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 500
+
+
+[[step]]
+mode = 21
+gait_id = 0
+contact = 11
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, -0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 500
+
+
+
+[[step]]
+mode = 21
+gait_id = 5
+contact = 15
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.23,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 500
+
+[[step]]
+mode = 11 #locomotion
+gait_id = 3
+contact = 15
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.5,] # velocity of x y yaw
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.06, 0.06,]
+value = 0
+duration = 3000
+
+[[step]]
+mode = 7 #Puredamper
+gait_id = 0
+contact = 0
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 4000
+

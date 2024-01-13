@@ -1,0 +1,5 @@
+*~
+*.vscode
+*.orig
+*_full.toml
+__pycache__

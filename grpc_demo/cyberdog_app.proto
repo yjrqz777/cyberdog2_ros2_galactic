@@ -1,0 +1,167 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.cyberdogapp";
+option java_outer_classname = "CyberdogAppProto";
+option objc_class_prefix = "RTG";
+
+package grpcapi;
+
+service GrpcApp {
+    rpc sendMsg(SendRequest) returns (stream RecResponse) {}
+    rpc heartbeat(Ticks) returns(Result) {}
+    rpc getFile(SendRequest) returns (stream FileChunk) {}
+}
+
+message MotionStatus{
+    int32 motion_id = 1;
+}
+
+message TaskStatus{
+    fixed32 task_status = 1;
+    int32 task_sub_status = 2;
+}
+
+message SelfCheckStatus{
+    int32 code = 1;
+    string description = 2;
+}
+
+message StateSwitchStatus{
+    int32 state = 1;
+    int32 code = 2;
+}
+
+message ChargingStatus{
+    bool wired_charging = 1;
+    bool wireless_charging = 2;
+}
+
+message Ticks{
+    string ip = 1;
+    fixed32 wifi_strength = 2;
+    fixed32 battery_power = 3;
+    bool internet = 4;
+    string sn = 5;
+    MotionStatus motion_status = 6;
+    TaskStatus task_status = 7;
+    SelfCheckStatus self_check_status = 8;
+    StateSwitchStatus state_switch_status = 9;
+    ChargingStatus charging_status = 10;
+    bool audio = 11;
+}
+
+message SendRequest {
+    fixed32 nameCode      = 1;
+    string params         = 2;
+    enum name_code{
+        INVALID = 0;
+        GET_DEVICE_INFO = 1001;
+        MOTION_SERVO_REQUEST = 1002;
+        MOTION_SERVO_RESPONSE = 1003;
+        MOTION_CMD_REQUEST = 1004;
+        DEVICE_NAME_SWITCH = 1010;
+        DEVICE_NAME_SET = 1011;
+        DEVICE_VOLUME_SET = 1012;
+        DEVICE_MIC_SET = 1013;
+        DEVICE_AUDIO_SET = 1014;
+        ACCOUNT_MEMBER_ADD = 1020;
+        ACCOUNT_MEMBER_SEARCH = 1021;
+        ACCOUNT_MEMBER_DELETE = 1022;
+        ACCOUNT_MEMBER_CHANGE = 1024;
+        STOP_AUDIO_PLAY = 1025;
+        VISUAL_BACKEND_MSG = 2001;
+        VISUAL_FRONTEND_MSG = 2002;
+        AUDIO_AUTHENTICATION_REQUEST = 3001;
+        AUDIO_AUTHENTICATION_RESPONSE = 3002;
+        AUDIO_VOICEPRINTTRAIN_START = 3011;
+        AUDIO_VOICEPRINTTRAIN_CANCEL = 3012;
+        AUDIO_VOICEPRINTTRAIN_RESULT = 3013;
+        AUDIO_VOICEPRINTS_DATA = 3014;
+        IMAGE_TRANSMISSION_REQUEST = 4001;
+        CAMERA_SERVICE = 4002;
+        FILES_NOT_DOWNLOAD_COMPLETE = 4003;
+        DOWNLOAD_FILE = 4004;
+        OTA_STATUS_REQUEST = 5001;
+        OTA_VERSION_QUERY_REQUEST = 5002;
+        OTA_START_DOWNLOAD_REQUEST = 5003;
+        OTA_START_UPGRADE_REQUEST = 5004;  
+        OTA_PROCESS_QUERY_REQUEST = 5005;
+        OTA_ESTIMATE_UPGRADE_TIME_REQUEST = 5006;
+        OTA_NX_REBOOT = 5007;
+        OTA_ACTION_START = 5010;
+        OTA_ACTION_CONTINUE = 5011;
+    	MAP_DATA_REQUEST = 6001;
+        MAP_SET_LABLE_REQUEST = 6002;
+        MAP_GET_LABLE_REQUEST = 6003;
+        NAV_ACTION = 6004;
+        MAP_DOG_POSE_REQUEST = 6005;
+        NAV_PLAN_PATH = 6006;
+        TRACKING_OBJ = 6007;
+        SELECTED_TRACKING_OBJ = 6008;
+        STOP_NAV_ACTION = 6009;
+        ACCESS_NAV_ACTION = 6010;
+        LASER_SCAN = 6011;
+        ENABLE_POINT_CLOUD = 6012;
+        POINT_CLOUD_STATE = 6013;
+        FACE_ENTRY_REQUEST = 7001;
+        FACE_RECORDING_REQUEST = 7002;
+        FACE_ENTRY_RESULT_PUBLISH = 7003;
+        FACE_RECOGNITION_RESULT_PUBLISH = 7004;
+        BLUETOOTH_SCAN = 8001;
+        BLUETOOTH_CONNECT = 8002;
+        BLUETOOTH_DISCONNECTED_UNEXPECTED = 8003;
+        BLUETOOTH_CONNECTED_DEVICES = 8004;
+        BLE_DIVICE_FIRMWARE_VERSION = 8005;
+        BLE_DEVICE_BATTERY_LEVEL = 8006;
+        DELETE_BLE_HISTORY = 8007;
+        BLE_FIRMWARE_UPDATE_NOTIFICATION = 8008;
+        UPDATE_BLE_FIRMWARE = 8009;
+        BLE_DFU_PROGRESS = 8010;
+        SET_BT_TREAD = 8011;
+        UPDATE_BT_TREAD = 8012;
+        GET_BT_TREAD = 8013;
+        UNLOCK_DEVELOP_ACCESS = 9030;
+        REBOOT_MACHINE = 9031;
+        STATUS_REQUEST = 10001;
+        LOW_POWER_EXIT = 10002;
+        AUTO_LOW_POWER_ENABLE = 10003;
+        SET_WORK_ENVIRONMENT = 10004;
+        UPLOAD_SYSLOG = 10005;
+        POWER_OFF = 10006;
+        LCM_LOG_UPLOAD = 10007;
+        ENABLE_ELEC_SKIN = 11001;
+        SET_ELEC_SKIN = 11002;
+        DOG_LEG_CALIBRATION = 12001;
+    }
+}
+
+message RecResponse {
+    fixed32 nameCode     = 1;
+    string data          = 2;
+}
+
+message Result {
+    string result = 1;
+}
+
+message FileChunk {
+    fixed32 error_code = 1;
+    string file_name   = 2;
+    fixed32 file_size  = 3;
+    bytes buffer       = 4;
+}

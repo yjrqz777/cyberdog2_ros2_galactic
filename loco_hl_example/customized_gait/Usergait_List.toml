@@ -1,0 +1,45 @@
+[[step]]
+mode = 12
+gait_id = 0
+contact = 0
+life_count = 0 #Fake value
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 5000  # Expected execution time of Position interpolation control, For recovery stand need > 5.0S
+
+[[step]]
+mode = 62 # User define gait
+gait_id = 110
+contact = 15
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,] # velocity of x y yaw
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 4320
+
+[[step]]
+mode = 7 #Puredamper
+gait_id = 0
+contact = 0
+life_count = 0
+vel_des = [ 0.0, 0.0, 0.0,]
+rpy_des = [ 0.0, 0.0, 0.0,]
+pos_des = [ 0.0, 0.0, 0.0,]
+acc_des = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+ctrl_point = [ 0.0, 0.0, 0.0,]
+foot_pose = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]
+step_height = [ 0.0, 0.0,]
+value = 0
+duration = 4000
+
