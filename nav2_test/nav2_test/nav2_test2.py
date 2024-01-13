@@ -42,7 +42,7 @@ class nva2_test(Node):
             self.get_logger().warn('service not available, waiting again...')
         request = StopAlgoTask.Request()
         request.task_id = id
-
+        request.map_name = "map22"
         future = self.stop_task.call_async(request)
         future.add_done_callback(self.stop_task_callback)
 
@@ -105,8 +105,8 @@ class nva2_test(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = nva2_test("nav2_test_node")
-    node.send_task_id(5)
-    # node.send_stop_task_request(5) 
+    # node.send_task_id(1)
+    node.send_stop_task_request(5) 
     # rclpy.spin(node)
     # # node.destroy_node()
     # rclpy.shutdown()
