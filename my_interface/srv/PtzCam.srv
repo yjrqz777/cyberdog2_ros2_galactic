@@ -1,0 +1,6 @@
+uint8 cmd
+uint8 time
+bool is_pic
+string pic_name
+---
+uint8 result

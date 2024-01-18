@@ -10,7 +10,7 @@ ros2 pkg create audio_test --build-type ament_python --dependencies rclcpp
 ros2 pkg create wifi_test --build-type ament_python --dependencies rclcpp
 
 
-ros2 pkg create camera_picture --build-type ament_python --dependencies rclcpp
+ros2 pkg create my_interface --build-type ament_cmake
 
 
 colcon build --merge-install --packages-select moto_contor_test
