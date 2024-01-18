@@ -20,6 +20,6 @@
 2024年1月11日19:42:10 使用grpc 实现跑过程点grpc_demo/grpc_teleop2.py
 2024年1月13日19:12:21  
 想要控制狗的姿态，通过grpc控制失败，原因：未知 文件路径：/grpc_demo/grpc_motion_cmd.py           
-通过lcm控制成功， *`但是是相对位移的控制`* 文件路径：/SDCARD/workspace/cyberdog2_ros2_galactic/loco_hl_example/basic_motion/main.py      
-
+通过lcm控制成功， *`但是是相对位移的控制`* 文件路径：/SDCARD/workspace/cyberdog2_ros2_galactic/loco_hl_example/basic_motion/main.py       
+2024年1月18日15:52:23 增加海康摄像头
 
