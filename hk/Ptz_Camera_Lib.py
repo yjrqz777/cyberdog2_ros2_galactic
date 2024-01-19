@@ -2,8 +2,9 @@
 
 import os
 import platform
-import tkinter
-from tkinter import *
+# import tkinter
+# from tkinter import *
+# import grpc
 from HCNetSDK import *
 from PlayCtrl import *
 from time import sleep
@@ -25,15 +26,15 @@ class Ptz_Camera():
         # 登录设备
 
 
-        # self.device_info = NET_DVR_DEVICEINFO_V30()
+        self.device_info = NET_DVR_DEVICEINFO_V30()
 
-        # self.lUserId = self.Objdll.NET_DVR_Login_V30(DEV_IP, DEV_PORT, DEV_USER_NAME, DEV_PASSWORD, byref(self.device_info))
+        self.lUserId = self.Objdll.NET_DVR_Login_V30(DEV_IP, DEV_PORT, DEV_USER_NAME, DEV_PASSWORD, byref(self.device_info))
         
         # device_info = NET_DVR_DEVICEINFO_V40()
         # device_info.byLoginMode = 1
         # DEV_info = NET_DVR_USER_LOGIN_INFO()
         # DEV_info.sDeviceAddress = '192.168.44.64'.encode('utf-8')
-        # DEV_info.wPort = 8011
+        # DEV_info.wPort = 80
         # DEV_info.sUserName = 'admin'.encode('utf-8')
         # DEV_info.sPassword = 'air12345678'.encode('utf-8')
         # DEV_info.byLoginMode = 1
@@ -41,7 +42,7 @@ class Ptz_Camera():
         
         if self.lUserId < 0:
             err = self.Objdll.NET_DVR_GetLastError()
-            print('Login device fail, error code is: %d' % self.Objdll.NET_DVR_GetLastError())
+            print('Login device fail,%d error code is: %d' % (err,self.Objdll.NET_DVR_GetLastError()))
             # 释放资源
             self.Objdll.NET_DVR_Cleanup()
             exit()
@@ -89,7 +90,19 @@ class Ptz_Camera():
         # print('os.getcwd', os.getcwd())
         # os.chdir(r'../../')
         lRealPlayHandle = self.Objdll.NET_DVR_CaptureJPEGPicture(self.lUserId, 1, byref(pic), bytes('//SDCARD/picture/{}.jpg'.format(p_name), encoding="utf-8"))
-        print('lRealPlayHandle:', lRealPlayHandle)   
+        
+        print('拍照成功:', lRealPlayHandle)   
+
+
+    def take_control_easy(self,id):
+        lRet = self.Objdll.NET_DVR_PTZPreset_Other(self.lUserId, 1, 39 , id)
+        if lRet == 0:
+            self.Objdll.NET_DVR_PTZPreset_Other(self.lUserId, 1, 39 , 300)
+        else:
+            print('开始转到指定位置')
+        sleep(22)
+
+
 
     def take_control(self,control_cmd = 0,control_time = 1):
         '''
@@ -131,10 +144,11 @@ if __name__ == '__main__':
     # 加载库,先加载依赖库
     Ptz_cam = Ptz_Camera()
     # 云台控制 
-    Ptz_cam.take_control(TILT_DOWN,1)
-    Ptz_cam.take_control(ZOOM_OUT,1)
+    # Ptz_cam.take_control(PAN_LEFT,1)
+    Ptz_cam.take_control_easy(1)
+    # Ptz_cam.take_control(ZOOM_OUT,1)
 
-    Ptz_cam.take_pic(p_size=8,)
+    Ptz_cam.take_pic(p_size=8)
     Ptz_cam.LogoutDev()
     # ../../pic/test.jpg
     # 停止解码，释放播放库资源

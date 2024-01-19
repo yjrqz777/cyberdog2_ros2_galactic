@@ -9,14 +9,18 @@ else:
     import termios
     import tty 
     print('os.name is', os.name)
+sys.path.append("/SDCARD/workspace/cyberdog2_ros2_galactic/hk")
+from Ptz_Camera_Lib import Ptz_Camera
+from HCNetSDK import *
+ptz= Ptz_Camera()
 
 import time
 import grpc
 import json
 import cyberdog_app_pb2
 import cyberdog_app_pb2_grpc
-sys.path.append("/SDCARD/workspace/cyberdog2_ros2_galactic/hk")
-from Ptz_Camera_Lib import Ptz_Camera
+
+
 # from HCNetSDK import *
 
 class Client:
@@ -92,7 +96,7 @@ class ProtoEncoder:
             content = file.read()
             content= json.loads(content)
             label_num = len(content) - 2
-            for i in range(1, 1 + 1):
+            for i in range(1, label_num + 1):
                 if i == 1:
                     
                     time.sleep(1)
@@ -100,15 +104,16 @@ class ProtoEncoder:
                 x = content[label_name]["x"]
                 y = content[label_name]["y"]
                 json_str = self.encodeVel(x,y)
-                label_name = ""
+
                 self.grpc_client.sendMsg(6004, json_str)
                 print(json_str)
-                # self.Ptz_cam.take_control(TILT_DOWN,1)
-                # self.Ptz_cam.take_control(ZOOM_OUT,1)
-                # self.Ptz_cam.take_pic(p_size=8,p_name="{}".format(label_name))
-                # Ptz_cam.LogoutDev()
-                # if i == 1:
-                #     Ptz_cam.LogoutDev()
+                ptz.take_control_easy(i)
+                # ptz.take_control(PAN_LEFT,1)
+                # ptz.take_control(ZOOM_OUT,1)
+                ptz.take_pic(p_size=8,p_name="{}".format(label_name))
+                label_name = ""
+                if i == label_num:
+                    ptz.LogoutDev()
                 time.sleep(1)
 
 
@@ -126,12 +131,13 @@ class ProtoEncoder:
         return json.dumps(cmd)
 
 if __name__ == '__main__':
-    # if len(sys.argv) < 5:
-    #     print('Please input gRPC server IP, CA certificate, client key and client certificate')
-    #     exit()
-    # grpc_client = Client(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
-    Ptz_Camera()
-    # send = ProtoEncoder()
-    # send.read_post()
+    if len(sys.argv) < 5:
+        print('Please input gRPC server IP, CA certificate, client key and client certificate')
+        exit()
+
+    grpc_client = Client(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    
+    send = ProtoEncoder()
+    send.read_post()
 
 

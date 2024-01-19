@@ -1,6 +1,6 @@
-import rclpy
+import rclpy as a
 import argparse
-import rclpy.node 
+import rclpy.node as s
 
 from HCNetSDK import *
 from PlayCtrl import *
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     DEV_PASSWORD = create_string_buffer(b'air12345678')
     strPath = os.getcwd().encode('utf-8')
     print(strPath)
-    os.chdir(r'./lib')
+    os.chdir(r'/SDCARD/workspace/cyberdog2_ros2_galactic/ptz_camera/ptz_camera/lib')
     Objdll = cdll.LoadLibrary('./libhcnetsdk.so')
     strPath = os.getcwd().encode('utf-8')
     print(strPath)
@@ -78,12 +78,14 @@ if __name__ == "__main__":
     # device_info.byLoginMode = 1
     DEV_info = NET_DVR_USER_LOGIN_INFO()
     DEV_info.sDeviceAddress = '192.168.44.64'.encode('utf-8')
-    DEV_info.wPort = DEV_PORT
+    DEV_info.wPort = 80
     DEV_info.sUserName = 'admin'.encode('utf-8')
     DEV_info.sPassword = 'air12345678'.encode('utf-8')
     DEV_info.byLoginMode = 1
+    # DEV_info.byProxyType = 0
+    DEV_info.byHttps = 0
     lUserId = Objdll.NET_DVR_Login_V40(byref(DEV_info), byref(device_info))
-    
+    print(lUserId)
     if lUserId < 0:
         err = Objdll.NET_DVR_GetLastError()
         print('Login device fail, error code is: %d' % Objdll.NET_DVR_GetLastError())

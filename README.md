@@ -23,3 +23,6 @@
 通过lcm控制成功， *`但是是相对位移的控制`* 文件路径：/SDCARD/workspace/cyberdog2_ros2_galactic/loco_hl_example/basic_motion/main.py       
 2024年1月18日15:52:23 增加海康摄像头
 
+2024年1月19日16:35:45 ssh增加byobu-enable,关闭窗口依然可以运行
+
+
