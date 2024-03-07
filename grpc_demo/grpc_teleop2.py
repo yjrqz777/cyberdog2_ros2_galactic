@@ -110,7 +110,7 @@ class ProtoEncoder:
                 ptz.take_control_easy(i)
                 # ptz.take_control(PAN_LEFT,1)
                 # ptz.take_control(ZOOM_OUT,1)
-                ptz.take_pic(p_size=8,p_name="{}".format(label_name))
+                ptz.take_pic(p_size=9,p_name="{}".format(label_name))
                 label_name = ""
                 if i == label_num:
                     ptz.LogoutDev()
