@@ -18,6 +18,21 @@ mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 /audio_test$ colcon build
 colcon build --merge-install --packages-select audio_test
 ros2 run audio_test audio_node
+
+
+ros2 interface show protocol/srv/AudioTextPlay
+# request
+string module_name
+bool is_online
+AudioPlay speech
+        string module_name
+        uint16 play_id
+string text
+---
+# response
+uint8 status    # 0播放完毕,1播放失败
+int32 code
+
 """
 
 
@@ -31,9 +46,21 @@ class AudioT(Node):
         # self.pub_volume_get = self.create_publisher(UInt8, mi_node + "volume_set", 10)
         self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
         # self.pub_volume_get.publish(msg_volume)
-        self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
-        self.set_volume(20)
-        self.timer = self.create_timer(self.time_per, self.timer_callback)
+        # self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
+        # self.set_volume(20)
+        # self.get_logger().info("111111-------")
+        # self.speak_service = self.create_service(AudioTextPlay, mi_node + "speak_text_play", self.speak_callback)
+        # self.timer = self.create_timer(self.time_per, self.timer_callback)
+        # self.destroy_node()
+    # def speak_callback(self,request,response):
+    #     msg_send = AudioPlayExtend()
+    #     msg_send.is_online = True
+    #     msg_send.module_name = "AudioT"
+    #     msg_send._speech.module_name = "AudioT"
+    #     msg_send._speech.play_id = 32
+    #     msg_send.text = request.text
+    #     self.pub_audio_send.publish(msg_send)
+    #     self.get_logger().info("topic_talk-------")
 
 
     def set_volume(self,val):
@@ -44,7 +71,7 @@ class AudioT(Node):
         self.set_volume_client.call_async(set_volume).add_done_callback(self.set_volume_callback)
 
     def set_volume_callback(self,response):
-        self.get_logger().warn("是否成功=%d\ncode = %d"%(response.result().success,response.result().code))
+        self.get_logger().warn("是否成功=%d, code = %d"%(response.result().success,response.result().code))
 
     def timer_callback(self):
         self.count += 1
@@ -53,6 +80,7 @@ class AudioT(Node):
         self.get_logger().info("Publishing: '%d'" % self.count)
 
     def topic_talk(self,string):
+        # self.get_logger().warn('service waiting')
         while not self.get_audio_stat.wait_for_service(1):
             self.get_logger().warn('service not available, waiting again...')
         msg_send = AudioPlayExtend()
@@ -71,9 +99,13 @@ def main(args=None):
 
     audio_node = AudioT("audio_t")
     # audio_node.get_logger().info("Hello World!")
-    rclpy.spin(audio_node)
+    
+    # rclpy.spin_once(audio_node)
+    audio_node.topic_talk("然后直接进行回调。")
+    audio_node.topic_talk("一系列订阅、回调、。")
+    # audio_node.get_logger().info("2222-------")
     # audio_node.destroy_node()
-    rclpy.shutdown()
+    # rclpy.shutdown()
 
 
 if __name__ == "__main__":

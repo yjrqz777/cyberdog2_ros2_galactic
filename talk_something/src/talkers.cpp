@@ -10,7 +10,13 @@
 #include "std_msgs/msg/u_int8.hpp"
 
 
+
+
+
+/*
 //colcon build --merge-install --packages-select talk_something
+ros2 run talk_something talks_node --ros-args -r __ns:=/mi_desktop_48_b0_2d_7b_02_9c
+*/
 
 
 class talkersNode : public rclcpp::Node
@@ -38,19 +44,19 @@ private:
     RCLCPP_INFO(this->get_logger(), "[%s] done!", __func__);
   }
 
-//   talkersNode():Node("AudioTalkDemo")
-//   {
-//     name_ = "AudioTalkDemo";
-//     group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
-//     audio_client_ = this->create_client<protocol::srv::AudioExecute>("get_audio_state",rmw_qos_profile_services_default, group_);
+  // talkersNode():Node("AudioTalkDemo")
+  // {
+  //   name_ = "AudioTalkDemo";
+  //   group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
+  //   audio_client_ = this->create_client<protocol::srv::AudioExecute>("get_audio_state",rmw_qos_profile_services_default, group_);
 
-//     audio_text_speech_client_ =this->create_client<protocol::srv::AudioTextPlay>("speech_text_play",rmw_qos_profile_services_default, group_);
+  //   audio_text_speech_client_ =this->create_client<protocol::srv::AudioTextPlay>("speech_text_play",rmw_qos_profile_services_default, group_);
 
-//     speech_play_extend_ = this->create_publisher<protocol::msg::AudioPlayExtend>("speech_play_extend", 2);
-//     // 使用timer触发
-//     timer_ = this->create_wall_timer(
-//       std::chrono::milliseconds(1000), std::bind(&talkersNode::timer_callback, this));
-//   }
+  //   speech_play_extend_ = this->create_publisher<protocol::msg::AudioPlayExtend>("speech_play_extend", 2);
+  //   // 使用timer触发
+  //   timer_ = this->create_wall_timer(
+  //     std::chrono::milliseconds(1000), std::bind(&talkersNode::timer_callback, this));
+  // }
 
 
     // void talk_topic(bool online,std::__cxx11::string strs)
@@ -70,9 +76,9 @@ private:
     if (audio_client_ == nullptr) {
       RCLCPP_INFO(this->get_logger(), "audio client not ready.");
     } else {
-      if (!audio_client_->wait_for_service(std::chrono::seconds(2))) {
-        RCLCPP_INFO(this->get_logger(), "call mic state server not avalible");
-      } else {
+      // if (!audio_client_->wait_for_service(std::chrono::seconds(2))) {
+      //   RCLCPP_INFO(this->get_logger(), "call mic state server not avalible");
+      // } else {
         std::chrono::seconds timeout(3);
         auto req = std::make_shared<protocol::srv::AudioExecute::Request>();
         req->client = name_;
@@ -95,7 +101,7 @@ private:
         } else {
           RCLCPP_INFO(this->get_logger(), "audio is not ready");
         }
-      }
+      // }
     }
   }
 
