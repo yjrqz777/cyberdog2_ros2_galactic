@@ -12,7 +12,7 @@ else:
 sys.path.append("/SDCARD/workspace/cyberdog2_ros2_galactic/hk")
 from Ptz_Camera_Lib import Ptz_Camera
 from HCNetSDK import *
-# ptz= Ptz_Camera()
+ptz= Ptz_Camera()
 
 
 
@@ -145,7 +145,7 @@ class Client:
 class ProtoEncoder():
     def __init__(self):
         self.grpc_client = Client(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
-        # self.Ptz_cam = Ptz_Camera()
+        self.Ptz_cam = Ptz_Camera()
 
     def read_post(self):
         txt_files_os = [f for f in os.listdir("/home/mi/mapping") if f.endswith('.json')]
@@ -165,15 +165,16 @@ class ProtoEncoder():
 
                 self.grpc_client.sendMsg(6004, json_str)
                 print(json_str)
-                # self.grpc_client.dog_speak.topic_talk("开始拍照请等待")
-                # ptz.take_control_easy(i)
-                # # ptz.take_control(PAN_LEFT,1)
-                # # ptz.take_control(ZOOM_OUT,1)
-                # ptz.take_pic(p_size=9,p_name="{}".format(label_name))
+                self.grpc_client.dog_speak.topic_talk("开始拍照请等待")
+                ptz.take_control_easy(i)
+                # ptz.take_control(PAN_LEFT,1)
+                # ptz.take_control(ZOOM_OUT,1)
+                ptz.take_pic(p_size=9,p_name="{}".format(label_name))
+                self.grpc_client.dog_speak.topic_talk("拍照完成")
                 label_name = ""
                 if i == label_num:
                     self.grpc_client.sendMsg(9999, json_str)
-                    # ptz.LogoutDev()
+                    ptz.LogoutDev()
                 time.sleep(1)
 
 
