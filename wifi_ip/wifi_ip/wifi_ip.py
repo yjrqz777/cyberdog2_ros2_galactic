@@ -79,6 +79,17 @@ class WifiNode(Node):
         self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
         self.set_volume(40)
 
+    def set_volume(self,val):
+        while not self.set_volume_client.wait_for_service(timeout_sec=1.0):
+          self.get_logger().warn('service not available, waiting again...')
+        set_volume = AudioVolumeSet.Request()
+        set_volume.volume = val
+        self.set_volume_client.call_async(set_volume).add_done_callback(self.set_volume_callback)
+
+    def set_volume_callback(self,response):
+        self.get_logger().warn("是否成功=%d, code = %d"%(response.result().success,response.result().code))
+
+
 
     def topic_talk(self,string):
         # self.get_logger().warn('service waiting')
@@ -104,19 +115,20 @@ class WifiNode(Node):
         if wifi_status.is_connected ==0:
             self.cout=0         
         if wifi_status.is_connected ==1:
-            if self.cout != 16:
+            if self.cout != 21:
                 self.cout = self.cout + 1
-            if self.cout == 15:
+            if self.cout == 20:
                 self.topic_talk(wifi_status.ip)
             # self.destroy_node()
-        self.get_logger().info("\nis_connected=%d,self.cout=%d\n\
-                            ip=%s\n\
-                            ssid=%s\n\
-                            strength=%d\n\
-                            "%(wifi_status.is_connected,self.cout,\
-                                wifi_status.ip,\
-                                    wifi_status.ssid,\
-                                        wifi_status.strength) )
+        if self.cout ==0 or self.cout==5 or self.cout==10 or self.cout==15 or self.cout==20:
+            self.get_logger().info("\nis_connected=%d,self.cout=%d\n\
+                                ip=%s\n\
+                                ssid=%s\n\
+                                strength=%d\n\
+                                "%(wifi_status.is_connected,self.cout,\
+                                    wifi_status.ip,\
+                                        wifi_status.ssid,\
+                                            wifi_status.strength) )
         # self.destroy_node()
 
 

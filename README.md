@@ -59,5 +59,10 @@ WantedBy=multi-user.target
 sudo systemctl start cyberdog_my_launch.service             手动开启
 sudo systemctl enable cyberdog_my_launch.service            开启自启动
 
+sudo systemctl status cyberdog_my_launch.service            查看状态
+
+sudo systemctl restart cyberdog_my_launch.service           重启服务
+
+journalctl -u cyberdog_my_launch.service
 
 2024年3月11日20:47:45 日志：以上
