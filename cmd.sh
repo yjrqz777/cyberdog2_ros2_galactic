@@ -7,7 +7,7 @@ git config --global user.email  3210551161@qq.com
 
 ros2 pkg create audio_test --build-type ament_python --dependencies rclcpp
 
-ros2 pkg create wifi_test --build-type ament_python --dependencies rclcpp
+ros2 pkg create wifi_ip --build-type ament_python --dependencies rclcpp
 
 
 ros2 pkg create my_interface --build-type ament_cmake
@@ -128,4 +128,7 @@ uint8[] data          # actual matrix data, size is (step * rows)
 
 
 sudo mv /etc/mr813_version /etc/mr813_version.backup
+
+
+du -h --max-depth=1 查看当前文件目录各个文件夹大小
 
