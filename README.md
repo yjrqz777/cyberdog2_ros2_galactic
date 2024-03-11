@@ -25,13 +25,13 @@
 
 2024年1月19日16:35:45 ssh增加byobu-enable,关闭窗口依然可以运行
 
-# 2024年3月7日21:37:22 增加tree.txt 说明文件目录 逐步更新
+## 2024年3月7日21:37:22 增加tree.txt 说明文件目录 逐步更新
 
 
 2024年3月8日19:53:25： grpc控制加入语言提醒
 
 
-2024年3月11日16:47:40 增加wifi_ip 实现联网自动报ip,等待15秒
+2024年3月11日16:47:40 增加wifi_ip 实现联网自动报ip,等待20秒
 
 ```
 cyberdog_my_launch.service  
@@ -56,13 +56,16 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-sudo systemctl start cyberdog_my_launch.service             手动开启
-sudo systemctl enable cyberdog_my_launch.service            开启自启动
+```
+sudo systemctl start cyberdog_my_launch.service             手动开启  
+sudo systemctl enable cyberdog_my_launch.service            开启自启动  
 
-sudo systemctl status cyberdog_my_launch.service            查看状态
+sudo systemctl status cyberdog_my_launch.service            查看状态  
 
-sudo systemctl restart cyberdog_my_launch.service           重启服务
+sudo systemctl restart cyberdog_my_launch.service           重启服务  
 
 journalctl -u cyberdog_my_launch.service
+```
+
 
 2024年3月11日20:47:45 日志：以上
