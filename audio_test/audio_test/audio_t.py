@@ -47,7 +47,7 @@ class AudioT(Node):
         self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
         # self.pub_volume_get.publish(msg_volume)
         self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
-        self.set_volume(50)
+        self.set_volume(10)
         # self.get_logger().info("111111-------")
         # self.speak_service = self.create_service(AudioTextPlay, mi_node + "speak_text_play", self.speak_callback)
         # self.timer = self.create_timer(self.time_per, self.timer_callback)

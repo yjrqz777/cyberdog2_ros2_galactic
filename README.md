@@ -32,3 +32,32 @@
 
 
 2024年3月11日16:47:40 增加wifi_ip 实现联网自动报ip,等待15秒
+
+```
+cyberdog_my_launch.service  
+sudo cp cyberdog_my_launch.service /etc/systemd/system/
+service 服务名 [start | stop | restart | reload | status]
+```
+
+```
+[Unit]
+Description="cyberdog Deamon"
+Wants=mi_preset.service cyberdog_sudo.service
+After=mi_preset.service cyberdog_sudo.service
+
+[Service]
+User=mi
+Type=idle
+ExecStart=/bin/bash -c 'source /etc/mi/ros2_env.conf; source /SDCARD/workspace/cyberdog2_ros2_galactic/install/setup.bash; rm -rf ~/.ros/log/*; ros2 launch my_launch my_wifi_ip.launch.py'
+TimeoutStopSec=1
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+sudo systemctl start cyberdog_my_launch.service             手动开启
+sudo systemctl enable cyberdog_my_launch.service            开启自启动
+
+
+2024年3月11日20:47:45 日志：以上

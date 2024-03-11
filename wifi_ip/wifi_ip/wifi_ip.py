@@ -5,12 +5,12 @@ from protocol.msg import WifiStatus
 from protocol.srv import WifiConnect
 from protocol.srv import Connector
 from rclpy.executors import MultiThreadedExecutor
-
+from protocol.srv import AudioVolumeSet
 
 from protocol.msg import AudioPlayExtend
 from protocol.srv import AudioExecute
 # from std_msgs.msg import Bools
-mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
+
 # protocol/srv/Connector
 
 """
@@ -63,16 +63,21 @@ int32 code
 """
 
 
+mi_node = ""
+
 
 class WifiNode(Node):
     def __init__(self,name):
         super().__init__(name)
         self.cout = 0
-        self.sub_wifi_status = self.create_subscription(WifiStatus,mi_node + "wifi_status",self.wifi_status_callback,10)
+        self.sub_wifi_status = self.create_subscription(WifiStatus,mi_node+"wifi_status",self.wifi_status_callback,10)
 
 
-        self.get_audio_stat = self.create_client(AudioExecute,mi_node + "get_audio_state")   
-        self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
+        self.get_audio_stat = self.create_client(AudioExecute,mi_node+ "get_audio_state")   
+        self.pub_audio_send = self.create_publisher(AudioPlayExtend,mi_node+"speech_play_extend", 10)
+
+        self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
+        self.set_volume(40)
 
 
     def topic_talk(self,string):

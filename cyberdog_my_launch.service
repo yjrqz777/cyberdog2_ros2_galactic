@@ -1,0 +1,15 @@
+[Unit]
+Description="cyberdog Deamon"
+Wants=mi_preset.service cyberdog_sudo.service
+After=mi_preset.service cyberdog_sudo.service
+
+[Service]
+User=mi
+Type=idle
+ExecStart=/bin/bash -c 'source /etc/mi/ros2_env.conf; source /SDCARD/workspace/cyberdog2_ros2_galactic/install/setup.bash; rm -rf ~/.ros/log/*; ros2 launch my_launch my_wifi_ip.launch.py'
+TimeoutStopSec=1
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
