@@ -64,6 +64,7 @@ WantedBy=multi-user.target
 ```
 
 sudo systemctl start cyberdog_my_launch.service             手动开启  
+sudo systemctl stop cyberdog_my_launch.service
 sudo systemctl enable cyberdog_my_launch.service            开启自启动  
 sudo systemctl disable cyberdog_my_launch.service
 sudo systemctl status cyberdog_my_launch.service            查看状态  

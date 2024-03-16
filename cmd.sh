@@ -7,7 +7,7 @@ git config --global user.email  3210551161@qq.com
 
 ros2 pkg create audio_test --build-type ament_python --dependencies rclcpp
 
-ros2 pkg create wifi_ip --build-type ament_python --dependencies rclcpp
+ros2 pkg create my_weakup --build-type ament_python --dependencies rclcpp
 
 
 ros2 pkg create my_interface --build-type ament_cmake

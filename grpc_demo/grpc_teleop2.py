@@ -107,13 +107,13 @@ class Client:
     def analy_code(self,feedback_code):
         if feedback_code == 300:
             print("导航启动成功，设置目标点成功，正在规划路径")
-            self.dog_speak.topic_talk("正在规划路径")
+            # self.dog_speak.topic_talk("正在规划路径")
         elif feedback_code == 307:
             print("正在导航中")
             self.dog_speak.topic_talk("正在导航中")
         elif feedback_code == 308:
             print("到达目标点")
-            self.dog_speak.topic_talk("到达目标点,开始拍照请等待")
+            # self.dog_speak.topic_talk("到达目标点,开始拍照请等待")
         elif feedback_code == 302:
             print("底层导航功能服务连接失败，请重新发送目标")
         elif feedback_code == 303:
@@ -137,7 +137,7 @@ class Client:
             # self.dog_speak.topic_talk("激活依赖节点成功")
         elif feedback_code == 1002:
             print("激活依赖节点失败")
-            # self.dog_speak.topic_talk("激活依赖节点失败")
+            self.dog_speak.topic_talk("激活依赖节点失败")
         else:
             print("feedback_code:{}".format(feedback_code))
         

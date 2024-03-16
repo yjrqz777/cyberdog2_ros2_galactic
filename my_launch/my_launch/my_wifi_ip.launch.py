@@ -168,4 +168,9 @@ def generate_launch_description():             # 自动生成launch文件的函�
             executable='wifi_ip_node', # 节点的可执行文件
             namespace=get_namespace()
         ),
+        Node(                                  # 配置一个节点的启动
+            package='my_weakup',          # 节点所在的功能包
+            executable='my_wakeup_node', # 节点的可执行文件
+            namespace=get_namespace()
+        ),
     ])
