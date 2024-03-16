@@ -118,7 +118,18 @@ class WifiNode(Node):
             if self.cout != 21:
                 self.cout = self.cout + 1
             if self.cout == 20:
-                self.topic_talk(wifi_status.ip)
+                str_ip = wifi_status.ip
+                str_ip1 = str_ip.split('.')[0]
+                str_ip2 = str_ip.split('.')[1]
+                str_ip3 = str_ip.split('.')[2]
+                str_ip4 = str_ip.split('.')[3]
+                if str_ip1 == "192":
+                    if str_ip2 == "168":
+                        self.topic_talk("网络已连接,ip地址后两段为:" + "，，" + ' '.join(str_ip3) + "." + "，，" + ' '.join(str_ip4))
+                    else:
+                        self.topic_talk("网络已连接,ip地址后三段为,"+' '.join(str_ip2) + "." + ' '.join(str_ip3) + "." + ' '.join(str_ip4))
+                else: 
+                    self.topic_talk("网络已连接,ip地址为,"+' '.join(str_ip))
             # self.destroy_node()
         if self.cout ==0 or self.cout==5 or self.cout==10 or self.cout==15 or self.cout==20:
             self.get_logger().info("\nis_connected=%d,self.cout=%d\n\
@@ -138,11 +149,11 @@ def main(args=None):
 
     rclpy.init(args=args)
     node = WifiNode("wifi_ip_node")
-    executor = MultiThreadedExecutor()
-    executor.add_node(node)
-    executor.spin()
-    # rclpy.spin(node)
-    # node.destroy_node()
+    # executor = MultiThreadedExecutor()
+    # executor.add_node(node)
+    # executor.spin()
+    rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == "__main__":
