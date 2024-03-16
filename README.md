@@ -48,6 +48,7 @@ After=mi_preset.service cyberdog_sudo.service
 [Service]
 User=mi
 Type=idle
+ExecStartPre=/bin/sleep 5s
 ExecStart=/bin/bash -c 'source /etc/mi/ros2_env.conf; source /SDCARD/workspace/cyberdog2_ros2_galactic/install/setup.bash; rm -rf ~/.ros/log/*; ros2 launch my_launch my_wifi_ip.launch.py'
 TimeoutStopSec=1
 Restart=on-failure
@@ -57,14 +58,18 @@ WantedBy=multi-user.target
 ```
 
 ```
+
 sudo systemctl start cyberdog_my_launch.service             手动开启  
 sudo systemctl enable cyberdog_my_launch.service            开启自启动  
-
+sudo systemctl disable cyberdog_my_launch.service
 sudo systemctl status cyberdog_my_launch.service            查看状态  
 
 sudo systemctl restart cyberdog_my_launch.service           重启服务  
 
-journalctl -u cyberdog_my_launch.service
+journalctl -u cyberdog_sudo
+
+sudo systemctl status SDCARD.mount
+
 ```
 
 

@@ -138,10 +138,11 @@ def main(args=None):
 
     rclpy.init(args=args)
     node = WifiNode("wifi_ip_node")
-    # executor = MultiThreadedExecutor()
-    # executor.add_node(node)
-    # executor.spin()
-    rclpy.spin(node)
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
+    executor.spin()
+    # rclpy.spin(node)
+    # node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == "__main__":
