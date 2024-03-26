@@ -79,3 +79,6 @@ sudo systemctl status SDCARD.mount
 
 
 2024年3月11日20:47:45 日志：以上
+
+
+2024.3.26 19：00 优化service
