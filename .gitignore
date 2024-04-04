@@ -1,9 +1,14 @@
 log
 build
 install
+protoc-3.19.5
+protobuf-3.6
+protoc-3.6.0
 **/install/
 **/build/
 **/log/
 ./talk_something/build/
 ./talk_something/install/
 ./talk_something/log/
+cyberdog_nav2
+cyberdog_occmap

@@ -65,6 +65,15 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "thread": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "any": "cpp",
+        "strstream": "cpp",
+        "bitset": "cpp",
+        "forward_list": "cpp",
+        "filesystem": "cpp",
+        "random": "cpp",
+        "regex": "cpp",
+        "cfenv": "cpp",
+        "typeindex": "cpp"
     }
 }
