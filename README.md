@@ -83,5 +83,7 @@ sudo systemctl status SDCARD.mount
 
 2024.3.26 19：00 优化service
 
+2024年4月5日17:53:36 尝试过10公分左右的台阶
+
 
 
