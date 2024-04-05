@@ -1,0 +1,120 @@
+cmake_minimum_required(VERSION 3.8)
+project(stair_find)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(nav2_util REQUIRED)
+find_package(nav2_lifecycle_manager REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(nav2_map_server REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(action_msgs REQUIRED)
+find_package(protocol REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(cyberdog_common REQUIRED)
+find_package(cyberdog_debug REQUIRED)
+find_package(cyberdog_system REQUIRED)
+find_package(motion_action REQUIRED)
+find_package(mcr_msgs REQUIRED)
+find_package(visualization REQUIRED)
+find_package(cyberdog_visions_interfaces REQUIRED)
+find_package(behavior_manager REQUIRED)
+find_package(filesystem REQUIRED)
+find_package(cyberdog_machine REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(nav2_core REQUIRED)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # uncomment the line when a copyright and license is not present in all source files
+  #set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # uncomment the line when this package is not in a git repo
+  #set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+
+set(dependencies
+  rclcpp
+  geometry_msgs
+  cyberdog_common
+  nav2_util
+  # nav2_lifecycle_manager
+  # nav2_msgs
+  # nav_msgs
+  # nav2_map_server
+  rclcpp_lifecycle
+  std_msgs
+  # builtin_interfaces
+  action_msgs
+  protocol
+  rclcpp_action
+  rclcpp_components
+  # mcr_msgs
+  # motion_action
+  cyberdog_debug
+  # cyberdog_system
+  # visualization
+  cyberdog_visions_interfaces
+  behavior_manager
+  filesystem
+  # cyberdog_machine
+  # tf2
+  # tf2_ros
+  # nav2_core
+)
+
+set(sources
+  src/main.cpp
+  src/stair_find.cpp
+  # src/algorithm_task_manager.cpp
+  src/executor_base.cpp
+  # src/executor_ab_navigation.cpp
+  # src/executor_poses_through_navigation.cpp
+  # src/executor_auto_dock.cpp
+  # src/executor_auto_dock.cpp
+  # src/executor_laser_mapping.cpp
+  # src/executor_laser_localization.cpp
+  # src/executor_vision_mapping.cpp
+  # src/executor_vision_localization.cpp
+  # src/executor_uwb_tracking.cpp
+  # src/executor_vision_tracking.cpp
+  # src/timer.cpp
+)
+
+
+add_executable(${PROJECT_NAME} ${sources})
+ament_target_dependencies(${PROJECT_NAME}
+  ${dependencies}
+)
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_features(${PROJECT_NAME} PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+
+install(TARGETS
+  ${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()
