@@ -74,6 +74,9 @@
         "random": "cpp",
         "regex": "cpp",
         "cfenv": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "*.ipp": "cpp",
+        "shared_mutex": "cpp",
+        "valarray": "cpp"
     }
 }

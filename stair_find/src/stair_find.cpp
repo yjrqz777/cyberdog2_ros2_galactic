@@ -515,38 +515,36 @@ void ExecutorStairFind::QueryVisualObstacleAvoidanceStatusCallback(
 }
 
 //  跟随启动前  调用底层的此接口，提前设置是否启用视觉避障;
-//  若不设置，toml配置中默认开启 视觉避障
-// void ExecutorStairFind::SwitchVisualObstacleAvoidanceCallback(
-//   const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
-//   std::shared_ptr<std_srvs::srv::SetBool::Response> response)
-// {
-//   if (!deps_lifecycle_activated_) {
-//     std::string toml_config = ament_index_cpp::get_package_share_directory(
-//       "algorithm_manager") + "/config/UwbTracking.toml";
-//     toml::value temp;
-//     if (!cyberdog::common::CyberdogToml::ParseFile(toml_config, temp)) {
-//       FATAL("Cannot parse %s", toml_config.c_str());
-//     }
-//     if (request->data) {
-//       enable_visual_obstacle_avoidance_ = true;
-//       response->success = true;
-//       response->message = "Realsense point cloud data switch to startup successed";
-//     } else {
-//       enable_visual_obstacle_avoidance_ = false;
-//       response->success = true;
-//       response->message = "Realsense point cloud data switch to shutdown successed";
-//     }
-//     cyberdog::common::CyberdogToml::Set(
-//       temp, "enable_visual_obstacle_avoidance",
-//       enable_visual_obstacle_avoidance_);                                                                              // NOLINT
-//     if (!cyberdog::common::CyberdogToml::WriteFile(toml_config, temp)) {
-//       ERROR("Write UWB toml file failed");
-//     }
-//   } else {  //  跟随过程(realsense节点已经激活)中 ，不可设置点云开关
-//     response->success = false;
-//     response->message = "Realsense point cloud data can not switch during tracking!";
-//   }
-// }
+  // 若不设置，toml配置中默认开启 视觉避障
+void ExecutorStairFind::SwitchVisualObstacleAvoidanceCallback(
+  const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+  std::shared_ptr<std_srvs::srv::SetBool::Response> response)
+{
+  if (!deps_lifecycle_activated_) {
+    std::string toml_config = ament_index_cpp::get_package_share_directory("algorithm_manager") + "/config/UwbTracking.toml";toml::value temp;
+    if (!cyberdog::common::CyberdogToml::ParseFile(toml_config, temp)) {
+      FATAL("Cannot parse %s", toml_config.c_str());
+    }
+    if (request->data) {
+      enable_visual_obstacle_avoidance_ = true;
+      response->success = true;
+      response->message = "Realsense point cloud data switch to startup successed";
+    } else {
+      enable_visual_obstacle_avoidance_ = false;
+      response->success = true;
+      response->message = "Realsense point cloud data switch to shutdown successed";
+    }
+    cyberdog::common::CyberdogToml::Set(
+      temp, "enable_visual_obstacle_avoidance",
+      enable_visual_obstacle_avoidance_);                                                                              // NOLINT
+    if (!cyberdog::common::CyberdogToml::WriteFile(toml_config, temp)) {
+      ERROR("Write UWB toml file failed");
+    }
+  } else {  //  跟随过程(realsense节点已经激活)中 ，不可设置点云开关
+    response->success = false;
+    response->message = "Realsense point cloud data can not switch during tracking!";
+  }
+}
 
 void ExecutorStairFind::HandleGoalResponseCallback(
   TargetTrackingGoalHandle::SharedPtr goal_handle)
