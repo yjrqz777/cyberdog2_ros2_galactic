@@ -85,5 +85,15 @@ sudo systemctl status SDCARD.mount
 
 2024年4月5日17:53:36 尝试过10公分左右的台阶
 
+2024年04月06日19:17:49
+pcl_1_10 当编译motion_utils遇到pcl版本不对应，请使用1.10.0版本，并复制pcl_1_10/lib下文件到库路径/usr/lib/aarch64-linux-gnu/
+```
+查看库路径
+ldconfig -p |grep pcl
+复制
+sudo cp -rf ./pcl_1_10/lib/lib* /usr/lib/aarch64-linux-gnu/
+更新共享库
+ldconfig
+```
 
 
