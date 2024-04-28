@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", "-std=c++11", "${file}", "-o", "${fileBasenameNoExtension}.o",
+                "-I", "/usr/include/opencv4/opencv2",
+                "-I", "/usr/include/opencv4",
+                "-L", "/usr/lib/aarch64-linux-gnu",
+                "-l", "opencv_core",
+                "-l", "opencv_imgproc",
+                "-l", "opencv_imgcodecs",
+                "-l", "opencv_video",
+                "-l", "opencv_ml",
+                "-l", "opencv_highgui",
+                "-l", "opencv_objdetect",
+                "-l", "opencv_flann",
+                "-l", "opencv_imgcodecs",
+                "-l", "opencv_photo",
+                "-l", "opencv_videoio"
+            ],// 编译命令参数        
+        }
+    ]
+}

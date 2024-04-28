@@ -1,0 +1,7 @@
+[2024-04-28 12:14:27.743][INF] COM_Logout[0][0]
+[2024-04-28 12:14:27.744][DBG] CUserMgr::UnRegisterHeartProxy[0]
+[2024-04-28 12:14:27.744][INF] Private connect 192.168.44.64:8011 sock=20 this=0x3f6ac0dc cmd=0x10100 port=47498
+[2024-04-28 12:14:27.753][INF] CTransUnitMgr::UnloadTransUnitLib
+[2024-04-28 12:14:27.753][ERR] Interim_UnRigisterTimerProxy, pProxy == NULL, iProxyID[2]
+[2024-04-28 12:14:27.753][DBG] ID-IP-CHAN[0-192.168.44.64-1] [CGetUDPStream::CloseLink] UserID[0] Port[8293]
+[2024-04-28 12:14:27.765][DBG] CStreamConvert::UnloadConvertLib, m_iInitCount = 0

@@ -58,7 +58,7 @@ StairPerception::StairPerception(rclcpp::Node::SharedPtr node, const toml::value
 
 void StairPerception::HandlePointCloud(const sensor_msgs::msg::PointCloud2 & msg)
 {
-  INFO("----------1------");
+  // INFO("----------1------");
   // if(!launch_) {
   //   return;
   // }
@@ -72,6 +72,8 @@ void StairPerception::HandlePointCloud(const sensor_msgs::msg::PointCloud2 & msg
   int left_point_size = 0;
   int right_point_size = 0;
   // int dead_zone = 2, correction = 0;
+
+
   float z = 0, sum = 0;
   for (auto point : pc_filtered_->points) {
     if (point.y > 0) {
@@ -99,72 +101,75 @@ void StairPerception::HandlePointCloud(const sensor_msgs::msg::PointCloud2 & msg
   } else {
     diff = left_point_size - right_point_size;
   }
-  // switch (state_) {
-  //   case State::IDLE:
-  //     if (trigger_) {
-  //       state_ = State::BLIND_FORWARD;
-  //       trigger_ = false;
-  //       INFO("Launch!");
-  //     }
-  //     break;
+  switch (state_) {
+    case State::IDLE:
+      if (trigger_) {
+        state_ = State::BLIND_FORWARD;
+        trigger_ = false;
+        INFO("Launch!");
+      }
+      break;
 
-  //   case State::BLIND_FORWARD:
-  //     if (total_points_size < blind_forward_threshold_) {
-  //       INFO("Points size %d < threshold, stair not found, Blind Forward", total_points_size);
-  //       break;
-  //     }
-  //     if (diff < -orientation_dead_zone_ + orientation_correction_) {
-  //       INFO("Turn right: %d", diff);
-  //       state_ = State::TURN_RIGHT;
-  //     } else if (diff > orientation_dead_zone_ + orientation_correction_) {
-  //       INFO("Turn left: %d", diff);
-  //       state_ = State::TURN_LEFT;
-  //     } else {
-  //       INFO("Approach Directly: %d", diff);
-  //       state_ = State::APPROACH;
-  //     }
-  //     break;
+    case State::BLIND_FORWARD:
+      if (total_points_size < blind_forward_threshold_) {
+        INFO("Points size %d < threshold, stair not found, Blind Forward", total_points_size);
+        break;
+      }
+      if (diff < -orientation_dead_zone_ + orientation_correction_) {
+        INFO("Turn right: %d", diff);
+        state_ = State::TURN_RIGHT;
+      } else if (diff > orientation_dead_zone_ + orientation_correction_) {
+        INFO("Turn left: %d", diff);
+        state_ = State::TURN_LEFT;
+      } else {
+        INFO("Approach Directly: %d", diff);
+        state_ = State::APPROACH;
+      }
+      break;
 
-  //   case State::TURN_LEFT:
-  //     if (diff <= orientation_dead_zone_ + orientation_correction_) {
-  //       if (total_points_size > approach_threshold_) {
-  //         INFO("Finish turning left: %d", diff);
-  //         state_ = State::FINISH;
-  //       } else {
-  //         INFO("Will approach when turning left: %d", total_points_size);
-  //         state_ = State::APPROACH;
-  //       }
-  //     }
-  //     INFO("Turn left: %d", diff);
-  //     break;
+    case State::TURN_LEFT:
+      if (diff <= orientation_dead_zone_ + orientation_correction_) {
+        if (total_points_size > approach_threshold_) {
+          INFO("Finish turning left: %d", diff);
+          state_ = State::FINISH;
+        } else {
+          INFO("Will approach when turning left: %d", total_points_size);
+          state_ = State::APPROACH;
+        }
+      }
+      INFO("Turn left: %d", diff);
+      break;
 
-  //   case State::TURN_RIGHT:
-  //     if (diff >= -orientation_dead_zone_ + orientation_correction_) {
-  //       if(total_points_size > approach_threshold_) {
-  //         INFO("Finish turning right: %d", diff);
-  //         state_ = State::FINISH;
-  //       } else {
-  //         INFO("Will approach when turning right: %d", total_points_size);
-  //         state_ = State::APPROACH;
-  //       }
-  //     }
-  //     INFO("Turn right: %d", diff);
-  //     break;
+    case State::TURN_RIGHT:
+      if (diff >= -orientation_dead_zone_ + orientation_correction_) {
+        if(total_points_size > approach_threshold_) {
+          INFO("Finish turning right: %d", diff);
+          state_ = State::FINISH;
+        } else {
+          INFO("Will approach when turning right: %d", total_points_size);
+          state_ = State::APPROACH;
+        }
+      }
+      INFO("Turn right: %d", diff);
+      break;
 
-  //   case State::APPROACH:
-  //     if (total_points_size > approach_threshold_) {
-  //       INFO("Stop: %d", total_points_size);
-  //       state_ = State::FINISH;
-  //     }
-  //     INFO("Approaching: %d", total_points_size);
-  //     break;
+    case State::APPROACH:
+      if (total_points_size > approach_threshold_) {
+        INFO("Stop: %d", total_points_size);
+        state_ = State::FINISH;
+      }
+      INFO("Approaching: %d", total_points_size);
+      break;
 
-  //   case State::FINISH:
-  //     break;
+    case State::FINISH:
+      WARN("------------FINISH");
+      state_ = State::IDLE;
+      trigger_ = true;
+      break;
 
-  //   default:
-  //     break;
-  // }
+    default:
+      break;
+  }
 }
 }
 }
