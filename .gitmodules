@@ -1,0 +1,3 @@
+[submodule "hk_cam_ws"]
+	path = hk_cam_ws
+	url = https://github.com/yjrqz777/hk_cam_ws
