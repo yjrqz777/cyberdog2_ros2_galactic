@@ -60,10 +60,16 @@ ros2 topic list|grep speech_play_extend
 ros2 topic echo /mi_desktop_48_b0_2d_7b_02_9c/volume_get
 ros2 topic info /mi_desktop_48_b0_2d_7b_02_9c/volume_get
 
+
+ros2 topic echo /mi_desktop_48_b0d_7b_02_9c/asr_text
+
 protocol/msg/AudioPlayExtend
 
-ros2 interface show protocol/msg/AudioPlayExtend
+ros2 interface show protocol/msg/AudioPlay
 
+
+
+ros2 interface show std_srvs/srv/Empty
 
 string module_name
 bool is_online

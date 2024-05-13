@@ -11,7 +11,8 @@ from protocol.msg import AudioPlayExtend
 from protocol.srv import AudioVolumeSet
 from std_srvs.srv import Trigger
 from std_msgs.msg import UInt8
-
+from std_srvs.srv import Empty
+from std_msgs.msg import String
 mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 
 """
@@ -20,7 +21,7 @@ colcon build --merge-install --packages-select audio_test
 ros2 run audio_test audio_node
 
 
-ros2 interface show protocol/srv/AudioTextPlay
+ros2 interface show std_msgs/msg/String
 # request
 string module_name
 bool is_online
@@ -32,6 +33,14 @@ string text
 # response
 uint8 status    # 0播放完毕,1播放失败
 int32 code
+
+
+    this->create_service<std_srvs::srv::Empty>(
+    "stop_play",
+    std::bind(
+    &CyberdogAudio::StopPlayService, this, std::placeholders::_1,
+    std::placeholders::_2));
+
 
 """
 
@@ -46,8 +55,14 @@ class AudioT(Node):
         # self.pub_volume_get = self.create_publisher(UInt8, mi_node + "volume_set", 10)
         self.pub_audio_send = self.create_publisher(AudioPlayExtend, mi_node + "speech_play_extend", 10)
         # self.pub_volume_get.publish(msg_volume)
+
         self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
-        self.set_volume(10)
+
+        self.get_text_ = self.create_subscription(String,mi_node+"asr_text",self.get_text_callback,10)
+
+        self.stop_paly_ = self.create_client(Empty,mi_node+"stop_play")
+
+        self.set_volume(50)
         # self.get_logger().info("111111-------")
         # self.speak_service = self.create_service(AudioTextPlay, mi_node + "speak_text_play", self.speak_callback)
         # self.timer = self.create_timer(self.time_per, self.timer_callback)
@@ -62,6 +77,9 @@ class AudioT(Node):
     #     self.pub_audio_send.publish(msg_send)
     #     self.get_logger().info("topic_talk-------")
 
+    def get_text_callback(self,text):
+        # self.get_logger().info("hk_node")
+        self.get_logger().info(text.data)
 
     def set_volume(self,val):
         while not self.set_volume_client.wait_for_service(timeout_sec=1.0):
@@ -103,6 +121,10 @@ def main(args=None):
     # rclpy.spin_once(audio_node)
     audio_node.topic_talk("然后直接进行回调。")
     audio_node.topic_talk("一系列订阅、回调、。")
+    Empty2 = Empty.Request()
+    audio_node.stop_paly_.call_async(Empty2)
+
+    rclpy.spin(audio_node)
     # audio_node.get_logger().info("2222-------")
     # audio_node.destroy_node()
     # rclpy.shutdown()

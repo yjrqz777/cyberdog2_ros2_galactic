@@ -58,6 +58,7 @@ source /opt/ros2/galactic/setup.bash
 colcon build --merge-install --install-base /opt/ros2/cyberdog/ --packages-up-to audio_demos
 
 #后续升级单个功能包使用--packages-select，只编译该功能包
+colcon build --merge-install --packages-select audio_demos
 
 colcon build --merge-install --install-base /opt/ros2/cyberdog/ --packages-select audio_demos
 ```
@@ -96,6 +97,7 @@ ros2 run audio_demos set_mic --ros-args -r __ns:=/`ros2 node list | grep "mi_" |
 ros2 run audio_demos set_voice --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/"
 
 #运行set_waken_words ，运行后唤醒词修改为”旺财旺财“
-ros2 run audio_demos set_waken_words --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/"
+ros2 run audio_demos set_waken_words --ros-args -r __ns:=/`ros2 node list | grep "mi_" | head -n 1 | cut -f 2 -d "/`
+"
 ```
 

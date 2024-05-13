@@ -39,9 +39,9 @@ private:
     std_msgs::msg::String::UniquePtr wake_words(new std_msgs::msg::String());
     // 唤醒词
     //  wake_words->data = "铁蛋铁蛋";
-    wake_words->data = "旺财旺财";
+    wake_words->data = "小爱同学";
     set_wakeup_words->publish(std::move(wake_words));
-    RCLCPP_INFO(this->get_logger(), "set wake up words:旺财旺财!");
+    RCLCPP_INFO(this->get_logger(), "set wake up words:小爱同学!");
     rclcpp::shutdown();
   }
   rclcpp::TimerBase::SharedPtr timer_;
