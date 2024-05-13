@@ -9,6 +9,10 @@ from protocol.srv import AudioVolumeSet
 
 from protocol.msg import AudioPlayExtend
 from protocol.srv import AudioExecute
+
+from std_srvs.srv import Empty
+
+
 # from std_msgs.msg import Bools
 
 # protocol/srv/Connector
@@ -63,7 +67,7 @@ int32 code
 """
 
 
-mi_node = ""
+mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 
 
 class WifiNode(Node):
@@ -77,11 +81,12 @@ class WifiNode(Node):
         self.pub_audio_send = self.create_publisher(AudioPlayExtend,mi_node+"speech_play_extend", 10)
 
         self.set_volume_client = self.create_client(AudioVolumeSet,mi_node+"audio_volume_set")
+        self.stop_paly_ = self.create_client(Empty,mi_node+"stop_play")
         self.set_volume(40)
 
     def set_volume(self,val):
         while not self.set_volume_client.wait_for_service(timeout_sec=1.0):
-          self.get_logger().warn('service not available, waiting again...')
+          self.get_logger().warn('set_volume_client not available, waiting again...')
         set_volume = AudioVolumeSet.Request()
         set_volume.volume = val
         self.set_volume_client.call_async(set_volume).add_done_callback(self.set_volume_callback)
@@ -92,9 +97,11 @@ class WifiNode(Node):
 
 
     def topic_talk(self,string):
+        Empty2 = Empty.Request()
+        self.stop_paly_.call_async(Empty2)
         # self.get_logger().warn('service waiting')
         while not self.get_audio_stat.wait_for_service(1):
-            self.get_logger().warn('service not available, waiting again...')
+            self.get_logger().warn('get_audio_stat not available, waiting again...')
         msg_send = AudioPlayExtend()
         msg_send.is_online = True
         msg_send.module_name = "AudioT"
@@ -149,11 +156,11 @@ def main(args=None):
 
     rclpy.init(args=args)
     node = WifiNode("wifi_ip_node")
-    # executor = MultiThreadedExecutor()
-    # executor.add_node(node)
-    # executor.spin()
-    rclpy.spin(node)
-    node.destroy_node()
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
+    executor.spin()
+    # rclpy.spin(node)
+    # node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == "__main__":

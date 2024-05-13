@@ -96,4 +96,4 @@ sudo cp -rf ./pcl_1_10/lib/lib* /usr/lib/aarch64-linux-gnu/
 ldconfig
 ```
 
-
+2024年05月13日20:43:29 实现只识别语音不回复 audio_test/audio_test/audio_t.py  /85
