@@ -196,6 +196,12 @@ if __name__ == '__main__':
         print('Please input gRPC server IP, CA certificate, client key and client certificate')
         exit()
     rclpy.init()
+
+#  127.0.0.1 
+#  /SDCARD/workspace/cyberdog2_ros2_galactic/grpc_demo/cert/ca-cert.pem 
+#  /SDCARD/workspace/cyberdog2_ros2_galactic/grpc_demo/cert/client-key.pem 
+#  /SDCARD/workspace/cyberdog2_ros2_galactic/grpc_demo/cert/client-cert.pem
+
     grpc_client = Client(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
     
     send = ProtoEncoder()

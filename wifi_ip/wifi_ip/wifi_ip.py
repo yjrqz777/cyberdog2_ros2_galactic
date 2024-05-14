@@ -70,6 +70,8 @@ int32 code
 mi_node = "/mi_desktop_48_b0_2d_7b_02_9c/"
 
 
+mi_node = ""
+
 class WifiNode(Node):
     def __init__(self,name):
         super().__init__(name)
@@ -97,8 +99,8 @@ class WifiNode(Node):
 
 
     def topic_talk(self,string):
-        Empty2 = Empty.Request()
-        self.stop_paly_.call_async(Empty2)
+        # Empty2 = Empty.Request()
+        # self.stop_paly_.call_async(Empty2)
         # self.get_logger().warn('service waiting')
         while not self.get_audio_stat.wait_for_service(1):
             self.get_logger().warn('get_audio_stat not available, waiting again...')
