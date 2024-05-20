@@ -4,6 +4,7 @@ install
 protoc-3.19.5
 protobuf-3.6
 protoc-3.6.0
+picture
 **/install/
 **/build/
 **/log/

@@ -38,7 +38,7 @@ ros2 run wifi_test wifi_node
 
 
 /mi_desktop_48_b0_2d_7b_02_9c/connect
-
+ros2 interface show protocol/srv/Connector
 protocol/srv/Connector
 
 string wifi_name
