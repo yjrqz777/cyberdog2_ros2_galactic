@@ -2,6 +2,10 @@
 # cyberdog2二次开发交流群 953437698
 
 ## https://github.com/orgs/MiRoboticsLab/repositories?type=all  
+
+
+![cyberdog2](./cyberdog2.jpg "cyberdog2")
+
 2023年12月6日16:00:39 增加readme    
 2023年12月6日21:23:09 测试了控制代码，控制了姿态，通过控制service控制了姿态（站立，趴下 demo: motion_action2    
 2023年12月8日20:03:13 渐入佳境，改为使用python写就是快，目前发现只需要改写头文件就OK
