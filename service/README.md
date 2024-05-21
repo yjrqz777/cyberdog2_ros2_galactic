@@ -3,6 +3,7 @@
 ```
 cyberdog_my_launch.service  
 sudo cp ./service/cyberdog_my_launch.service /etc/systemd/system/
+sudo cp ./service/cyberdog_my_run_launch.service /etc/systemd/system/
 service 服务名 [start | stop | restart | reload | status]
 ```
 
@@ -31,6 +32,7 @@ WantedBy=multi-user.target
 ```
 
 sudo systemctl start cyberdog_my_launch.service             手动开启  
+
 sudo systemctl stop cyberdog_my_launch.service
 sudo systemctl enable cyberdog_my_launch.service            开启自启动  
 sudo systemctl disable cyberdog_my_launch.service
@@ -40,6 +42,9 @@ sudo systemctl restart cyberdog_my_launch.service           重启服务
 
 journalctl -u cyberdog_my_launch.service -f
 
+sudo systemctl start cyberdog_my_run_launch.service             手动开启  
+sudo systemctl stop cyberdog_my_run_launch.service
+journalctl -u cyberdog_my_run_launch.service -f
 sudo systemctl status SDCARD.mount
 
 ```

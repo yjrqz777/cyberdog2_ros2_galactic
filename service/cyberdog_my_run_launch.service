@@ -1,0 +1,18 @@
+[Unit]
+Description="cyberdog my_run"
+Wants=mi_preset.service cyberdog_sudo.service cyberdog_autodock.service cyberdog_bringup.service SDCARD.mount
+After=mi_preset.service cyberdog_sudo.service cyberdog_autodock.service cyberdog_bringup.service SDCARD.mount
+Requires=cyberdog_autodock.service
+
+[Service]
+User=mi
+Type=idle
+ExecStartPre=/bin/sleep 5s
+ExecStart=/bin/bash -c 'source /etc/mi/ros2_env.conf; source /SDCARD/workspace/cyberdog2_ros2_galactic/install/setup.bash; source /SDCARD/workspace/cyberdog2_ros2_galactic/hk_cam_ws/install/setup.bash; ros2 launch my_launch my_run.launch.py'
+TimeoutStopSec=1
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+
