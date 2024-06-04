@@ -128,6 +128,8 @@ class WifiNode(Node):
                 self.cout = self.cout + 1
             if self.cout == 20:
                 str_ip = wifi_status.ip
+                with open("/SDCARD/ip.text","w") as f:
+                    f.write(str_ip)
                 str_ip1 = str_ip.split('.')[0]
                 str_ip2 = str_ip.split('.')[1]
                 str_ip3 = str_ip.split('.')[2]
@@ -164,6 +166,7 @@ def main(args=None):
     # rclpy.spin(node)
     # node.destroy_node()
     rclpy.shutdown()
+
 
 if __name__ == "__main__":
     main()

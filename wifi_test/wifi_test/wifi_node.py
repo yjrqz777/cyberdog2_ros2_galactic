@@ -1,3 +1,4 @@
+
 import rclpy
 import argparse
 from rclpy.node import Node
@@ -67,6 +68,8 @@ class WifiNode(Node):
         self.sub_wifi_status = self.create_subscription(WifiStatus,mi_node + "wifi_status",self.wifi_status_callback,10)
         # self.cli_wifi_connect = self.create_client(WifiConnect,mi_node + "connect_wifi")
         self.app_wifi_connect = self.create_client(Connector,mi_node + "connect")
+
+        
 
     def wifi_status_callback(self,wifi_status):
         self.get_logger().info("wifi_status_callback")
@@ -153,7 +156,9 @@ def main(args=None):
     ip=argss.ip
     print(n,ip)
     rclpy.init(args=args)
+
     node = WifiNode("wifi_node")
+
     node.send_app_request()
     rclpy.spin(node)
     rclpy.shutdown()

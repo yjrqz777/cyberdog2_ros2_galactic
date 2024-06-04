@@ -44,6 +44,10 @@ journalctl -u cyberdog_my_launch.service -f
 
 sudo systemctl start cyberdog_my_run_launch.service             手动开启  
 sudo systemctl stop cyberdog_my_run_launch.service
+sudo systemctl disable cyberdog_my_run_launch.service
+sudo systemctl status cyberdog_my_run_launch.service
+enable
+
 journalctl -u cyberdog_my_run_launch.service -f
 sudo systemctl status SDCARD.mount
 
