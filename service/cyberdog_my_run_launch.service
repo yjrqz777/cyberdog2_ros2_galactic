@@ -7,9 +7,9 @@ Requires=cyberdog_autodock.service
 [Service]
 User=mi
 Type=idle
-ExecStartPre=/bin/sleep 300s
-ExecStart=/bin/bash -c 'source /etc/mi/ros2_env.conf; source /SDCARD/workspace/cyberdog2_ros2_galactic/install/setup.bash; source /SDCARD/workspace/cyberdog2_ros2_galactic/hk_cam_ws/install/setup.bash; ros2 launch my_launch my_run.launch.py'
-TimeoutStopSec=1
+ExecStartPre=/bin/sleep 5s
+ExecStart=/SDCARD/workspace/cyberdog2_ros2_galactic/service/kh_service.sh
+TimeoutStopSec=20
 Restart=on-failure
 
 [Install]

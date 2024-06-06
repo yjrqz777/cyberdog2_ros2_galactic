@@ -38,7 +38,7 @@ sudo systemctl enable cyberdog_my_launch.service            开启自启动
 sudo systemctl disable cyberdog_my_launch.service
 sudo systemctl status cyberdog_my_launch.service            查看状态  
 
-sudo systemctl restart cyberdog_my_launch.service           重启服务  
+sudo systemctl restart cyberdog_my_launch.service           重启服务  l
 
 journalctl -u cyberdog_my_launch.service -f
 
@@ -50,5 +50,5 @@ enable
 
 journalctl -u cyberdog_my_run_launch.service -f
 sudo systemctl status SDCARD.mount
-
+systemctl daemon-reload
 ```
