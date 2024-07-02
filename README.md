@@ -3,6 +3,10 @@
 
 ## https://github.com/orgs/MiRoboticsLab/repositories?type=all  
 
+# 和狗分布式通信教程
+修改 /etc/mi/ros2_env.conf 中的 ROS_DOMAIN_ID 
+推荐为 ROS_DOMAIN_ID = 5 （我可行）
+记得自己ros2的ROS_DOMAIN_ID = 5
 
 ![cyberdog2](./cyberdog2.jpg "cyberdog2")
 
