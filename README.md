@@ -9,7 +9,7 @@
 推荐为 ROS_DOMAIN_ID = 5 （我可行）
 记得自己ros2的ROS_DOMAIN_ID = 5
 
-## 使用wifi分布式通信（感谢群友提供方法）
+## 使用wifi分布式通信（感谢群友[xander-2077](https://github.com/xander-2077)提供方法）
 修改/etc/mi下面有一个cyclonedds.xml
 的
 ![56d91ba6f64d1b93e82ae600c733235c](https://github.com/user-attachments/assets/e3d7e83a-b80b-4c09-a13d-f4f694592dd7)
