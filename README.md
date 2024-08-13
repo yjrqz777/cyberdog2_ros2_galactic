@@ -1,12 +1,18 @@
-# cyberdog2 学习代码记录 
+# cyberdog2 学习代码记录 （本项目代码不能直接全部编译使用，要单独编译）
 # cyberdog2二次开发交流群 953437698
 
 ## https://github.com/orgs/MiRoboticsLab/repositories?type=all  
 
 # 和狗分布式通信教程
+
 修改 /etc/mi/ros2_env.conf 中的 ROS_DOMAIN_ID    
 推荐为 ROS_DOMAIN_ID = 5 （我可行）
 记得自己ros2的ROS_DOMAIN_ID = 5
+
+## 使用wifi分布式通信（感谢群友提供方法）
+修改/etc/mi下面有一个cyclonedds.xml
+的
+![56d91ba6f64d1b93e82ae600c733235c](https://github.com/user-attachments/assets/e3d7e83a-b80b-4c09-a13d-f4f694592dd7)
 
 ![cyberdog2](./cyberdog2.jpg "cyberdog2")
 
