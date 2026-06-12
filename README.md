@@ -22,6 +22,13 @@
 
 ![DS-2CD3646FWD-LPTZ](./DS-2CD3646FWD-LPTZ.png "DS-2CD3646FWD-LPTZ")
 
+## 模块说明
+
+本仓库是 CyberDog2 二次开发学习仓库，很多目录来自官方示例、开源项目或自己实验时 clone / 改写的源码。代码不保证可以一次性整体编译，通常需要按模块单独学习、单独编译、单独运行。
+
+- [my_launch](./my_launch)：自己整理的 ROS 2 launch 包，用来把常用学习节点组合起来启动。例如 `my_wifi_ip.launch.py` 启动联网后播报/获取 IP 的节点，`my_test.launch.py` 启动语音唤醒测试节点，`my_run.launch.py` 用来联动启动海康摄像头相关节点。系统服务里也会调用这里的 launch 文件。
+- [ptz_camera](./ptz_camera)：海康威视 PTZ 摄像机的早期 Python 测试包，主要用于学习 HCNetSDK / PlayCtrl 的 Python 调用、登录摄像机、云台控制、抓图等能力。这个目录更偏实验验证，后续更完整的 ROS 2 化实现放在 `hk_cam_ws`。
+- [hk_cam_ws](https://github.com/yjrqz777/hk_cam_ws)：海康摄像机 ROS 2 工作空间，也是本仓库的 git submodule。它把海康 SDK 封装成 ROS 2 节点和接口，包括 `hk_interfaces`、`hk_cam`、`hk_cam_slave`，用于上位机/下位机定点巡检、PTZ 控制、图像发布和拍照保存等功能。
 
 
 2023年12月6日16:00:39 增加readme    
@@ -123,5 +130,5 @@ ldconfig
 2024年05月13日20:43:29 实现只识别语音不回复 audio_test/audio_test/audio_t.py  /85
 
 2024年05月21日18:56:53
-# 重大实现，在hk_cam里面，实现上位机，下位机 定点巡检
+# 实现在hk_cam里面，实现上位机，下位机 定点巡检
 
